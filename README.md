@@ -2,7 +2,7 @@
 
 Cite: [L.A.Riley, D.Weisshaar, H.L.Crawford et al., UCGretina GEANT4 simulation of the GRETINA Gamma-Ray Energy Tracking Array, Nucl. Instr. Meth. A1003, 165305 (2021)](https://doi.org/10.1016/j.nima.2021.165305)
 
-## Compile and install ##
+## Compile and Install ##
 
 Install version [Geant4-10.7.4 of the Geant4 libraries](https://geant4.web.cern.ch/download/all). You will need the data files for low energy electromagnetic processes, photon evaporation, and radioactive decay.
 
@@ -630,6 +630,40 @@ Energies are expressed in keV, and positions are expressed in mm.
 
 > Print ion tracking information to standard output.
 
+## Driving Simulations with Cached Events ##
+
+(Developed by Blake McNulty and Jake Kosa.)
+
+In-beam simulations involving very thick (tens of mm) targets are significantly more computationally intensive than others. The bottleneck is entirely in the tracking of ions through the target. Once the shape and density of the target are fixed, the trajectories of the beam-like reaction product and S800 data can be written to a cache file once. Then, this collection of cached trajectories can be used to generate gamma rays with a significant improvement in event rate.
+
+### Generating Cache Files ###
+
+/Cache/Output <filename>
+
+> (Mandatory) Set name of the cache file to be generated. Trajectories of the beam-like reaction products in the target and S800 data are written to this file.
+
+### Cache Simulations ###
+
+Mandatory Commands
+
+/Cache/Input <filename>
+
+> Set the name of the (existing) cache file to be used to generate gamma rays. Trajectories of beam-like reaction products are read from this file and used to drive gamma-ray emission. S800 data are also read from this file.
+
+/Cache/GammaEnergy <double> <unit>
+
+> Set the energy of the emitted gamma rays in the rest frame of the beam-like reaction product.
+
+Optional Commands
+
+/Cache/HalfLife <double> <unit>
+
+> Set the  value of the half life governing gamma-ray emission.
+
+/Cache/ZOffset <double> <unit>
+
+> Set the offset of the target along the beam axis.
+
 ## Visualization ##
 
 Run the macro file `vis/vis.mac` an interactive session:
@@ -644,31 +678,3 @@ This generates a VRML 2 file named `g4_XX.wrl` which can be viewed with a VRML v
 The macro file `./vis/trajectories.mac` illustrates how to add particle trajectories to visualizations.
 
 Within mayavi2, the python scripts `./vis/mlab.animate.py` and `./vis/mlab.movie.py` can be run (File -> Run Python Script). The former animates the scene, and the latter saves the animation frames as a series of .png files which can be stitched together into an animated png or gif.
-
-## Cache Simulation Commands ##
-
-The lsit of all commands necesary and used for cache file data simulations.
-
-/Experiment/Cache/
-
->This command sets up the cache diretory for cache file data simulations. Used for all of the Cache data simulations commands.
-
-/Experiment/Cache/Output
-
-> This command sets the specified file name given to be the Cache Output file for the simulations.
-
-/Experiment/Cache/Input
-
-> This command sets the specificed file name given to be the Cache Input file for the simulations.
-
-/Experiment/Cache/HalfLife
-
-> This command sets the specified value to be the Half Life of the particles that will be used in the simulations.
-
-/Experiment/Cache/GammaEnergy
-
-> This command sets the specified value to be the Gamma Energy of the particles that will be used in the simulations.
-
-/Experiment/Cache/ZOffset
-
-> This command sets the specified value to be the ZOffset of the LH Target that will be used in the simulations.

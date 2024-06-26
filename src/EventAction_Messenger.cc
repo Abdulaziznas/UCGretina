@@ -25,18 +25,18 @@ EventAction_Messenger::EventAction_Messenger(EventAction* EA):theEventAction(EA)
   Mode2FileCmd = new G4UIcmdWithAString("/Mode2/Filename",this);
   Mode2FileCmd->SetGuidance("Mode 2 output file name");
 
-  cacheDir = new G4UIdirectory("/Experiment/Cache/");
-  cacheOutputFileCmd = new G4UIcmdWithAString("/Experiment/Cache/Output",this);
+  cacheDir = new G4UIdirectory("/Cache/");
+  cacheOutputFileCmd = new G4UIcmdWithAString("/Cache/Output",this);
   cacheOutputFileCmd -> SetGuidance("sets the EventAction Cache Ouput file");
   
-  cacheInputFileCmd = new G4UIcmdWithAString("/Experiment/Cache/Input",this);
+  cacheInputFileCmd = new G4UIcmdWithAString("/Cache/Input",this);
   cacheInputFileCmd -> SetGuidance("sets the EventAction Cache Input file");
   
-  cacheHalfLifeCmd = new G4UIcmdWithADoubleAndUnit("/Experiment/Cache/HalfLife",this);
+  cacheHalfLifeCmd = new G4UIcmdWithADoubleAndUnit("/Cache/HalfLife",this);
   cacheHalfLifeCmd -> SetGuidance("sets the Half-Life for the particles in the cache simulation");
-  cacheGammaEnergyCmd = new G4UIcmdWithADoubleAndUnit("/Experiment/Cache/GammaEnergy",this);
+  cacheGammaEnergyCmd = new G4UIcmdWithADoubleAndUnit("/Cache/GammaEnergy",this);
   cacheGammaEnergyCmd -> SetGuidance("sets the Gamma Energy for the particles in the cache simulation");
-  cacheZOffsetCmd = new G4UIcmdWithADoubleAndUnit("/Experiment/Cache/ZOffset",this);
+  cacheZOffsetCmd = new G4UIcmdWithADoubleAndUnit("/Cache/ZOffset",this);
   cacheZOffsetCmd -> SetGuidance("sets the Z-Offset for the target in the cache simulation");
 
   crmatCmd = new G4UIcmdWithAString("/Mode2/crmatFile",this);
