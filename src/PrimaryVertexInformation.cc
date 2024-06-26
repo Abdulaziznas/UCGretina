@@ -1,6 +1,6 @@
-#include "EventInformation.hh"
+#include "PrimaryVertexInformation.hh"
 
-EventInformation::EventInformation() { 
+PrimaryVertexInformation::PrimaryVertexInformation() { 
   fNEmittedGammas = 0;
   fNBetas         = 0;
   fFullEnergy     = -1;
@@ -12,7 +12,7 @@ EventInformation::EventInformation() {
   fwrite          = true;
 }
 
-void EventInformation::AddEmittedGamma(G4double e, 
+void PrimaryVertexInformation::AddEmittedGamma(G4double e, 
 				       G4ThreeVector *pos, 
 				       G4ThreeVector *dir,
 				       G4int parentID){
@@ -51,7 +51,7 @@ void EventInformation::AddEmittedGamma(G4double e,
     
 }
 
-void EventInformation::AddBeta(G4double b, G4int TID){
+void PrimaryVertexInformation::AddBeta(G4double b, G4int TID){
 
   // Beta values are stored first, so we keep track of the track ID 
   // of the ion to match it with the corresponding emitted gamma
@@ -63,7 +63,7 @@ void EventInformation::AddBeta(G4double b, G4int TID){
 
 }
 
-void EventInformation::SetExitPos(G4ThreeVector* p){
+void PrimaryVertexInformation::SetExitPos(G4ThreeVector* p){
   fExitPos.setX(p->x());
   fExitPos.setY(p->y());
   fExitPos.setZ(p->z());

@@ -34,7 +34,6 @@
 #include "SteppingAction.hh"
 
 #include "EventAction.hh"
-#include "EventInformation.hh"
 
 #include "G4Step.hh"
 #include "G4RunManager.hh"
@@ -56,8 +55,8 @@ SteppingAction::~SteppingAction()
 
 void SteppingAction::UserSteppingAction(const G4Step* aStep)
 {
-  eventInfo 
-    = (EventInformation*)eventAction->GetEvent()->GetUserInformation();
+  primaryVertexInfo
+    = (PrimaryVertexInformation*)eventAction->GetEvent()->GetPrimaryVertex()->GetUserInformation();
 
   // if(   aStep->GetTrack()->GetDefinition()->GetParticleType() == "nucleus" 
   // 	&& aStep->GetPostStepPoint()->GetStepStatus() != fWorldBoundary ){
@@ -108,22 +107,28 @@ void SteppingAction::UserSteppingAction(const G4Step* aStep)
 
       // ATA is the dispersive angle (radians), 
       // down is + in NSCL coords= -y in Geant4 coords
-      eventInfo->SetATA( asin(-pDir.getY()/pDir.mag()) );
+      primaryVertexInfo->SetATA( asin(-pDir.getY()/pDir.mag()) );
 
       // BTA is the non-dispersive angle (radians), 
       // South is + in NSL coords = -x in Geant4 coords
-      eventInfo->SetBTA( asin(-pDir.getX()/pDir.mag()) );
+      primaryVertexInfo->SetBTA( asin(-pDir.getX()/pDir.mag()) );
 
       // DTA is dT/T with T = kinetic energy corresponding 
       // to the user-supplied center of the S800 acceptance
-      eventInfo->SetDTA( (aStep->GetTrack()->GetKineticEnergy() 
+      primaryVertexInfo->SetDTA( (aStep->GetTrack()->GetKineticEnergy() 
 			  - eventAction->GetS800KE())
 			  / eventAction->GetS800KE() ); 
 
       // YTA is horizontal position on target (mm), 
       // South is + in NSCL coords = -x in Geant4 coords
-      eventInfo->SetYTA( -aStep->GetTrack()->GetStep()->GetPreStepPoint()->GetPosition().getX()*mm );
+      primaryVertexInfo->SetYTA( -aStep->GetTrack()->GetStep()->GetPreStepPoint()->GetPosition().getX()*mm );
 
+      primaryVertexInfo->SetExitTheta(aStep->GetTrack()->GetStep()->GetPostStepPoint()->GetMomentum().getTheta());
+      primaryVertexInfo->SetExitBeta(aStep->GetTrack()->GetStep()->GetPostStepPoint()->GetBeta());
+      primaryVertexInfo->SetExitPhi(aStep->GetTrack()->GetStep()->GetPostStepPoint()->GetMomentum().getPhi());
+      primaryVertexInfo->SetExitTime(aStep->GetTrack()->GetStep()->GetPostStepPoint()->GetProperTime());
+      G4ThreeVector pos = aStep->GetTrack()->GetStep()->GetPostStepPoint()->GetPosition();
+      primaryVertexInfo->SetExitPos(&pos);
     }
     // Kill a reaction product once it hits the chamber or beamline
     // as long it has already emitted its gamma(s)
@@ -157,7 +162,7 @@ void SteppingAction::UserSteppingAction(const G4Step* aStep)
   }
   // Warn when incoming beam particles hit something other than the target.
   if( aStep->GetTrack()->GetDefinition()->GetParticleType() == "nucleus" 
-      && aStep->GetTrack()->GetParentID() == 0
+      && aStep->GetTrack()->GetParentID() == 0 
       && aStep->GetPostStepPoint()->GetStepStatus() != fWorldBoundary ){
 
     // get the final volume of the current step

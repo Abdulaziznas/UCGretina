@@ -5,7 +5,7 @@
 #include "TrackerIonSD.hh"
 #include "TrackerGammaSD.hh"
 #include "G4Event.hh"
-#include "EventInformation.hh"
+#include "PrimaryVertexInformation.hh"
 #include "G4TrajectoryContainer.hh"
 #include "G4Trajectory.hh"
 #include "G4ios.hh"
@@ -13,6 +13,7 @@
 #include "G4UnitsTable.hh"
 
 #include "GEB.hh"
+#include "cache.hh"
 
 #define MAXDETPOS 31   // for crmat - hole indices offset+1
 #define MAXCRYSTALNO 4 // for crmat
@@ -44,7 +45,30 @@ class EventAction : public G4UserEventAction
     void writeS800(long long int, G4double, G4double, G4double, G4double);
     void writeDecomp(long long int, G4int, G4int*, G4int*, G4int*, G4double*,
                      G4double*, G4double*, G4double*, G4double*, G4double*);
-    void writeSim(long long int, EventInformation*);
+    void writeSim(long long int, PrimaryVertexInformation*);
+    void writeCache(TrackerIonHitsCollection*);
+    void openCacheOutputFile(G4String);
+    void closeCacheOutputFile();
+    G4bool CacheOut(){return cacheOut;}
+#ifdef CACHETEXT
+    std::ofstream& getCacheOutputFile(){return cacheOutputFile;}
+#else
+    std::FILE* getCacheOutputFile(){return cacheOutputFile;}
+#endif
+    void openCacheInputFile(G4String);
+    void closeCacheInputFile();
+    G4bool CacheIn(){return cacheIn;}
+#ifdef CACHETEXT  
+    std::ifstream& getCacheInputFile(){return cacheInputFile;}
+#else
+  std::FILE* getCacheInputFile(){return cacheInputFile;}
+#endif
+    void SetCacheHalfLife(G4double hl) {cacheHalfLife=hl;}
+    void SetCacheGammaEnergy(G4double e) {cacheGammaEnergy=e;}
+    void SetCacheZOffset(G4double z) {cacheZOffset=z;}
+    G4double GetCacheHalfLife() { return cacheHalfLife; }
+    G4double GetCacheGammaEnergy() { return cacheGammaEnergy; }
+    G4double GetCacheZOffset() { return cacheZOffset; }
     void openCrmatFile();
     void closeCrmatFile();
     void SetCrmatFile(G4String);
@@ -80,6 +104,23 @@ class EventAction : public G4UserEventAction
     G4bool evOut;
     G4String crmatFileName;
     G4int crmatFile;
+    G4String cacheOutputFileName;
+#ifdef CACHETEXT
+    std::ofstream cacheOutputFile;
+#else
+  std::FILE* cacheOutputFile;
+#endif
+    G4bool cacheOut;
+    G4String cacheInputFileName;
+#ifdef CACHETEXT
+    std::ifstream cacheInputFile;
+#else
+  std::FILE* cacheInputFile;
+#endif
+    G4bool cacheIn;
+    G4double cacheGammaEnergy;
+    G4double cacheHalfLife;
+    G4double cacheZOffset;
     G4String mode2FileName;
     G4int mode2file;
     G4bool mode2Out;  

@@ -35,10 +35,11 @@
 #define SteppingAction_h 1
 
 #include "G4UserSteppingAction.hh"
+#include "PrimaryVertexInformation.hh"
 
 class DetectorConstruction;
 class EventAction;
-class EventInformation;
+
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -52,7 +53,7 @@ public:
     
 private:
   EventAction*          eventAction;  
-  EventInformation*     eventInfo;
+  PrimaryVertexInformation*     primaryVertexInfo;
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

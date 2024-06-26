@@ -644,3 +644,31 @@ This generates a VRML 2 file named `g4_XX.wrl` which can be viewed with a VRML v
 The macro file `./vis/trajectories.mac` illustrates how to add particle trajectories to visualizations.
 
 Within mayavi2, the python scripts `./vis/mlab.animate.py` and `./vis/mlab.movie.py` can be run (File -> Run Python Script). The former animates the scene, and the latter saves the animation frames as a series of .png files which can be stitched together into an animated png or gif.
+
+## Cache Simulation Commands ##
+
+The lsit of all commands necesary and used for cache file data simulations.
+
+/Experiment/Cache/
+
+>This command sets up the cache diretory for cache file data simulations. Used for all of the Cache data simulations commands.
+
+/Experiment/Cache/Output
+
+> This command sets the specified file name given to be the Cache Output file for the simulations.
+
+/Experiment/Cache/Input
+
+> This command sets the specificed file name given to be the Cache Input file for the simulations.
+
+/Experiment/Cache/HalfLife
+
+> This command sets the specified value to be the Half Life of the particles that will be used in the simulations.
+
+/Experiment/Cache/GammaEnergy
+
+> This command sets the specified value to be the Gamma Energy of the particles that will be used in the simulations.
+
+/Experiment/Cache/ZOffset
+
+> This command sets the specified value to be the ZOffset of the LH Target that will be used in the simulations.

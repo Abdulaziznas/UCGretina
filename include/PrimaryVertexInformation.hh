@@ -1,17 +1,17 @@
-#ifndef EventInformation_h
-#define EventInformation_h 1
+#ifndef PrimaryVertexInformation_h
+#define PrimaryVertexInformation_h 1
 
-#include "G4VUserEventInformation.hh"
+#include "G4VUserPrimaryVertexInformation.hh"
 #include "G4ThreeVector.hh"
 #include "GEB.hh"
 #include "G4SystemOfUnits.hh"
 
-class EventInformation : public G4VUserEventInformation
+class PrimaryVertexInformation : public G4VUserPrimaryVertexInformation
 {
 public:
 
-  EventInformation();
-  ~EventInformation(){};
+  PrimaryVertexInformation();
+  ~PrimaryVertexInformation(){};
 
   inline virtual void Print()const{;}
 

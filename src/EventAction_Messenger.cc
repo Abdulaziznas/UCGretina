@@ -25,6 +25,20 @@ EventAction_Messenger::EventAction_Messenger(EventAction* EA):theEventAction(EA)
   Mode2FileCmd = new G4UIcmdWithAString("/Mode2/Filename",this);
   Mode2FileCmd->SetGuidance("Mode 2 output file name");
 
+  cacheDir = new G4UIdirectory("/Experiment/Cache/");
+  cacheOutputFileCmd = new G4UIcmdWithAString("/Experiment/Cache/Output",this);
+  cacheOutputFileCmd -> SetGuidance("sets the EventAction Cache Ouput file");
+  
+  cacheInputFileCmd = new G4UIcmdWithAString("/Experiment/Cache/Input",this);
+  cacheInputFileCmd -> SetGuidance("sets the EventAction Cache Input file");
+  
+  cacheHalfLifeCmd = new G4UIcmdWithADoubleAndUnit("/Experiment/Cache/HalfLife",this);
+  cacheHalfLifeCmd -> SetGuidance("sets the Half-Life for the particles in the cache simulation");
+  cacheGammaEnergyCmd = new G4UIcmdWithADoubleAndUnit("/Experiment/Cache/GammaEnergy",this);
+  cacheGammaEnergyCmd -> SetGuidance("sets the Gamma Energy for the particles in the cache simulation");
+  cacheZOffsetCmd = new G4UIcmdWithADoubleAndUnit("/Experiment/Cache/ZOffset",this);
+  cacheZOffsetCmd -> SetGuidance("sets the Z-Offset for the target in the cache simulation");
+
   crmatCmd = new G4UIcmdWithAString("/Mode2/crmatFile",this);
   crmatCmd->SetGuidance("Use the crystal-frame to world-frame transformations in the specified file for Mode2 data (expected in crystal coordinates).");
 
@@ -64,6 +78,11 @@ EventAction_Messenger::~EventAction_Messenger()
   delete ThreshDECmd;
   delete Mode2Dir;
   delete Mode2FileCmd;
+  delete cacheOutputFileCmd;
+  delete cacheInputFileCmd;
+  delete cacheHalfLifeCmd;
+  delete cacheGammaEnergyCmd;
+  delete cacheZOffsetCmd;
   delete crmatCmd;
   delete crysCmd;
   delete coordsCmd;
@@ -90,6 +109,16 @@ void EventAction_Messenger::SetNewValue(G4UIcommand* command,G4String newValue)
     {theEventAction->SetThreshDE(ThreshDECmd->GetNewDoubleValue(newValue));}
   if( command == Mode2FileCmd )
     {theEventAction->SetMode2File(newValue);}
+  if( command ==  cacheOutputFileCmd )
+    {theEventAction->openCacheOutputFile(newValue);}
+  if( command == cacheInputFileCmd )
+    {theEventAction->openCacheInputFile(newValue);}
+  if( command == cacheHalfLifeCmd )
+    {theEventAction->SetCacheHalfLife(cacheHalfLifeCmd->GetNewDoubleValue(newValue));}
+  if( command == cacheGammaEnergyCmd )
+    {theEventAction->SetCacheGammaEnergy(cacheGammaEnergyCmd->GetNewDoubleValue(newValue));}
+  if( command == cacheZOffsetCmd )
+    {theEventAction->SetCacheZOffset( cacheZOffsetCmd->GetNewDoubleValue(newValue));}
   if( command == crmatCmd )
     {theEventAction->SetCrmatFile(newValue);}
   if( command == crysCmd )
