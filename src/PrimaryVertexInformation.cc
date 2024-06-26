@@ -8,14 +8,18 @@ PrimaryVertexInformation::PrimaryVertexInformation() {
   fbta            = sqrt(-1.0);
   fdta            = sqrt(-1.0);
   fyta            = sqrt(-1.0);
+  fExitPos        = G4ThreeVector(0, 0, 0);
+  fExitBeta       = sqrt(-1.0);
+  fExitTheta      = sqrt(-1.0);
+  fExitPhi        = sqrt(-1.0);
   ffiltercode     = 0;
   fwrite          = true;
 }
 
 void PrimaryVertexInformation::AddEmittedGamma(G4double e, 
-				       G4ThreeVector *pos, 
-				       G4ThreeVector *dir,
-				       G4int parentID){
+					       G4ThreeVector *pos, 
+					       G4ThreeVector *dir,
+					       G4int parentID){
 
   //G4cout << "   fNEmittedGammas = " << fNEmittedGammas << G4endl;
 
@@ -37,7 +41,7 @@ void PrimaryVertexInformation::AddEmittedGamma(G4double e,
     }
   }
 
-  // Source/Background
+  // Source/Background/Cache
   if(fNBetas == 0){
       fEmittedGammaEnergies[fNEmittedGammas] = e/keV;
       fEmittedGammaPosX[fNEmittedGammas]     = pos->getX()/mm;

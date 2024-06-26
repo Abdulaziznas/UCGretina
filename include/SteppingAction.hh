@@ -40,7 +40,6 @@
 class DetectorConstruction;
 class EventAction;
 
-
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 class SteppingAction : public G4UserSteppingAction
@@ -52,8 +51,8 @@ public:
   void UserSteppingAction(const G4Step*);
     
 private:
-  EventAction*          eventAction;  
-  PrimaryVertexInformation*     primaryVertexInfo;
+  EventAction*              eventAction;  
+  PrimaryVertexInformation* primaryVertexInfo;
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

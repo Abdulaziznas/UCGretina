@@ -22,11 +22,11 @@ public:
   void SetBTA(G4double b){fbta = b;}
   void SetDTA(G4double d){fdta = d;}
   void SetYTA(G4double y){fyta = y;}
-  void SetExitPos(G4ThreeVector*);
-  void SetExitTheta(G4double th){fExitTheta = th;}
-  void SetExitBeta(G4double be){fExitBeta = be;}
-  void SetExitPhi(G4double p){fExitPhi = p;}
-  void SetExitTime(G4double t){fExitTime = t;}
+  void SetExitPos(G4ThreeVector* p);
+  void SetExitBeta(G4double b){ fExitBeta = b; }
+  void SetExitTheta(G4double t){ fExitTheta = t; }
+  void SetExitPhi(G4double p){ fExitPhi = p; }
+  void SetExitTime(G4double t){ fExitTime = t; }
   void SetFilterCode(G4int c){ffiltercode = c;}
   void SetWriteEvent(G4bool b){fwrite = b;}
 
@@ -44,11 +44,11 @@ public:
   G4double GetBTA(){return fbta;}
   G4double GetDTA(){return fdta;}
   G4double GetYTA(){return fyta;}
-  G4double GetExitTheta(){return fExitTheta;}
-  G4double GetExitBeta(){return fExitBeta;}
-  G4double GetExitPhi(){return fExitPhi;}
-  G4double GetExitTime(){return fExitTime;}
-  G4ThreeVector* GetExitPos(){return &fExitPos;}
+  G4ThreeVector* GetExitPos(){ return &fExitPos; }
+  G4double GetExitBeta(){ return fExitBeta; }
+  G4double GetExitTheta(){ return fExitTheta; }
+  G4double GetExitPhi(){ return fExitPhi; }
+  G4double GetExitTime(){ return fExitTime; }
   G4int    GetFilterCode(){return ffiltercode;}
   G4bool   WriteEvent(){return fwrite;}
 
@@ -70,8 +70,8 @@ private:
   G4double fdta;
   G4double fyta;
   G4ThreeVector fExitPos;
-  G4double fExitTheta;
   G4double fExitBeta;
+  G4double fExitTheta;
   G4double fExitPhi;
   G4double fExitTime;
   G4int    ffiltercode;

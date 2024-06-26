@@ -54,8 +54,8 @@ void TrackingAction::PreUserTrackingAction(const G4Track* aTrack)
     // 	   << G4endl;
 
     primaryVertexInfo->AddEmittedGamma(aTrack->GetKineticEnergy(), 
-			       &pos, &dir,
-			       aTrack->GetParentID());
+				       &pos, &dir,
+				       aTrack->GetParentID());
 
   }
 
@@ -119,8 +119,7 @@ void TrackingAction::PostUserTrackingAction(const G4Track* aTrack)
   if( def->GetParticleType() == "nucleus" &&
       aTrack->GetParticleDefinition()->GetParticleName().contains('[') )
     primaryVertexInfo->AddBeta(aTrack->GetStep()->GetPostStepPoint()->GetBeta(),
-		       aTrack->GetTrackID());
-
+			       aTrack->GetTrackID());
   
   // if( def->GetParticleType() == "nucleus" &&
   //     aTrack->GetParentID() > 0 &&

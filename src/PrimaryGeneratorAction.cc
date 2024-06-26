@@ -1,5 +1,5 @@
 #include "PrimaryGeneratorAction.hh"
-#include <cstdio>
+
 PrimaryGeneratorAction::PrimaryGeneratorAction(DetectorConstruction *detector, Incoming_Beam* BI, Outgoing_Beam* BO): BeamIn(BI), BeamOut(BO), myDetector(detector)
 {
   SetInBeam();
@@ -30,7 +30,6 @@ PrimaryGeneratorAction::PrimaryGeneratorAction(DetectorConstruction *detector, I
   theta_max=180.*deg;
   theta_min=0.;
   theta_bin=0.;
-
 }
 
 PrimaryGeneratorAction::~PrimaryGeneratorAction()
@@ -236,16 +235,13 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 
       //  G4cout<<" +++++ Generating an event "<<G4endl;
       particleGun->GeneratePrimaryVertex(anEvent);
-      PrimaryVertexInformation* primaryVertexInfo = new PrimaryVertexInformation;
+      PrimaryVertexInformation* primaryVertexInfo
+	= new PrimaryVertexInformation;
       anEvent->GetPrimaryVertex()->SetUserInformation(primaryVertexInfo);
 
     }
-
   else if(cache)
     {
-#ifdef CACHETEXT
-      char currentLine[1000];
-#endif
       G4int Npoints;
       G4double x[1000];
       G4double y[1000];
@@ -256,11 +252,14 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
       G4double t[1000];
       G4double ata, bta, dta, yta;
 
+      // Use the half life ( /Experiment/Cache/HalfLife ) to find the
+      // emission position.
       G4bool emissionSet = false;
       G4ThreeVector emissionPos;
       G4ThreeVector emissionBeta;
 
 #ifdef CACHETEXT
+      char currentLine[1000];
       std::ifstream& cacheFile = eventAction->getCacheInputFile();
       cacheFile >> Npoints;
       if(cacheFile.eof()) {
@@ -310,6 +309,7 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 #endif
 	if(!emissionSet){
 	  if(lifetime > 0){
+	    // Inside the target, we interpolate.
 	    if(t[i] > emissionTime){
 	      G4ThreeVector x1 = G4ThreeVector(x[i-1], y[i-1], z[i-1]);
 	      G4ThreeVector x2 = G4ThreeVector(x[i],   y[i],   z[i]);
@@ -336,6 +336,8 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 	  + emissionBeta*c*(emissionTime-t[Npoints-1]);
 	emissionSet = true;
       }
+      
+      // Read S800 data.
 #ifdef CACHETEXT
       cacheFile >> ata >> bta >> dta >> yta;
       cacheFile.getline(currentLine,1000);

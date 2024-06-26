@@ -55,16 +55,20 @@ void RunAction::BeginOfRunAction(const G4Run* run)
   if(evaction->CacheIn()){
 #ifdef CACHETEXT
     std::ifstream& cacheInputFile = evaction->getCacheInputFile();
+    if(cacheInputFile.eof()){
+      G4cerr << "Error reading cache file header." << G4endl;
+      exit(EXIT_FAILURE);
+    }
     G4int Nevents;
     cacheInputFile >> Nevents;
 #else
     std::FILE* cacheInputFile = evaction->getCacheInputFile();
     G4int Nevents;
-   int size = fread(&Nevents, sizeof(G4int), 1, cacheInputFile);
+    int size = fread(&Nevents, sizeof(G4int), 1, cacheInputFile);
     if(size != 1) {
-	G4cerr << "Error reading file content: data read(Nevents) does not match expected size" << G4endl;
-	exit(EXIT_FAILURE);
-      }
+      G4cerr << "Error reading cache file header." << G4endl;
+      exit(EXIT_FAILURE);
+    }
 #endif
     G4cout << Nevents << " events in cache file." << G4endl;
     if (Nevents < run->GetNumberOfEventToBeProcessed()){
@@ -87,6 +91,8 @@ void RunAction::EndOfRunAction(const G4Run*)
     evaction->closeMode2file();
   if(evaction->CacheOut())
     evaction->closeCacheOutputFile();
+  if(evaction->CacheIn())
+    evaction->closeCacheInputFile();
 
   Timer.Stop();
 

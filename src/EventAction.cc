@@ -2,7 +2,6 @@
 #include "RunAction.hh"
 
 #include "G4Timer.hh"
-//#include <cstdio>
 extern G4Timer Timerintern;
 
 EventAction::EventAction()
@@ -50,9 +49,8 @@ void EventAction::BeginOfEventAction(const G4Event* ev)
 {
   evt = ev;
 
-  // Get the PrimaryVertexInformation.
-  PrimaryVertexInformation* primaryVertexInfo = (PrimaryVertexInformation*)evt->GetPrimaryVertex()->GetUserInformation();
-  
+  PrimaryVertexInformation* primaryVertexInfo
+    = (PrimaryVertexInformation*)evt->GetPrimaryVertex()->GetUserInformation();
 
   G4SDManager * SDman = G4SDManager::GetSDMpointer();
 
@@ -126,7 +124,8 @@ void EventAction::EndOfEventAction(const G4Event* ev)
 
   }
   
-  PrimaryVertexInformation* primaryVertexInfo = (PrimaryVertexInformation*)evt->GetPrimaryVertex()->GetUserInformation();
+  PrimaryVertexInformation* primaryVertexInfo
+    = (PrimaryVertexInformation*)evt->GetPrimaryVertex()->GetUserInformation();
 
   // Event filter
   if(!primaryVertexInfo->WriteEvent())
@@ -599,153 +598,6 @@ void EventAction::EndOfEventAction(const G4Event* ev)
     writeCache(ionCollection);
   }
 
-}
-//---------------------------------------------------
-void EventAction::writeCache(TrackerIonHitsCollection* ionCollection){
-
-  PrimaryVertexInformation* primaryVertexInfo
-    = (PrimaryVertexInformation*)evt->GetPrimaryVertex()->GetUserInformation();
-
-  // If the reaction product doesn't exit the target, the S800 information
-  // will all be nan, and we reject this event.
-  if(std::isnan(primaryVertexInfo->GetATA())){
-    G4cerr << "Warning: an event did not generate an entry in the cache file."
-	   << G4endl
-	   << "         The reaction product did not exit the target."
-	   << G4endl;
-    return;
-  }
-    
-  // Process reaction-product tracking points
-  G4int Npoints = ionCollection->entries();
-  G4bool reactionOccurence = false;
-  G4bool emissionOccurence = false;
-  G4double timeOffset = 0;
-  
-  G4double x[1000];
-  G4double y[1000];
-  G4double z[1000];
-  G4double bx[1000];
-  G4double by[1000];
-  G4double bz[1000];
-  G4double t[1000];
-
-  // Store steps in the target starting at the reaction point.
-  G4int Nwrite = 0;
-  for(G4int i = 0; i < Npoints; i++){
-    // Find the reaction step.
-    if( (*ionCollection)[i]->GetParticleID().contains("[")
-	&& !reactionOccurence) {
-      reactionOccurence = true;
-    }
-    // We need to add in a time offset for any steps in the target after
-    // a gamma-ray is emitted.
-    // (The proper time clock resets with each particle change.)
-    if( !(*ionCollection)[i]->GetParticleID().contains("[")
-	&& reactionOccurence &&!emissionOccurence) {
-      emissionOccurence = true;
-      timeOffset = (*ionCollection)[i-1]->GetTime();
-      continue; // This is a particle change step, at the same position
-                // as the next one. We don't write this one.
-    }
-    // Either the reaction has happened, or it happens as the last
-    // step in the target.
-    if(reactionOccurence || (Nwrite == 0 && i == Npoints-1) ) {
-      G4ThreeVector betaVector = G4ThreeVector(0,0,1);
-      betaVector.setMag((*ionCollection)[i]->GetBeta());
-      betaVector.setTheta((*ionCollection)[i]->GetTheta());
-      betaVector.setPhi((*ionCollection)[i]->GetPhi());
-      x[Nwrite]  = (*ionCollection)[i]->GetPos().getX();
-      y[Nwrite]  = (*ionCollection)[i]->GetPos().getY();
-      z[Nwrite]  = (*ionCollection)[i]->GetPos().getZ();
-      bx[Nwrite] = betaVector.getX();
-      by[Nwrite] = betaVector.getY();
-      bz[Nwrite] = betaVector.getZ();
-      // If the reaction happens in the last step in the target,
-      // the proper-time "clock" should start there.
-      if(Nwrite == 0 && i == Npoints-1)
-	timeOffset = -(*ionCollection)[i]->GetTime();
-      t[Nwrite]  = ((*ionCollection)[i]->GetTime()+timeOffset)/ps;
-      Nwrite++;
-    }
-  }
-  if(Nwrite > 0){
-    // Store the trajectory point as the ion exits the target.
-    G4ThreeVector betaVector = G4ThreeVector(0,0,1);
-    betaVector.setMag(primaryVertexInfo->GetExitBeta());
-    betaVector.setTheta(primaryVertexInfo->GetExitTheta());
-    betaVector.setPhi(primaryVertexInfo->GetExitPhi());
-    x[Nwrite]  = primaryVertexInfo->GetExitPos()->getX();
-    y[Nwrite]  = primaryVertexInfo->GetExitPos()->getY();
-    z[Nwrite]  = primaryVertexInfo->GetExitPos()->getZ();
-    bx[Nwrite] = betaVector.getX();
-    by[Nwrite] = betaVector.getY();
-    bz[Nwrite] = betaVector.getZ();
-    t[Nwrite]  = (primaryVertexInfo->GetExitTime()+timeOffset)/ps;
-    Nwrite++;
-  }
-
-  // Write this event to the cache file.
-  if(Nwrite > 0){
-    // Write the event header.
-#ifdef CACHETEXT
-    cacheOutputFile << Nwrite << G4endl;
-#else
-    fwrite(&Nwrite, sizeof(G4int), 1, cacheOutputFile);
-#endif
-    // Write the reaction-product tracking points.
-    for(G4int i = 0; i < Nwrite; i++){
-      // Write this ion trajectory point.
-#ifdef CACHETEXT
-      cacheOutputFile << std::fixed << std::setprecision(4) 
-		      << std::right << std::setw(12)
-		      << x[i] << std::setw(12)
-		      << y[i] << std::setw(12)
-		      << z[i]
-		      << std::setprecision(6) << std::setw(12)
-		      << bx[i] << std::setw(12)
-		      << by[i] << std::setw(12)
-		      << bz[i]
-		      << std::setprecision(4) << std::setw(12)
-		      << t[i]
-		      << G4endl;
-#else
-      CTP tp;
-      tp.x = x[i];
-      tp.y = y[i];
-      tp.z = z[i];
-      tp.bx = bx[i];
-      tp.by = by[i];
-      tp.bz = bz[i];
-      tp.t = t[i];
-      fwrite(&tp, sizeof(tp), 1, cacheOutputFile);
-#endif
-    }
-#ifdef CACHETEXT
-    //Write the S800 data.
-    cacheOutputFile << std::fixed << std::setprecision(15)
-		    << std::right << std::setw(20)
-		    << primaryVertexInfo->GetATA() << std::setw(20)
-		    << primaryVertexInfo->GetBTA() << std::setw(20)
-		    << primaryVertexInfo->GetDTA() << std::setw(20)
-		    << primaryVertexInfo->GetYTA() << std::setw(20) << G4endl;
-#else
-    CS s8;
-    s8.ata = primaryVertexInfo->GetATA();
-    s8.bta = primaryVertexInfo->GetBTA();
-    s8.dta = primaryVertexInfo->GetDTA();
-    s8.yta = primaryVertexInfo->GetYTA();
-    fwrite(&s8, sizeof(s8), 1, cacheOutputFile);
-#endif
-  }
-  else {
-    // This should never happen, since the hit collection should be empty.
-    // Right?
-    G4cerr << "Warning: an event did not generate an entry in the cache file."
-	   << G4endl
-	   << "         There were no tracking points in the target."
-	   << G4endl;
-  }
 }
 // --------------------------------------------------
 void EventAction::writeGEBHeader(GEBDATA* gd){
@@ -1282,4 +1134,151 @@ void EventAction::closeCacheInputFile()
   fclose(cacheInputFile);
 #endif
   return;
+}
+//---------------------------------------------------
+void EventAction::writeCache(TrackerIonHitsCollection* ionCollection){
+
+  PrimaryVertexInformation* primaryVertexInfo
+    = (PrimaryVertexInformation*)evt->GetPrimaryVertex()->GetUserInformation();
+
+  // If the reaction product doesn't exit the target, the S800 information
+  // will all be nan, and we reject this event.
+  if(std::isnan(primaryVertexInfo->GetATA())){
+    G4cerr << "Warning: an event did not generate an entry in the cache file."
+	   << G4endl
+	   << "         The reaction product did not exit the target."
+	   << G4endl;
+    return;
+  }
+    
+  // Process reaction-product tracking points
+  G4int Npoints = ionCollection->entries();
+  G4bool reactionOccurence = false;
+  G4bool emissionOccurence = false;
+  G4double timeOffset = 0;
+  
+  G4double x[1000];
+  G4double y[1000];
+  G4double z[1000];
+  G4double bx[1000];
+  G4double by[1000];
+  G4double bz[1000];
+  G4double t[1000];
+
+  // Store steps in the target starting at the reaction point.
+  G4int Nwrite = 0;
+  for(G4int i = 0; i < Npoints; i++){
+    // Find the reaction step.
+    if( (*ionCollection)[i]->GetParticleID().contains("[")
+	&& !reactionOccurence) {
+      reactionOccurence = true;
+    }
+    // We need to add in a time offset for any steps in the target after
+    // a gamma-ray is emitted.
+    // (The proper time clock resets with each particle change.)
+    if( !(*ionCollection)[i]->GetParticleID().contains("[")
+	&& reactionOccurence &&!emissionOccurence) {
+      emissionOccurence = true;
+      timeOffset = (*ionCollection)[i-1]->GetTime();
+      continue; // This is a particle change step, at the same position
+                // as the next one. We don't write this one.
+    }
+    // Either the reaction has happened, or it happens as the last
+    // step in the target.
+    if(reactionOccurence || (Nwrite == 0 && i == Npoints-1) ) {
+      G4ThreeVector betaVector = G4ThreeVector(0,0,1);
+      betaVector.setMag((*ionCollection)[i]->GetBeta());
+      betaVector.setTheta((*ionCollection)[i]->GetTheta());
+      betaVector.setPhi((*ionCollection)[i]->GetPhi());
+      x[Nwrite]  = (*ionCollection)[i]->GetPos().getX();
+      y[Nwrite]  = (*ionCollection)[i]->GetPos().getY();
+      z[Nwrite]  = (*ionCollection)[i]->GetPos().getZ();
+      bx[Nwrite] = betaVector.getX();
+      by[Nwrite] = betaVector.getY();
+      bz[Nwrite] = betaVector.getZ();
+      // If the reaction happens in the last step in the target,
+      // the proper-time "clock" should start there.
+      if(Nwrite == 0 && i == Npoints-1)
+	timeOffset = -(*ionCollection)[i]->GetTime();
+      t[Nwrite]  = ((*ionCollection)[i]->GetTime()+timeOffset)/ps;
+      Nwrite++;
+    }
+  }
+  if(Nwrite > 0){
+    // Store the trajectory point as the ion exits the target.
+    G4ThreeVector betaVector = G4ThreeVector(0,0,1);
+    betaVector.setMag(primaryVertexInfo->GetExitBeta());
+    betaVector.setTheta(primaryVertexInfo->GetExitTheta());
+    betaVector.setPhi(primaryVertexInfo->GetExitPhi());
+    x[Nwrite]  = primaryVertexInfo->GetExitPos()->getX();
+    y[Nwrite]  = primaryVertexInfo->GetExitPos()->getY();
+    z[Nwrite]  = primaryVertexInfo->GetExitPos()->getZ();
+    bx[Nwrite] = betaVector.getX();
+    by[Nwrite] = betaVector.getY();
+    bz[Nwrite] = betaVector.getZ();
+    t[Nwrite]  = (primaryVertexInfo->GetExitTime()+timeOffset)/ps;
+    Nwrite++;
+  }
+
+  // Write this event to the cache file.
+  if(Nwrite > 0){
+    // Write the event header.
+#ifdef CACHETEXT
+    cacheOutputFile << Nwrite << G4endl;
+#else
+    fwrite(&Nwrite, sizeof(G4int), 1, cacheOutputFile);
+#endif
+    // Write the reaction-product tracking points.
+    for(G4int i = 0; i < Nwrite; i++){
+      // Write this ion trajectory point.
+#ifdef CACHETEXT
+      cacheOutputFile << std::fixed << std::setprecision(4) 
+		      << std::right << std::setw(12)
+		      << x[i] << std::setw(12)
+		      << y[i] << std::setw(12)
+		      << z[i]
+		      << std::setprecision(6) << std::setw(12)
+		      << bx[i] << std::setw(12)
+		      << by[i] << std::setw(12)
+		      << bz[i]
+		      << std::setprecision(4) << std::setw(12)
+		      << t[i]
+		      << G4endl;
+#else
+      CTP tp;
+      tp.x = x[i];
+      tp.y = y[i];
+      tp.z = z[i];
+      tp.bx = bx[i];
+      tp.by = by[i];
+      tp.bz = bz[i];
+      tp.t = t[i];
+      fwrite(&tp, sizeof(tp), 1, cacheOutputFile);
+#endif
+    }
+#ifdef CACHETEXT
+    //Write the S800 data.
+    cacheOutputFile << std::fixed << std::setprecision(15)
+		    << std::right << std::setw(20)
+		    << primaryVertexInfo->GetATA() << std::setw(20)
+		    << primaryVertexInfo->GetBTA() << std::setw(20)
+		    << primaryVertexInfo->GetDTA() << std::setw(20)
+		    << primaryVertexInfo->GetYTA() << std::setw(20) << G4endl;
+#else
+    CS s8;
+    s8.ata = primaryVertexInfo->GetATA();
+    s8.bta = primaryVertexInfo->GetBTA();
+    s8.dta = primaryVertexInfo->GetDTA();
+    s8.yta = primaryVertexInfo->GetYTA();
+    fwrite(&s8, sizeof(s8), 1, cacheOutputFile);
+#endif
+  }
+  else {
+    // This should never happen, since the hit collection should be empty.
+    // Right?
+    G4cerr << "Warning: an event did not generate an entry in the cache file."
+	   << G4endl
+	   << "         There were no tracking points in the target."
+	   << G4endl;
+  }
 }

@@ -123,12 +123,13 @@ void SteppingAction::UserSteppingAction(const G4Step* aStep)
       // South is + in NSCL coords = -x in Geant4 coords
       primaryVertexInfo->SetYTA( -aStep->GetTrack()->GetStep()->GetPreStepPoint()->GetPosition().getX()*mm );
 
-      primaryVertexInfo->SetExitTheta(aStep->GetTrack()->GetStep()->GetPostStepPoint()->GetMomentum().getTheta());
-      primaryVertexInfo->SetExitBeta(aStep->GetTrack()->GetStep()->GetPostStepPoint()->GetBeta());
-      primaryVertexInfo->SetExitPhi(aStep->GetTrack()->GetStep()->GetPostStepPoint()->GetMomentum().getPhi());
-      primaryVertexInfo->SetExitTime(aStep->GetTrack()->GetStep()->GetPostStepPoint()->GetProperTime());
-      G4ThreeVector pos = aStep->GetTrack()->GetStep()->GetPostStepPoint()->GetPosition();
-      primaryVertexInfo->SetExitPos(&pos);
+      G4ThreeVector p = aStep->GetPostStepPoint()->GetPosition();
+      primaryVertexInfo->SetExitPos( &p );
+      primaryVertexInfo->SetExitBeta( aStep->GetPostStepPoint()->GetBeta() );
+      primaryVertexInfo->SetExitTheta( aStep->GetPostStepPoint()->GetMomentumDirection().theta() );
+      primaryVertexInfo->SetExitPhi( aStep->GetPostStepPoint()->GetMomentumDirection().phi() );
+      primaryVertexInfo->SetExitTime( aStep->GetPostStepPoint()->GetProperTime() );
+      
     }
     // Kill a reaction product once it hits the chamber or beamline
     // as long it has already emitted its gamma(s)

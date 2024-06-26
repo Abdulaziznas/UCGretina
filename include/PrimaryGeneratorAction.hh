@@ -15,6 +15,7 @@
 #include "G4RandomDirection.hh"
 #include <vector>
 #include "SourceData.hh"
+#include "PrimaryVertexInformation.hh"
 #include "cache.hh"
 
 using namespace std;
