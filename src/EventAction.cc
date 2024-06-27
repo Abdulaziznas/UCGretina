@@ -1068,22 +1068,25 @@ void EventAction::openCacheOutputFile(G4String FileName)
 {
   cacheOutputFileName = FileName;
 #ifdef CACHETEXT
-  if (!cacheOutputFile.is_open()) cacheOutputFile.open(cacheOutputFileName.c_str());
+  if (!cacheOutputFile.is_open())
+    cacheOutputFile.open(cacheOutputFileName.c_str());
   if (!cacheOutputFile.is_open()){
-    G4cerr << "ERROR opening cache output file." << G4endl;
-    cacheOut = false;
+    G4cerr << "Error opening cache output file." << G4endl;
+    exit(EXIT_FAILURE);
   } else {
-    G4cout << "\nOpened cache output file: " << outFileName << G4endl;
+    G4cout << "\nOpened cache output file: " << cacheOutputFileName
+	   << G4endl;
     cacheOut = true;
     allS800 = true;
   }
 #else
   cacheOutputFile = fopen(cacheOutputFileName.c_str(), "wb");
   if (cacheOutputFile == NULL) {
-    G4cerr << "Could not open output file" << G4endl;
+    G4cerr << "Error opening cache output file." << G4endl;
     exit(EXIT_FAILURE);
   } else {
-    G4cout << "\nOpened cache output file: " << outFileName << G4endl;
+    G4cout << "\nOpened cache output file: " << cacheOutputFileName
+	   << G4endl;
     cacheOut = true;
     allS800 = true;
   }
@@ -1105,21 +1108,24 @@ void EventAction::openCacheInputFile(G4String FileName)
 {
   cacheInputFileName = FileName;
 #ifdef CACHETEXT
-  if (!cacheInputFile.is_open()) cacheInputFile.open(cacheInputFileName.c_str());
+  if (!cacheInputFile.is_open())
+    cacheInputFile.open(cacheInputFileName.c_str());
   if (!cacheInputFile.is_open()){
-    G4cout<< "ERROR opening cache input file." << G4endl;
-    cacheIn = false;
+    G4cerr<< "Error opening cache input file." << G4endl;
+    exit(EXIT_FAILURE);
   } else {
-    G4cout << "\nOpened cache input file: " << cacheInputFileName << G4endl;
+    G4cout << "\nOpened cache input file: " << cacheInputFileName
+	   << G4endl;
     cacheIn = true;
   }
 #else
   cacheInputFile = fopen(cacheInputFileName.c_str(), "rb");
   if (cacheInputFile == NULL) {
-    G4cerr << "Could not open cache input file." << G4endl;
+    G4cerr << "Error opening cache input file." << G4endl;
     exit(EXIT_FAILURE);
   } else {
-    G4cout << "Opened cache input file: " << cacheInputFileName << G4endl;
+    G4cout << "\nOpened cache input file: " << cacheInputFileName
+	   << G4endl;
     cacheIn = true;
   }
 #endif

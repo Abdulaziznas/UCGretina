@@ -39,7 +39,8 @@ PrimaryGeneratorAction::~PrimaryGeneratorAction()
 
 void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 {
-  EventAction* eventAction = (EventAction*)G4RunManager::GetRunManager()->GetUserEventAction();
+  EventAction* eventAction
+    = (EventAction*)G4RunManager::GetRunManager()->GetUserEventAction();
   if(eventAction->CacheIn())
     SetCache();
   
@@ -263,7 +264,7 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
       std::ifstream& cacheFile = eventAction->getCacheInputFile();
       cacheFile >> Npoints;
       if(cacheFile.eof()) {
-	G4cerr << "Error reading trajectory header from cache file: End of File."
+	G4cerr << "Error reading trajectory header from cache file."
 	       << G4endl;
 	exit(EXIT_FAILURE);
       }
@@ -272,7 +273,7 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
       std::FILE* cacheFile = eventAction->getCacheInputFile();
       G4int size = fread(&Npoints, sizeof(G4int), 1, cacheFile);
       if(size != 1) {
-	G4cerr << "Error reading trajectory header from cache file: size mismatch."
+	G4cerr << "Error reading trajectory header from cache file."
 	       << G4endl;
 	exit(EXIT_FAILURE);
       }
@@ -282,6 +283,11 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
       G4double emissionTime = CLHEP::RandExponential::shoot(lifetime);
       for(int i = 0; i < Npoints; i++) {
 #ifdef CACHETEXT
+	if(cacheFile.eof()) {
+	  G4cerr << "Error reading trajectory point from cache file."
+		 << G4endl;
+	  exit(EXIT_FAILURE);
+	}
 	cacheFile >> x[i] >> y[i] >> z[i] >> bx[i] >> by[i] >> bz[i] >> t[i];
 	// G4cout << x[i] << std::setw(12)
 	// 	 << y[i] << std::setw(12)
@@ -339,6 +345,11 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
       
       // Read S800 data.
 #ifdef CACHETEXT
+      if(cacheFile.eof()) {
+	G4cerr << "Error reading S800 data from cache file."
+	       << G4endl;
+	exit(EXIT_FAILURE);
+      }
       cacheFile >> ata >> bta >> dta >> yta;
       cacheFile.getline(currentLine,1000);
       //	G4cout << ata << std::setw(12) << bta << std::setw(12) << dta << std::setw(12) << yta << std::setw(12) << G4endl;
@@ -346,7 +357,8 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
       CS inputS8Data;
       size =  fread(&inputS8Data, sizeof(inputS8Data), 1, cacheFile);
       if(size != 1) {
-	G4cerr << "Error reading file content: data read(inputS8Data) does not match expected size" << G4endl;
+	G4cerr << "Error reading S800 data from cache file."
+	       << G4endl;
 	exit(EXIT_FAILURE);
       }
       ata = inputS8Data.ata;
