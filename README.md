@@ -638,35 +638,37 @@ In-beam simulations involving very thick (tens of mm) targets are significantly 
 
 ### Generating Cache Files ###
 
-/Cache/Output <filename>
+    /Cache/Output <filename>
 
 > (Mandatory) Set name of the cache file to be generated. Trajectories of the beam-like reaction products in the target and S800 data are written to this file.
+
+> *Note: Sometimes events are killed before the reaction product leaves the target (if, for example the reaction product stops in the target frame). When this happens when generating a cache file, the event does not produce an entry in the cache file. The cache file header will not reflect these lost events, and it is necessary to simulate a larger number events than is needed in the cache file to compensate.*
 
 ### Cache Simulations ###
 
 Mandatory Commands
 
-/Cache/Input <filename>
+    /Cache/Input <filename>
 
 > Set the name of the (existing) cache file to be used to generate gamma rays. Trajectories of beam-like reaction products are read from this file and used to drive gamma-ray emission. S800 data are also read from this file.
 
-/Cache/GammaEnergy <double> <unit>
+    /Cache/GammaEnergy <double> <unit>
 
 > Set the energy of the emitted gamma rays in the rest frame of the beam-like reaction product.
 
 Optional Commands
 
-/Cache/HalfLife <double> <unit>
+    /Cache/HalfLife <double> <unit>
 
 > Set the  value of the half life governing gamma-ray emission.
 
-/Cache/ZOffset <double> <unit>
+    /Cache/ZOffset <double> <unit>
 
 > Set the offset of the target along the beam axis.
 
-/Cache/AngularDistribution/a0 <double>
-/Cache/AngularDistribution/a2 <double>
-/Cache/AngularDistribution/a4 <double>
+    /Cache/AngularDistribution/a0 <double>
+    /Cache/AngularDistribution/a2 <double>
+    /Cache/AngularDistribution/a4 <double>
 
 > Set the coefficients of the gamma-ray angular distribution.
 
