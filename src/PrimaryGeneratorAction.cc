@@ -370,9 +370,20 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
       // Projectile-frame gamma-ray energy
       G4double e = eventAction->GetCacheGammaEnergy();
 
-      // Projectile-frame gamma-ray momentum vector
-      //   TO DO: implement angular distribution
-      G4ThreeVector p = G4RandomDirection();
+      // Projectile-frame gamma-ray momentum
+      G4ThreeVector p;
+      AngularDistribution* angDist = eventAction->GetCacheAngDist();
+      if(angDist == NULL){ // Isotropic
+	p = G4RandomDirection();
+      } else {             // User-specified a0, a2, a4
+	G4double theta = angDist->GetRandomAngle();
+	G4double cosTheta = std::cos(theta);
+	G4double sinTheta = std::sin(theta);
+	G4double phi = twopi * G4UniformRand();
+	p.set(sinTheta*std::cos(phi),
+	      sinTheta*std::sin(phi),
+	      cosTheta);
+      }
       p.setMag(e);
       
       // Projectile-frame gamma-ray 4 momentum

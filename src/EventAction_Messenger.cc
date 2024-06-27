@@ -39,6 +39,16 @@ EventAction_Messenger::EventAction_Messenger(EventAction* EA):theEventAction(EA)
   cacheZOffsetCmd = new G4UIcmdWithADoubleAndUnit("/Cache/ZOffset",this);
   cacheZOffsetCmd -> SetGuidance("sets the Z-Offset for the target in the cache simulation");
 
+  CacheAngDistDir = new G4UIdirectory("/Cache/AngularDistribution/");
+  CacheAngDistA0Cmd = new G4UIcmdWithADouble("/Cache/AngularDistribution/a0",this);
+  CacheAngDistA0Cmd->SetGuidance("a0 parameter of the gamma-ray angular distribution for cached events.");
+
+  CacheAngDistA2Cmd = new G4UIcmdWithADouble("/Cache/AngularDistribution/a2",this);
+  CacheAngDistA2Cmd->SetGuidance("a2 parameter of the gamma-ray angular distribution for cached events.");
+
+  CacheAngDistA4Cmd = new G4UIcmdWithADouble("/Cache/AngularDistribution/a4",this);
+  CacheAngDistA4Cmd->SetGuidance("a4 parameter of the gamma-ray angular distribution for cached events.");
+
   crmatCmd = new G4UIcmdWithAString("/Mode2/crmatFile",this);
   crmatCmd->SetGuidance("Use the crystal-frame to world-frame transformations in the specified file for Mode2 data (expected in crystal coordinates).");
 
@@ -83,6 +93,10 @@ EventAction_Messenger::~EventAction_Messenger()
   delete cacheHalfLifeCmd;
   delete cacheGammaEnergyCmd;
   delete cacheZOffsetCmd;
+  delete CacheAngDistDir;
+  delete CacheAngDistA0Cmd;
+  delete CacheAngDistA2Cmd;
+  delete CacheAngDistA4Cmd;
   delete crmatCmd;
   delete crysCmd;
   delete coordsCmd;
@@ -119,6 +133,12 @@ void EventAction_Messenger::SetNewValue(G4UIcommand* command,G4String newValue)
     {theEventAction->SetCacheGammaEnergy(cacheGammaEnergyCmd->GetNewDoubleValue(newValue));}
   if( command == cacheZOffsetCmd )
     {theEventAction->SetCacheZOffset( cacheZOffsetCmd->GetNewDoubleValue(newValue));}
+  if( command == CacheAngDistA0Cmd )
+    {theEventAction->SetCacheAngDistA0(CacheAngDistA0Cmd->GetNewDoubleValue(newValue));}
+  if( command == CacheAngDistA2Cmd )
+    {theEventAction->SetCacheAngDistA2(CacheAngDistA2Cmd->GetNewDoubleValue(newValue));}
+  if( command == CacheAngDistA4Cmd )
+    {theEventAction->SetCacheAngDistA4(CacheAngDistA4Cmd->GetNewDoubleValue(newValue));}
   if( command == crmatCmd )
     {theEventAction->SetCrmatFile(newValue);}
   if( command == crysCmd )

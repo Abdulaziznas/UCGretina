@@ -6,6 +6,7 @@
 #include "TrackerGammaSD.hh"
 #include "G4Event.hh"
 #include "PrimaryVertexInformation.hh"
+#include "AngularDistribution.hh"
 #include "G4TrajectoryContainer.hh"
 #include "G4Trajectory.hh"
 #include "G4ios.hh"
@@ -69,6 +70,10 @@ class EventAction : public G4UserEventAction
     G4double GetCacheHalfLife() { return cacheHalfLife; }
     G4double GetCacheGammaEnergy() { return cacheGammaEnergy; }
     G4double GetCacheZOffset() { return cacheZOffset; }
+    void SetCacheAngDistA0(G4double);
+    void SetCacheAngDistA2(G4double);
+    void SetCacheAngDistA4(G4double);
+    AngularDistribution* GetCacheAngDist(){return cacheAngDist;}
     void openCrmatFile();
     void closeCrmatFile();
     void SetCrmatFile(G4String);
@@ -119,8 +124,9 @@ class EventAction : public G4UserEventAction
 #endif
     G4bool cacheIn;
     G4double cacheGammaEnergy;
-    G4double cacheHalfLife;
     G4double cacheZOffset;
+    G4double cacheHalfLife;
+    AngularDistribution* cacheAngDist;
     G4String mode2FileName;
     G4int mode2file;
     G4bool mode2Out;  

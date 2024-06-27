@@ -664,6 +664,12 @@ Optional Commands
 
 > Set the offset of the target along the beam axis.
 
+/Cache/AngularDistribution/a0 <double>
+/Cache/AngularDistribution/a2 <double>
+/Cache/AngularDistribution/a4 <double>
+
+> Set the coefficients of the gamma-ray angular distribution.
+
 ## Visualization ##
 
 Run the macro file `vis/vis.mac` an interactive session:

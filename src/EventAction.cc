@@ -19,6 +19,7 @@ EventAction::EventAction()
   cacheGammaEnergy = 0;
   cacheZOffset = 0;
   cacheHalfLife = 0;
+  cacheAngDist = NULL;
   outFileName = "";
   outDetsOnly = false;
   evOut = false;
@@ -1288,3 +1289,25 @@ void EventAction::writeCache(TrackerIonHitsCollection* ionCollection){
 	   << G4endl;
   }
 }
+//---------------------------------------------------
+void EventAction::SetCacheAngDistA0(G4double a0){
+  if(cacheAngDist == NULL){
+    cacheAngDist = new AngularDistribution();
+  }
+  cacheAngDist->SetCoeff(0, a0);
+}
+//---------------------------------------------------
+void EventAction::SetCacheAngDistA2(G4double a2){
+  if(cacheAngDist == NULL){
+    cacheAngDist = new AngularDistribution();
+  }
+  cacheAngDist->SetCoeff(2, a2);
+}
+//---------------------------------------------------
+void EventAction::SetCacheAngDistA4(G4double a4){
+  if(cacheAngDist == NULL){
+    cacheAngDist = new AngularDistribution();
+  }
+  cacheAngDist->SetCoeff(4, a4);
+}
+//---------------------------------------------------
