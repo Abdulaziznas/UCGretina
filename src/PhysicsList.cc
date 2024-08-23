@@ -724,7 +724,8 @@ void PhysicsList::SetUsePolarizedPhysics(bool use){
         theNeutronCaptureHPModel->SetMinEnergy( theHPMin );
         theNeutronCaptureHPModel->SetMaxEnergy( theHPMax );
 	G4NeutronRadCapture* theNeutronRadCapture = new G4NeutronRadCapture(); 
- 	theNeutronRadCapture->SetMinEnergy(theHPMax*0.99); 
+ 	theNeutronRadCapture->SetMinEnergy(theHPMax*0.99);
+	theNeutronRadCapture->InitialiseModel(); 
 	theCaptureProcess->RegisterMe( theNeutronCaptureHPModel );
 	theCaptureProcess->RegisterMe( theNeutronRadCapture);
 	theCaptureProcess->AddDataSet( new G4ParticleHPCaptureData );
