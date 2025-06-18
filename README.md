@@ -4,51 +4,38 @@ Cite: [L.A.Riley, D.Weisshaar, H.L.Crawford et al., UCGretina GEANT4 simulation 
 
 ## Compile and install ##
 
-***This branch has not been extensively tested. The code compiles with geant4-v11.2.0 and runs the examples with the exception of UCGretina_Pol. The polarized electromagnetic physics does not appear to be functional.***
+***This branch has not been extensively tested. The code compiles with geant4-v11.2.2 and runs the examples with the exception of UCGretina_Pol. The polarized electromagnetic physics does not appear to be functional.***
 
-Install version [Geant4.11.2.0 of the Geant4 libraries](https://geant4.web.cern.ch/download/all). You will need the data files for low energy electromagnetic processes, photon evaporation, and radioactive decay.
+Install version [Geant4.11.2.2 of the Geant4 libraries](https://geant4.web.cern.ch/download/all). You will need the data files for low energy electromagnetic processes, photon evaporation, and radioactive decay.
 
 The model of the GRETINA scanning table uses version 2.0.3 of the external [CADMesh](https://github.com/christopherpoole/cadmesh) package. 
 
 Set up your environment (consider adding this to your `.bashrc`):
 
     $ source <Path to Geant4>/bin/geant4.sh
-    $ source <Path to Geant4>/share/Geant4-10.7.4/geant4make/geant4make.sh
 
-Compile:
+Make sure `Geant4_DIR` points to the location of the Geant4 11.2.2 CMake configuration files (built with GCC 13.2.0).
 
-    $ make
+Compile with CMake:
 
-To use the LBL scanning table:
+    $ cmake -S . -B build
+    $ cmake --build build
 
-    $ make SCANNING=1
+Executables will appear in `build/bin`.  Use `cmake --install build` to install them.
 
-(produces the binary UCGretina_Scan)
+Several build variants are provided.  Compile them by specifying the corresponding target:
 
-To use the liquid hydrogen target:
+    $ cmake --build build --target UCGretina_Scan      # for the scanning table
+    $ cmake --build build --target UCGretina_LH        # for the liquid hydrogen target
+    $ cmake --build build --target UCGretina_Pol       # with polarization
 
-    $ make LHTARGET=1
+Additional combinations (`UCGretina_LH_Pol` and `UCGretina_Scan_Pol`) are also available.
 
-(produces the binary UCGretina_LH)
+Implementation and validation of the polarization capability is described here: [C. Morse, H. L. Crawford, A. O. Macchiavelli et al., The polarization sensitivity of GRETINA, Nucl. Instr. Meth. A1025, 166155 (2022)](https://doi.org/10.1016/j.nima.2021.166155)
 
-To include nuclear polarization (alignment) of the reaction product in the `Reaction` class:
+To activate neutron-related processes in the physics list (required for the `neutron` source type) add `-DNEUTRONS=1` to the compiler definitions when configuring the build:
 
-    $ make POL=1
-
-(produces the binary `UCGretina_Pol`)
-Implementation and validation of this capability is described here: [C. Morse, H. L. Crawford, A. O. Macchiavelli et al., The polarization sensitivity of GRETINA, Nucl. Instr. Meth. A1025, 166155 (2022)](https://doi.org/10.1016/j.nima.2021.166155)
-
-To activate neutron-related processes in the physics list (required for the `neutron` source type:
-
-    $ make NEUTRONS=1
-
-(does not affect the executable name, can be used with any of the above flags)
-
-Executables are automatically installed in
-
-    $G4WORKDIR/bin/$G4SYSTEM
-
-(which is added to your path when you source `geant4make.sh`)
+    $ cmake -S . -B build -DNEUTRONS=1
 
 ## Examples ##
 
