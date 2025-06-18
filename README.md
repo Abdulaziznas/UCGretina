@@ -23,8 +23,7 @@ Compile with CMake:
 
 Executables will appear in `build/bin`.  Use `cmake --install build` to install them.
 
-The `vis` directory and default geometry files are copied into `build/bin` so
-that example macros can be run from there without additional setup.
+The `vis` directory, default geometry files, and the `aclust`, `aslice`, `asolid`, and `awalls` links are copied into `build/bin` so that example macros can be run from there without additional setup.
 
 Several build variants are provided.  Compile them by specifying the corresponding target:
 

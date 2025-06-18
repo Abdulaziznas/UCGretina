@@ -59,7 +59,7 @@ install(TARGETS UCGretina UCGretina_LH UCGretina_Scan UCGretina_Pol
         LIBRARY DESTINATION lib)
 
 # copy runtime resources
-file(COPY vis change_geometry.sh
+file(COPY vis change_geometry.sh aclust aslice asolid awalls
      DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 file(COPY GretinaGeometry
      DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
@@ -67,4 +67,6 @@ file(COPY GretinaGeometry
 install(DIRECTORY vis GretinaGeometry
         DESTINATION share/UCGretina)
 install(PROGRAMS change_geometry.sh
+        DESTINATION share/UCGretina)
+install(FILES aclust aslice asolid awalls
         DESTINATION share/UCGretina)
