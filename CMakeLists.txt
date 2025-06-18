@@ -4,6 +4,9 @@ project(UCGretina)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# executables will go in the bin directory of the build tree
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
 # Use large file support
 add_compile_definitions(_FILE_OFFSET_BITS=64 G4V11)
 
@@ -54,3 +57,14 @@ install(TARGETS UCGretina UCGretina_LH UCGretina_Scan UCGretina_Pol
         UCGretina_LH_Pol UCGretina_Scan_Pol gretina
         RUNTIME DESTINATION bin
         LIBRARY DESTINATION lib)
+
+# copy runtime resources
+file(COPY vis change_geometry.sh
+     DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+file(COPY GretinaGeometry
+     DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+
+install(DIRECTORY vis GretinaGeometry
+        DESTINATION share/UCGretina)
+install(PROGRAMS change_geometry.sh
+        DESTINATION share/UCGretina)
