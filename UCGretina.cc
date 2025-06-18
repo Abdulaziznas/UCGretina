@@ -21,6 +21,8 @@
 #include "Incoming_Beam_Messenger.hh"
 #include "Outgoing_Beam.hh"
 #include "Outgoing_Beam_Messenger.hh"
+#include "G4UIExecutive.hh"
+#include "G4VisExecutive.hh"
 
 #ifdef G4VIS_USE
 #include "VisManager.hh"
@@ -112,7 +114,11 @@ int main(int argc,char** argv)
   // cout << "*** Initialized runManager" << endl;
 
   // get the pointer to the UI manager and set verbosities
+
   G4UImanager* UI = G4UImanager::GetUIpointer();
+  G4UIExecutive* ui = new G4UIExecutive(argc, argv);
+    G4VisManager* visManager = new G4VisExecutive("Quiet");
+      visManager->Initialize();
 
   if (session)   // Define UI session for interactive mode.
     {
@@ -133,9 +139,14 @@ int main(int argc,char** argv)
 #endif
   }
 
+  ui->SessionStart();
+
   delete runManager;
 
   delete BeamIn;
+  delete ui;
+    delete visManager;
+
 
   delete IncomingBeamMessenger;
 
