@@ -24,15 +24,15 @@
 #include "G4ExtrudedSolid.hh"
 
 
-#include "myGlobalVariables.hh"
+#include "FAUSTmyGlobalVariables.hh"
 
-#include "TrapPixel.hh"
-#include "S1annaularD.hh"
+#include "FAUSTTrapPixel.hh"
+#include "FAUSTS1annaularD.hh"
 #include "FAUST_S3rings_Parameterisation.hh"
 #include "FAUSTPixelToCoordinates.hh"
 #include "G4UserLimits.hh"
 
-#include "Vertical_strip_sol.hh"
+#include "FAUSTVertical_strip_sol.hh"
 
 #include "G4VPVParameterisation.hh"
 #include "G4PVParameterised.hh"
@@ -51,13 +51,13 @@ class G4VPhysicalVolume;
 class G4LogicalVolume;
 class G4UserLimits;
 
-class FAUSTDetectorConstruction : public G4VUserDetectorConstruction
+class FAUSTDetectorConstruction
 {
 public:
   FAUSTDetectorConstruction();
   virtual ~FAUSTDetectorConstruction();
 
-  virtual G4VPhysicalVolume* Construct();
+  virtual G4VPhysicalVolume* Construct(G4LogicalVolume*);
 
 
 private:

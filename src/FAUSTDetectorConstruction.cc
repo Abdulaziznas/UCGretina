@@ -88,7 +88,7 @@ void FAUSTDetectorConstruction::FAUSTMaterialDefinition()
   // fCsI_Mat->AddElement(fIodine, 1);
 }
 
-G4VPhysicalVolume* FAUSTDetectorConstruction::Construct()
+G4VPhysicalVolume* FAUSTDetectorConstruction::Construct(G4LogicalVolume* experimentalHall_log)
 {
   G4bool checkOverlaps = true;
 
@@ -106,11 +106,14 @@ G4VPhysicalVolume* FAUSTDetectorConstruction::Construct()
       /***** Step limit *****/
   const G4double maxStep = 0.01*um;
   fStepLimit = new G4UserLimits(maxStep);
+
   // Definition of the volumes
   // World
-  G4VSolid* expHall = new G4Box("ExperimentalHall", 2.*m, 2.*m, 2.*m);
-  G4LogicalVolume* expHall_log = 
-  new G4LogicalVolume(expHall, fVacuum, "ExperimentalHall");
+  G4VSolid* expHall = new G4Box("ExperimentalHall", 0.5*m, 0.5*m, 0.5*m);
+  //G4LogicalVolume* expHall_log = 
+  //new G4LogicalVolume(expHall, fVacuum, "ExperimentalHall");
+
+  G4LogicalVolume* expHall_log = experimentalHall_log;
   G4VPhysicalVolume* physExpHall = 
   new G4PVPlacement(G4Transform3D(), expHall_log, "ExperimentalHall", 0, 
                     false, 0);

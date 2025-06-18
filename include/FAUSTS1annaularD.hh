@@ -1,5 +1,5 @@
-#ifndef S1annaularD_H
-#define S1annaularD_H 1
+#ifndef FAUSTS1annaularD_H
+#define FAUSTS1annaularD_H 1
 #include "G4Tubs.hh"
 #include "G4SubtractionSolid.hh"
 #include "G4Box.hh"

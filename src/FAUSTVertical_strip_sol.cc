@@ -1,4 +1,4 @@
-#include "Vertical_strip_sol.hh"
+#include "FAUSTVertical_strip_sol.hh"
 
 G4ExtrudedSolid* Vertical_strip_sol(G4int copyNo, G4int NoCChambers, G4double SpacingZ ,G4double base_width, G4double top_width, G4double trap_hight, G4double strip_thickness)
 {

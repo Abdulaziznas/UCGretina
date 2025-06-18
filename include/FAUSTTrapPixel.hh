@@ -1,5 +1,5 @@
-#ifndef TrapPixel_H
-#define TrapPixel_H 1
+#ifndef FAUSTTrapPixel_H
+#define FAUSTTrapPixel_H 1
 #include "G4ExtrudedSolid.hh"
 #include "G4Box.hh"
 

@@ -1,5 +1,5 @@
-#ifndef myGlobalVariables_HH
-#define myGlobalVariables_HH
+#ifndef FAUSTmyGlobalVariables_HH
+#define FAUSTmyGlobalVariables_HH
 
 #include <fstream>
 #include "globals.hh"

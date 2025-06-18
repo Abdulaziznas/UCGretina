@@ -1,4 +1,4 @@
-#include "TrapPixel.hh"
+#include "FAUSTTrapPixel.hh"
 
 
 G4ExtrudedSolid* TrapPixel(G4int VstripID, G4int HstripID, G4int PanelID, 
