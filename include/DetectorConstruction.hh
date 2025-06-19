@@ -11,6 +11,9 @@
 #ifndef SCANNING
   #include "Beam_Tube.hh"
   #include "Beam_Tube_Messenger.hh"
+#include "FAUSTDetectorConstruction.hh"
+
+
   #include "Greta_Chamber.hh"
   #include "Greta_Chamber_Messenger.hh"
   #include "WU_Chamber.hh"
@@ -110,6 +113,7 @@ private:
 #ifndef SCANNING
   G4bool beamTubeStatus;
   Beam_Tube* BeamTube;
+  FAUSTDetectorConstruction* FAUSTDetector;
   
   G4bool gretaChamberStatus;
   Greta_Chamber* GretaChamber;
