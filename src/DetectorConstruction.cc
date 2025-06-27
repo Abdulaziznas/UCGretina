@@ -53,6 +53,9 @@ DetectorConstruction::DetectorConstruction()
   BeamTube = new Beam_Tube();
   BeamTubeMessenger = new Beam_Tube_Messenger(BeamTube);
 
+    // FAUST Detector
+  FAUSTDetector = new FAUSTDetectorConstruction();
+
   // Greta Chamber
 
   GretaChamber = new Greta_Chamber();
@@ -136,7 +139,8 @@ void DetectorConstruction::Placement()
 #ifndef SCANNING
   // Beam Tube
   if( beamTubeStatus ){
-    BeamTube->Construct(ExpHall_log);
+    //BeamTube->Construct(ExpHall_log);
+    FAUSTDetector->Construct(ExpHall_log);
   }
 
   // Greta Chamber

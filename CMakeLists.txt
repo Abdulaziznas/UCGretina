@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 # Use large file support
-add_compile_definitions(_FILE_OFFSET_BITS=64 G4V11)
+add_compile_definitions(_FILE_OFFSET_BITS=64 G4V10)
 
 find_package(Geant4 REQUIRED)
 include(${Geant4_USE_FILE})

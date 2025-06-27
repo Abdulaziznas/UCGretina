@@ -22,9 +22,10 @@
 #include "Outgoing_Beam.hh"
 #include "Outgoing_Beam_Messenger.hh"
 
-#ifdef G4VIS_USE
-#include "VisManager.hh"
-#endif
+#include "G4UIExecutive.hh"
+#include "G4VisExecutive.hh"
+
+
 
 #include "Git_Hash.hh"
 
@@ -36,7 +37,10 @@ int main(int argc,char** argv)
 {
   
   // Construct the default run manager
+    G4UIExecutive* ui = new G4UIExecutive(argc, argv);
+
   G4RunManager* runManager = new G4RunManager;
+
 
   G4cout << "Git commit: " << GIT_HASH << G4endl;
   G4cout << "Git branch: " << GIT_BRANCH << G4endl;
@@ -78,60 +82,19 @@ int main(int argc,char** argv)
   SteppingAction* steppingAction = new SteppingAction();
   runManager->SetUserAction(steppingAction);
 
-  G4UIsession* session=0;
+   G4VisManager* visManager = new G4VisExecutive("Quiet");
+  visManager->Initialize();
 
-#ifdef G4VIS_USE
-  // visualization manager
-  G4VisManager* visManager=0;
-#endif
+  G4UImanager* UImanager = G4UImanager::GetUIpointer();
 
-  if (argc==1)   // Define UI session for interactive mode.
-    {
+  G4String command = "/control/execute ";
+  G4String fileName = argv[1];
+  UImanager->ApplyCommand(command+fileName);
 
-#ifdef G4VIS_USE
-      // visualization manager
-      cout << "Starting visualization...";
-      visManager = new VisManager; 
-      visManager->Initialize();
-      cout << "Done!" << endl;
-#endif
+  ui->SessionStart();
 
-// G4UIterminal is a (dumb) terminal.
-#ifdef G4UI_USE_TCSH
-      session = new G4UIterminal(new G4UItcsh);      
-#else
-      session = new G4UIterminal();
-#endif
-
-    }
-
-  // Initialize G4 kernel
-  // cout << "*** Initializing runManager" << endl;
-  // //  runManager->SetVerboseLevel(2);
-  // runManager->Initialize();
-  // cout << "*** Initialized runManager" << endl;
-
-  // get the pointer to the UI manager and set verbosities
-  G4UImanager* UI = G4UImanager::GetUIpointer();
-
-  if (session)   // Define UI session for interactive mode.
-    {
-      session->SessionStart();
-      delete session;
-    }
-  else           // Batch mode
-    { 
-      G4String command = "/control/execute ";
-      G4String fileName = argv[1];
-      UI->ApplyCommand(command+fileName);
-    }
-
-  // job termination
-  if(argc==1){
-#ifdef G4VIS_USE
+  delete ui;
   delete visManager;
-#endif
-  }
 
   delete runManager;
 

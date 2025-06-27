@@ -11,6 +11,8 @@
 #ifndef SCANNING
   #include "Beam_Tube.hh"
   #include "Beam_Tube_Messenger.hh"
+  #include "FAUSTDetectorConstruction.hh"
+
   #include "Greta_Chamber.hh"
   #include "Greta_Chamber_Messenger.hh"
   #include "WU_Chamber.hh"
@@ -139,6 +141,7 @@ private:
 
   // Physical volumes
   G4VPhysicalVolume* ExpHall_phys;
+  FAUSTDetectorConstruction* FAUSTDetector;
 
   Experimental_Hall_Messenger* ExperimentalHallMessenger;
   Target_Messenger*    TargetMessenger;

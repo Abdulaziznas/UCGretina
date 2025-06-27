@@ -102,6 +102,12 @@ class EventAction : public G4UserEventAction
     G4int timerCount;
     G4int everyNevents;
     G4double eventsPerSecond;
+
+      // These are used to remember quantities from call to call of
+  // UserSteppingAction
+  G4int fTopID, fBottomID, fPanelID, fEventID;
+  G4double fEdepCsI[22], fEdepGRETINA, fEdepDeadLayer, fVertexTheta, fVertexX, fVertexY, fVertexZ, fVertexR;
+  G4double fEdepPixel[22][128][128]; 
 };
 
 #endif //EVENTACTION_H

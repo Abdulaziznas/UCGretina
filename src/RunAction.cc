@@ -1,11 +1,45 @@
 #include "RunAction.hh"
 
 #include "G4Timer.hh"
+//#include "G4AnalysisManager.hh"
+#include "FAUSTmyGlobalVariables.hh"
+
 extern G4Timer Timer;
 
 RunAction::RunAction(DetectorConstruction* detector, Incoming_Beam* BI,EventAction* ev): myDetector(detector), BeamIn(BI), evaction(ev)
 {
-
+//  G4AnalysisManager* mgr = G4AnalysisManager::Instance();
+//  
+//  mgr->SetVerboseLevel(0);
+//  mgr->SetNtupleMerging(true);
+//  
+//  mgr->CreateNtuple("Ntuple1", "Pixels");
+//  mgr->CreateNtupleIColumn("EventID");
+//  mgr->CreateNtupleIColumn("PixelID");
+//  mgr->CreateNtupleIColumn("PanelID");
+//  mgr->CreateNtupleIColumn("TopID");
+//  mgr->CreateNtupleIColumn("BottomID");
+//  mgr->CreateNtupleDColumn("EdepPixel");
+//  mgr->FinishNtuple(0);
+//
+//  mgr->CreateNtuple("Ntuple2", "CsI");
+//  mgr->CreateNtupleIColumn("EventID");
+//  mgr->CreateNtupleIColumn("PanelID");
+//  mgr->CreateNtupleDColumn("EdepCsI");
+//  mgr->FinishNtuple(1);
+//
+//  mgr->CreateNtuple("Ntuple3", "TotalEdep");
+//  mgr->CreateNtupleIColumn("EventID");
+//  mgr->CreateNtupleIColumn("PixelID");
+//  mgr->CreateNtupleDColumn("EdepTotal");
+//  mgr->CreateNtupleDColumn("EdepSi");
+//  mgr->CreateNtupleDColumn("EdepCsI"); 
+//  mgr->CreateNtupleDColumn("VertexTheta");
+//  mgr->CreateNtupleDColumn("VertexX");
+//  mgr->CreateNtupleDColumn("VertexY");
+//  mgr->CreateNtupleDColumn("VertexZ");
+//  mgr->CreateNtupleDColumn("VertexR");
+//  mgr->FinishNtuple(2);
 }
 
 
@@ -18,6 +52,14 @@ void RunAction::BeginOfRunAction(const G4Run* run)
 {
 
   G4cout<<" Beginning of run "<<G4endl;
+
+ // // Get analysis manager
+ // G4AnalysisManager* mgr = G4AnalysisManager::Instance();
+ // G4String SiThickness = to_string(GlobalVariables::SiThickness);
+ // G4String CsIThickness = to_string(GlobalVariables::CsIThickness);
+ // // Open an output file
+ // G4String fileName = "../simulationData/Data" + GlobalVariables::OutFileName + ".root";
+ // mgr->OpenFile(fileName);
 
   evaction->SetNTotalevents(run->GetNumberOfEventToBeProcessed());
   if(run->GetNumberOfEventToBeProcessed() > 1000000)
@@ -49,6 +91,11 @@ void RunAction::BeginOfRunAction(const G4Run* run)
  
 void RunAction::EndOfRunAction(const G4Run*)
 {
+
+// G4AnalysisManager* mgr = G4AnalysisManager::Instance();
+// mgr->Write();
+// mgr->CloseFile();
+
   if(evaction->EvOut())
     evaction->closeEvfile();
   if(evaction->Mode2Out())
