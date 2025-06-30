@@ -139,14 +139,20 @@ void DetectorConstruction::Placement()
 #ifndef SCANNING
   // Beam Tube
   if( beamTubeStatus ){
-    //BeamTube->Construct(ExpHall_log);
-    FAUSTDetector->Construct(ExpHall_log);
+    BeamTube->Construct(ExpHall_log);
   }
 
   // Greta Chamber
   if( gretaChamberStatus ){
     GretaChamber->Construct(ExpHall_log);
   }
+
+  // FAUST Detector
+ // if( FAUSTDetectorStatus ){
+ //   FAUSTDetector->Construct(ExpHall_log);
+ // }
+
+ //  FAUSTDetector->Construct(ExpHall_log);
 
   // WU Chamber
   if( WUChamberStatus ){

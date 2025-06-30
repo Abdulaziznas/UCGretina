@@ -15,7 +15,7 @@ class FAUST_S3rings_Parameterisation : public G4VPVParameterisation
 {
   public:
     FAUST_S3rings_Parameterisation(G4int NoCChambers, G4double inner_radius_StartZ , G4double outter_radius_EndZ, G4double ring_gap, G4bool SiLayerCheck);
-     ~FAUST_S3rings_Parameterisation() ;
+     ~FAUST_S3rings_Parameterisation() override;
     void ComputeTransformation (G4int copyNo, G4VPhysicalVolume* physVol) const;
     void ComputeDimensions (G4Tubs& trackerChamber, G4int copyNo, const G4VPhysicalVolume* physVol) const;
   private:

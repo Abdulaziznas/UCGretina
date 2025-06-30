@@ -3,13 +3,46 @@
 /Gretina/Shell full
 /Target/Construct
 /Target/Sled
-/BeamTube/Construct
+
+# Opt
+#/BeamTube/Construct
+#/WUChamber/Construct
+/GretaChamber/Construct
+/Gretina/S800
+
+# beam-tube Geometry
+#/BeamTube/R_min 144 mm
+#/BeamTube/R_max 145.4732 mm
+#/BeamTube/Length <double> <unit>
+
+# In-beam Simulations
+/BeamIn/A 21 
+/BeamIn/Z 10       # Mass number and atomic number
+/BeamIn/KEu 40 MeV  # Kinetic energy per nucleon of the incoming beam
+/BeamIn/Dpp 1 # Momentum acceptance (dp/p) for the incoming beam. (Set this to 0 if you are providing the dta spectrum of the incoming beam using the /BeamIn/dtaFile command.)
+/BeamIn/momentumDistribution Gaussian # flat or Gaussian
+/BeamIn/Focus/X 0 cm
+/BeamIn/Focus/Y 0 cm
+/BeamIn/Focus/Z0 0 um
+
+/BeamOut/TargetA 2
+/BeamOut/TargetZ 1
+
+/BeamOut/DA +1 
+/BeamOut/DZ 0
+
+
+
+
+
+/BeamOut/Update
 
 # Initialize run manager =======================================================
 /run/initialize
 
 #start visualizer
 /vis/open OGLIQt
+#/vis/open VRML2FILE
 
 # Disable auto refresh and quieten vis messages while scene and
 #   trajectories are established 
