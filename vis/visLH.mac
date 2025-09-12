@@ -10,7 +10,7 @@
 /run/initialize
 
 #start visualizer
-/vis/open VRML2FILE
+/vis/open TSGQt
 
 # Disable auto refresh and quieten vis messages while scene and
 #   trajectories are established 

@@ -641,7 +641,7 @@ Run the macro file `vis/vis.mac` an interactive session:
     Idle> /control/execute vis/vis.mac
     Idle> exit
 
-This generates a VRML 2 file named `g4_XX.wrl` which can be viewed with a VRML viewer (like view3dscene, FreeWRL, or mayavi2). Macro files are included for visualizing GRETA, the LBL scanning table, and the liquid-hydrogen target setups. These scripts must be run in a directory with soft links (`aclust`, `euler`, `aslice`, `asolid`, `awalls`) to the appropriate GRETINA geometry files.
+This opens an interactive OpenGL viewer. Macro files are included for visualizing GRETA, the LBL scanning table, and the liquid-hydrogen target setups. These scripts must be run in a directory with soft links (`aclust`, `euler`, `aslice`, `asolid`, `awalls`) to the appropriate GRETINA geometry files.
 
 The macro file `./vis/trajectories.mac` illustrates how to add particle trajectories to visualizations.
 

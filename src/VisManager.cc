@@ -13,7 +13,7 @@
 //#include "G4HepRep.hh"
 #include "G4RayTracer.hh"
 //#include "G4VRML1File.hh"
-#include "G4VRML2File.hh"
+//#include "G4VRML2File.hh"
 
 // Needing external packages or libraries...
 
@@ -65,7 +65,7 @@ void VisManager::RegisterGraphicsSystems () {
   //LR RegisterGraphicsSystem (new G4HepRep);
   RegisterGraphicsSystem (new G4RayTracer);
   //LR RegisterGraphicsSystem (new G4VRML1File);
-  RegisterGraphicsSystem (new G4VRML2File);
+  //RegisterGraphicsSystem (new G4VRML2File);
 
   // Graphics systems needing external packages or libraries...
 
