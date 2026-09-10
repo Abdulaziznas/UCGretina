@@ -1,0 +1,11 @@
+{
+  "label": "Geant4 10.7.4 container",
+  "events": 100000,
+  "detected_events": 27710,
+  "generated_gammas": 100000,
+  "crystal_entries": 36487,
+  "root_version": "6.28/12",
+  "geant4_banner": "Geant4 version Name: geant4-10-07-patch-04 [MT]   (9-September-2022)",
+  "underflow": 0.0,
+  "overflow": 0.0
+}

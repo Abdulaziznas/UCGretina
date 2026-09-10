@@ -1,0 +1,52 @@
+{
+  "source": "Sulfur-44 in-beam excitation 1329 keV",
+  "plot_title": "Sulfur-44, excitation 1329 keV (laboratory energies)",
+  "excitation_keV": 1329,
+  "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+  "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+  "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+  "native_worktree_patch": "native-source.patch in parent directory",
+  "events_per_run": 100000,
+  "threads": 2,
+  "seeds": {
+    "g4-10": [
+      2513279,
+      2713243
+    ],
+    "g4-11": [
+      2913247,
+      3113251
+    ]
+  },
+  "bins": 2000,
+  "range_keV": [
+    0,
+    4000
+  ],
+  "resolution_smearing": false,
+  "doppler_correction": false,
+  "geometry": "NSCLstd12quads/G120C4",
+  "peak_windows_keV": [],
+  "sha256": {
+    "g4-10": {
+      "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+      "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+      "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+      "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+      "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+      "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+      "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+      "run.mac": "c2bde6293bf033f569c96946b86691caa833fc6e1ae113d0ecd639a435072818"
+    },
+    "g4-11": {
+      "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+      "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+      "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+      "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+      "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+      "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+      "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+      "run.mac": "b206a90214379294310b16639c2a04240759b2ab25f693807589cd34440fdeed"
+    }
+  }
+}

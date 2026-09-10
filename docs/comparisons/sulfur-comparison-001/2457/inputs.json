@@ -1,0 +1,50 @@
+{
+  "source": "Sulfur-44 in-beam excitation 2457 keV",
+  "plot_title": "Sulfur-44, excitation 2457 keV (laboratory energies)",
+  "excitation_keV": 2457,
+  "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+  "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+  "events_per_run": 100000,
+  "threads": 2,
+  "seeds": {
+    "g4-10": [
+      515297,
+      715269
+    ],
+    "g4-11": [
+      915285,
+      1115293
+    ]
+  },
+  "bins": 2000,
+  "range_keV": [
+    0,
+    4000
+  ],
+  "resolution_smearing": false,
+  "doppler_correction": false,
+  "geometry": "NSCLstd12quads/G120C4",
+  "peak_windows_keV": [],
+  "sha256": {
+    "g4-10": {
+      "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+      "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+      "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+      "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+      "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+      "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+      "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+      "run.mac": "2090c451f7cd45e1dcba38d7417accfcb86364933a14769796a9caae973b4248"
+    },
+    "g4-11": {
+      "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+      "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+      "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+      "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+      "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+      "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+      "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+      "run.mac": "811f7a3c562113348bccc18d610a5f8bee1034c1a8ebc4f1f8a67acc24e8d654"
+    }
+  }
+}

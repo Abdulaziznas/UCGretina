@@ -1,0 +1,13 @@
+diff --git a/src/TrackingAction.cc b/src/TrackingAction.cc
+index a993a26..b1c5769 100644
+--- a/src/TrackingAction.cc
++++ b/src/TrackingAction.cc
+@@ -38,6 +38,8 @@ void TrackingAction::PreUserTrackingAction(const G4Track* aTrack)
+       &&
+       ( aTrack->GetParentID() == 0 ||
+ 	aTrack->GetCreatorProcess()->GetProcessName() == "Radioactivation" ||
++        // Geant4 11.4 aliases G4Radioactivation to G4RadioactiveDecay.
++        aTrack->GetCreatorProcess()->GetProcessName() == "RadioactiveDecay" ||
+ 	aTrack->GetCreatorProcess()->GetProcessName() == "Reaction" ) ){
+ 
+     //    G4cout << "> Event ID = " << eventAction->GetEvent()->GetEventID() << G4endl;

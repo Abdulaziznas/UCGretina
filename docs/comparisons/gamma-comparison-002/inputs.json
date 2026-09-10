@@ -1,0 +1,45 @@
+{
+  "source": "Eu-152 empirical single-gamma source (not radioactive-decay cascades)",
+  "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+  "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+  "events_per_run": 100000,
+  "threads": 2,
+  "seeds": {
+    "g4-10": [
+      314159,
+      271828
+    ],
+    "g4-11": [
+      8675309,
+      1618033
+    ]
+  },
+  "spectrum": "sum interaction-point energy per crystal per event, keV",
+  "bins": 800,
+  "range_keV": [
+    0,
+    1600
+  ],
+  "resolution_smearing": false,
+  "geometry": "examples/sources/eu152: GretinaNSCL/G120C4",
+  "sha256": {
+    "g4-10": {
+      "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+      "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+      "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+      "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+      "aeuler": "cb6f01afddabe9fbaccd8e4835921a47f7857991ec0aca99ce8cb1759378dab3",
+      "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+      "run.mac": "054a1f5017b745616af29399a93587fead10154c9c3eca830f9a556db0b0f6d5"
+    },
+    "g4-11": {
+      "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+      "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+      "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+      "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+      "aeuler": "cb6f01afddabe9fbaccd8e4835921a47f7857991ec0aca99ce8cb1759378dab3",
+      "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+      "run.mac": "c908c2731d1d0c343f4a3d5e899800c76c41ad442db42230f57c7fe3bb976dc9"
+    }
+  }
+}

@@ -1,0 +1,728 @@
+{
+  "1329": {
+    "seeds": {
+      "previous": {
+        "g4-10": [
+          513279,
+          713243
+        ],
+        "g4-11": [
+          913247,
+          1113251
+        ]
+      },
+      "current": {
+        "g4-10": [
+          2513279,
+          2713243
+        ],
+        "g4-11": [
+          2913247,
+          3113251
+        ]
+      }
+    },
+    "comparisons": {
+      "New Geant4 11 vs new Geant4 10": {
+        "detected events": {
+          "reference": 29514,
+          "new": 29465,
+          "difference_per_primary": -0.0004899999999999904,
+          "standard_error": 0.002039283983605927,
+          "z": -0.24028041407629594
+        },
+        "crystal entries": {
+          "reference": 37648,
+          "new": 37640,
+          "difference_per_primary": -7.999999999996898e-05,
+          "standard_error": 0.0028805453427111186,
+          "z": -0.02777251890944872
+        },
+        "0-500 keV": {
+          "reference": 15588,
+          "new": 15647,
+          "difference_per_primary": 0.0005900000000000072,
+          "standard_error": 0.0018734248701795975,
+          "z": 0.31493123070552936
+        },
+        "500-1000 keV": {
+          "reference": 9115,
+          "new": 9049,
+          "difference_per_primary": -0.0006599999999999939,
+          "standard_error": 0.0013649362639002764,
+          "z": -0.4835390614606853
+        },
+        "1000-1500 keV": {
+          "reference": 10836,
+          "new": 10847,
+          "difference_per_primary": 0.00010999999999999899,
+          "standard_error": 0.001390411100153575,
+          "z": 0.07911329245562637
+        },
+        "1500-2000 keV": {
+          "reference": 2109,
+          "new": 2097,
+          "difference_per_primary": -0.00012000000000000205,
+          "standard_error": 0.0006416843675735571,
+          "z": -0.18700782824703346
+        },
+        "2000-2500 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        },
+        "2500-3000 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        },
+        "3000-3500 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        },
+        "3500-4000 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        }
+      },
+      "Geant4 10: new vs previous": {
+        "detected events": {
+          "reference": 29529,
+          "new": 29514,
+          "difference_per_primary": -0.00014999999999998348,
+          "standard_error": 0.002039927345773805,
+          "z": -0.07353203059449356
+        },
+        "crystal entries": {
+          "reference": 37904,
+          "new": 37648,
+          "difference_per_primary": -0.0025600000000000067,
+          "standard_error": 0.00289119326057334,
+          "z": -0.8854475537523715
+        },
+        "0-500 keV": {
+          "reference": 15578,
+          "new": 15588,
+          "difference_per_primary": 9.999999999998899e-05,
+          "standard_error": 0.001873652923503384,
+          "z": 0.05337167772407256
+        },
+        "500-1000 keV": {
+          "reference": 9434,
+          "new": 9115,
+          "difference_per_primary": -0.0031899999999999984,
+          "standard_error": 0.0013755127550675035,
+          "z": -2.3191351648669
+        },
+        "1000-1500 keV": {
+          "reference": 10835,
+          "new": 10836,
+          "difference_per_primary": 9.999999999996123e-06,
+          "standard_error": 0.0013900730923343636,
+          "z": 0.007193866319074649
+        },
+        "1500-2000 keV": {
+          "reference": 2057,
+          "new": 2109,
+          "difference_per_primary": 0.0005199999999999996,
+          "standard_error": 0.0006386900259511593,
+          "z": 0.8141664639675523
+        },
+        "2000-2500 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        },
+        "2500-3000 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        },
+        "3000-3500 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        },
+        "3500-4000 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        }
+      },
+      "Geant4 11: new vs previous": {
+        "detected events": {
+          "reference": 29797,
+          "new": 29465,
+          "difference_per_primary": -0.0033199999999999896,
+          "standard_error": 0.0020421053518226424,
+          "z": -1.6257731252879712
+        },
+        "crystal entries": {
+          "reference": 38349,
+          "new": 37640,
+          "difference_per_primary": -0.007089999999999985,
+          "standard_error": 0.0029006497094077677,
+          "z": -2.4442799752775275
+        },
+        "0-500 keV": {
+          "reference": 15849,
+          "new": 15647,
+          "difference_per_primary": -0.002019999999999994,
+          "standard_error": 0.0018864294781840538,
+          "z": -1.07080599797694
+        },
+        "500-1000 keV": {
+          "reference": 9333,
+          "new": 9049,
+          "difference_per_primary": -0.0028399999999999953,
+          "standard_error": 0.0013719437059498188,
+          "z": -2.0700557812128433
+        },
+        "1000-1500 keV": {
+          "reference": 11010,
+          "new": 10847,
+          "difference_per_primary": -0.0016300000000000064,
+          "standard_error": 0.0013952927862708937,
+          "z": -1.1682135936188698
+        },
+        "1500-2000 keV": {
+          "reference": 2157,
+          "new": 2097,
+          "difference_per_primary": -0.0005999999999999998,
+          "standard_error": 0.0006452550701397513,
+          "z": -0.9298648360408079
+        },
+        "2000-2500 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        },
+        "2500-3000 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        },
+        "3000-3500 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        },
+        "3500-4000 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        }
+      }
+    }
+  },
+  "2150": {
+    "seeds": {
+      "previous": {
+        "g4-10": [
+          514288,
+          714256
+        ],
+        "g4-11": [
+          914266,
+          1114272
+        ]
+      },
+      "current": {
+        "g4-10": [
+          2514288,
+          2714256
+        ],
+        "g4-11": [
+          2914266,
+          3114272
+        ]
+      }
+    },
+    "comparisons": {
+      "New Geant4 11 vs new Geant4 10": {
+        "detected events": {
+          "reference": 27799,
+          "new": 27809,
+          "difference_per_primary": 9.999999999998899e-05,
+          "standard_error": 0.002003675439075064,
+          "z": 0.04990828257402354
+        },
+        "crystal entries": {
+          "reference": 36711,
+          "new": 36912,
+          "difference_per_primary": 0.0020100000000000118,
+          "standard_error": 0.0029675233439600724,
+          "z": 0.6773324981894586
+        },
+        "0-500 keV": {
+          "reference": 13157,
+          "new": 13185,
+          "difference_per_primary": 0.00028000000000000247,
+          "standard_error": 0.0017661484418935991,
+          "z": 0.15853707047398394
+        },
+        "500-1000 keV": {
+          "reference": 4716,
+          "new": 4609,
+          "difference_per_primary": -0.0010700000000000015,
+          "standard_error": 0.0009814408261637339,
+          "z": -1.090233839346615
+        },
+        "1000-1500 keV": {
+          "reference": 4650,
+          "new": 4919,
+          "difference_per_primary": 0.002689999999999998,
+          "standard_error": 0.0009646192222335396,
+          "z": 2.78866514164149
+        },
+        "1500-2000 keV": {
+          "reference": 7364,
+          "new": 7530,
+          "difference_per_primary": 0.0016600000000000087,
+          "standard_error": 0.0011740887482826366,
+          "z": 1.4138624549703966
+        },
+        "2000-2500 keV": {
+          "reference": 5504,
+          "new": 5441,
+          "difference_per_primary": -0.0006299999999999986,
+          "standard_error": 0.001017158713829111,
+          "z": -0.6193723668043437
+        },
+        "2500-3000 keV": {
+          "reference": 1320,
+          "new": 1228,
+          "difference_per_primary": -0.0009200000000000007,
+          "standard_error": 0.0005015497298586802,
+          "z": -1.8343146157395511
+        },
+        "3000-3500 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        },
+        "3500-4000 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        }
+      },
+      "Geant4 10: new vs previous": {
+        "detected events": {
+          "reference": 27710,
+          "new": 27799,
+          "difference_per_primary": 0.0008900000000000019,
+          "standard_error": 0.002002576241274229,
+          "z": 0.4444275237349762
+        },
+        "crystal entries": {
+          "reference": 36487,
+          "new": 36711,
+          "difference_per_primary": 0.0022399999999999642,
+          "standard_error": 0.0029505403516785988,
+          "z": 0.7591829743069267
+        },
+        "0-500 keV": {
+          "reference": 12909,
+          "new": 13157,
+          "difference_per_primary": 0.0024799999999999822,
+          "standard_error": 0.001754275304739381,
+          "z": 1.4136891702801553
+        },
+        "500-1000 keV": {
+          "reference": 4768,
+          "new": 4716,
+          "difference_per_primary": -0.0005199999999999996,
+          "standard_error": 0.0009894621318439142,
+          "z": -0.5255380506891684
+        },
+        "1000-1500 keV": {
+          "reference": 4730,
+          "new": 4650,
+          "difference_per_primary": -0.0008000000000000021,
+          "standard_error": 0.0009571905568577353,
+          "z": -0.8357792440266458
+        },
+        "1500-2000 keV": {
+          "reference": 7470,
+          "new": 7364,
+          "difference_per_primary": -0.0010600000000000054,
+          "standard_error": 0.0011719148168034136,
+          "z": -0.9045026010434155
+        },
+        "2000-2500 keV": {
+          "reference": 5340,
+          "new": 5504,
+          "difference_per_primary": 0.0016399999999999956,
+          "standard_error": 0.0010127194280778859,
+          "z": 1.6194021310647424
+        },
+        "2500-3000 keV": {
+          "reference": 1270,
+          "new": 1320,
+          "difference_per_primary": 0.0005000000000000004,
+          "standard_error": 0.0005056157201596532,
+          "z": 0.988893303875363
+        },
+        "3000-3500 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        },
+        "3500-4000 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        }
+      },
+      "Geant4 11: new vs previous": {
+        "detected events": {
+          "reference": 27531,
+          "new": 27809,
+          "difference_per_primary": 0.0027800000000000047,
+          "standard_error": 0.002000685778785828,
+          "z": 1.3895235471144927
+        },
+        "crystal entries": {
+          "reference": 36394,
+          "new": 36912,
+          "difference_per_primary": 0.005180000000000018,
+          "standard_error": 0.002964771309677896,
+          "z": 1.7471836640792349
+        },
+        "0-500 keV": {
+          "reference": 12991,
+          "new": 13185,
+          "difference_per_primary": 0.0019399999999999973,
+          "standard_error": 0.0017611986577916535,
+          "z": 1.1015225292259425
+        },
+        "500-1000 keV": {
+          "reference": 4642,
+          "new": 4609,
+          "difference_per_primary": -0.0003300000000000039,
+          "standard_error": 0.0009754580822283968,
+          "z": -0.33830259445503946
+        },
+        "1000-1500 keV": {
+          "reference": 4728,
+          "new": 4919,
+          "difference_per_primary": 0.001909999999999995,
+          "standard_error": 0.0009696178920526198,
+          "z": 1.969848138792742
+        },
+        "1500-2000 keV": {
+          "reference": 7570,
+          "new": 7530,
+          "difference_per_primary": -0.0003999999999999976,
+          "standard_error": 0.0011815278922148223,
+          "z": -0.33854469508136725
+        },
+        "2000-2500 keV": {
+          "reference": 5198,
+          "new": 5441,
+          "difference_per_primary": 0.0024300000000000016,
+          "standard_error": 0.0010036365815691848,
+          "z": 2.421195126427834
+        },
+        "2500-3000 keV": {
+          "reference": 1265,
+          "new": 1228,
+          "difference_per_primary": -0.00037000000000000054,
+          "standard_error": 0.0004961796579289898,
+          "z": -0.7456976401337126
+        },
+        "3000-3500 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        },
+        "3500-4000 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        }
+      }
+    }
+  },
+  "2457": {
+    "seeds": {
+      "previous": {
+        "g4-10": [
+          515297,
+          715269
+        ],
+        "g4-11": [
+          915285,
+          1115293
+        ]
+      },
+      "current": {
+        "g4-10": [
+          2515297,
+          2715269
+        ],
+        "g4-11": [
+          2915285,
+          3115293
+        ]
+      }
+    },
+    "comparisons": {
+      "New Geant4 11 vs new Geant4 10": {
+        "detected events": {
+          "reference": 50747,
+          "new": 50589,
+          "difference_per_primary": -0.0015800000000000258,
+          "standard_error": 0.0022358767992558567,
+          "z": -0.7066578983805729
+        },
+        "crystal entries": {
+          "reference": 75798,
+          "new": 75521,
+          "difference_per_primary": -0.002769999999999939,
+          "standard_error": 0.00405757395423225,
+          "z": -0.6826739404492412
+        },
+        "0-500 keV": {
+          "reference": 32637,
+          "new": 32628,
+          "difference_per_primary": -8.999999999997899e-05,
+          "standard_error": 0.002705367449558446,
+          "z": -0.033267199993357
+        },
+        "500-1000 keV": {
+          "reference": 21807,
+          "new": 21536,
+          "difference_per_primary": -0.002710000000000018,
+          "standard_error": 0.0020473879390515443,
+          "z": -1.3236377670835697
+        },
+        "1000-1500 keV": {
+          "reference": 19206,
+          "new": 19101,
+          "difference_per_primary": -0.0010499999999999954,
+          "standard_error": 0.0018600042900917169,
+          "z": -0.564514826978286
+        },
+        "1500-2000 keV": {
+          "reference": 2092,
+          "new": 2196,
+          "difference_per_primary": 0.0010399999999999993,
+          "standard_error": 0.0006480781743379425,
+          "z": 1.6047446761533553
+        },
+        "2000-2500 keV": {
+          "reference": 40,
+          "new": 39,
+          "difference_per_primary": -1.0000000000000026e-05,
+          "standard_error": 8.886482976734776e-05,
+          "z": -0.11253045806963778
+        },
+        "2500-3000 keV": {
+          "reference": 14,
+          "new": 17,
+          "difference_per_primary": 3.0000000000000024e-05,
+          "standard_error": 5.56735663978872e-05,
+          "z": 0.5388553660384602
+        },
+        "3000-3500 keV": {
+          "reference": 2,
+          "new": 4,
+          "difference_per_primary": 2e-05,
+          "standard_error": 2.4494611649503625e-05,
+          "z": null
+        },
+        "3500-4000 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        }
+      },
+      "Geant4 10: new vs previous": {
+        "detected events": {
+          "reference": 50511,
+          "new": 50747,
+          "difference_per_primary": 0.0023600000000000287,
+          "standard_error": 0.0022358959864690986,
+          "z": 1.055505271390962
+        },
+        "crystal entries": {
+          "reference": 75295,
+          "new": 75798,
+          "difference_per_primary": 0.005029999999999979,
+          "standard_error": 0.0040517391743427125,
+          "z": 1.241442201376638
+        },
+        "0-500 keV": {
+          "reference": 32375,
+          "new": 32637,
+          "difference_per_primary": 0.002620000000000011,
+          "standard_error": 0.0027009180949420803,
+          "z": 0.9700405224824841
+        },
+        "500-1000 keV": {
+          "reference": 21490,
+          "new": 21807,
+          "difference_per_primary": 0.003170000000000006,
+          "standard_error": 0.0020433737799932855,
+          "z": 1.551355914927333
+        },
+        "1000-1500 keV": {
+          "reference": 19177,
+          "new": 19206,
+          "difference_per_primary": 0.00029000000000001247,
+          "standard_error": 0.0018606737640082317,
+          "z": 0.15585752086668833
+        },
+        "1500-2000 keV": {
+          "reference": 2190,
+          "new": 2092,
+          "difference_per_primary": -0.0009799999999999982,
+          "standard_error": 0.000647635414655733,
+          "z": -1.5131970516481748
+        },
+        "2000-2500 keV": {
+          "reference": 38,
+          "new": 40,
+          "difference_per_primary": 1.9999999999999998e-05,
+          "standard_error": 8.830081523032334e-05,
+          "z": 0.22649847510277354
+        },
+        "2500-3000 keV": {
+          "reference": 25,
+          "new": 14,
+          "difference_per_primary": -0.00011000000000000002,
+          "standard_error": 6.244371859666848e-05,
+          "z": -1.7615863127963807
+        },
+        "3000-3500 keV": {
+          "reference": 0,
+          "new": 2,
+          "difference_per_primary": 2e-05,
+          "standard_error": 1.4142064912168937e-05,
+          "z": null
+        },
+        "3500-4000 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        }
+      },
+      "Geant4 11: new vs previous": {
+        "detected events": {
+          "reference": 50726,
+          "new": 50589,
+          "difference_per_primary": -0.0013700000000000934,
+          "standard_error": 0.002235883716734828,
+          "z": -0.6127331174452902
+        },
+        "crystal entries": {
+          "reference": 75752,
+          "new": 75521,
+          "difference_per_primary": -0.0023099999999999232,
+          "standard_error": 0.004056806334023885,
+          "z": -0.5694134276576789
+        },
+        "0-500 keV": {
+          "reference": 32791,
+          "new": 32628,
+          "difference_per_primary": -0.0016299999999999648,
+          "standard_error": 0.0027176345947124503,
+          "z": -0.599786300620166
+        },
+        "500-1000 keV": {
+          "reference": 21764,
+          "new": 21536,
+          "difference_per_primary": -0.0022800000000000042,
+          "standard_error": 0.0020423444175033745,
+          "z": -1.116364106102705
+        },
+        "1000-1500 keV": {
+          "reference": 18974,
+          "new": 19101,
+          "difference_per_primary": 0.0012700000000000211,
+          "standard_error": 0.0018533411644202794,
+          "z": 0.6852489031059071
+        },
+        "1500-2000 keV": {
+          "reference": 2153,
+          "new": 2196,
+          "difference_per_primary": 0.0004299999999999998,
+          "standard_error": 0.0006525691024438214,
+          "z": 0.6589340475816012
+        },
+        "2000-2500 keV": {
+          "reference": 45,
+          "new": 39,
+          "difference_per_primary": -5.9999999999999995e-05,
+          "standard_error": 9.16326250053967e-05,
+          "z": -0.6547886191895769
+        },
+        "2500-3000 keV": {
+          "reference": 23,
+          "new": 17,
+          "difference_per_primary": -5.9999999999999995e-05,
+          "standard_error": 6.323940221270219e-05,
+          "z": -0.9487755718846512
+        },
+        "3000-3500 keV": {
+          "reference": 2,
+          "new": 4,
+          "difference_per_primary": 2e-05,
+          "standard_error": 2.4494611649503625e-05,
+          "z": null
+        },
+        "3500-4000 keV": {
+          "reference": 0,
+          "new": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null
+        }
+      }
+    }
+  }
+}

@@ -4,6 +4,9 @@ Cite: [L.A.Riley, D.Weisshaar, H.L.Crawford et al., UCGretina GEANT4 simulation 
 
 ## Compile and Install ##
 
+For an isolated installation of the original Geant4 10.7.4 baseline, see the
+[comparison container instructions](containers/geant4-10/README.md).
+
 The simulation supports Geant4 11.x and requires a C++17 compiler and CMake
 3.16 or newer. This migration has been built and smoke-tested with Geant4
 11.4.1 on Linux. Other 11.x releases have not been tested locally.
@@ -804,3 +807,9 @@ runs the functionality tests with 100 events for quick testing.
     $ make test-baselines
 
 runs 1,000,000-event simulations (100,000 events for LH target simulations) and writes detection ratios to `./tests/baselines.json` for comparison with future functionality tests. These baselines should not change, within statistical uncertainties, unless the code is changed in a way that affects the total counts registering in the array.
+
+## ROOT gamma-spectrum comparison ##
+
+See [analysis/README.md](analysis/README.md) for the completed Geant4 10.7.4 container versus Geant4 11.4.1 WSL comparison, ROOT output files, and commands to repeat it.
+
+The [published comparison results](docs/comparisons/README.md) include the sulfur-44 twelve-run validation and pooled ROOT spectra.

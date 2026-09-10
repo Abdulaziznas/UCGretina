@@ -1,0 +1,35 @@
+{
+  "runs": [
+    {
+      "label": "Geant4 10.7.4 container",
+      "events": 100000,
+      "detected_events": 29529,
+      "generated_gammas": 99997,
+      "crystal_entries": 37904,
+      "root_version": "6.28/12",
+      "geant4_banner": "Geant4 version Name: geant4-10-07-patch-04 [MT]   (9-September-2022)",
+      "underflow": 0.0,
+      "overflow": 0.0
+    },
+    {
+      "label": "Geant4 11.4.1 WSL",
+      "events": 100000,
+      "detected_events": 29797,
+      "generated_gammas": 0,
+      "crystal_entries": 38349,
+      "root_version": "6.40.00",
+      "geant4_banner": "Geant4 version Name: geant4-11-04-patch-01 [MT]   (13-March-2026)",
+      "underflow": 0.0,
+      "overflow": 0.0
+    }
+  ],
+  "peak_windows": [],
+  "crystal_yield_ratio": 1.0117401857323751,
+  "notes": [
+    "Normalized per simulated primary, not to equal spectrum area.",
+    "No resolution smearing or cross-crystal addback in the main spectrum.",
+    "Ratio errors use approximate independent Poisson counts; crystal entries within an event can be correlated.",
+    "Sulfur-44 in-beam excitation 1329 keV",
+    "This is an initial comparison, not a physics validation sign-off."
+  ]
+}

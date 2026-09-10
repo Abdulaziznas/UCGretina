@@ -158,3 +158,41 @@ Recommended disposition: keep the migration available for development and
 review, and obtain physics/geometry sign-off for the configurations that will
 be used for production. Approval of compilation or GUI behavior alone does
 not approve the changed physics configuration.
+
+**7. Sulfur-44 reaction validation follow-up**
+
+The three `examples/inbeam/fit` excitation states (1329, 2150, 2457 keV)
+were run for 100,000 primaries each against the original Geant4 10.7.4
+container. Initial outputs are preserved in
+`container-results/sulfur-comparison-001/`.
+
+These runs exposed a further output compatibility defect in
+`TrackingAction::PreUserTrackingAction`: the emitted-particle filter accepted
+`Radioactivation`, while installed Geant4 11.4.1 aliases `G4Radioactivation`
+to `G4RadioactiveDecay`, whose default process name is `RadioactiveDecay`.
+Consequently, the migrated code wrote zero emitted-gamma records despite
+nonzero detector deposits. The filter now accepts both names. This changes
+emitted-gamma bookkeeping and derived output flags; it does not change the
+registered physics processes or reaction kinematics.
+
+The WSL cases were repeated with identical seeds after the correction, and
+compared with the preserved container runs in
+`container-results/sulfur-comparison-002/`. That directory contains the exact
+patch, run inputs, ROOT files, and a statistical summary. The detector spectra
+are laboratory energies without Doppler correction. These standard-build
+in-beam tests do not validate the POL build or all migration configurations.
+
+A ten-additional-seed follow-up completed 60 more sulfur simulations (six
+million beam events). Combining these with the two prior independent sets
+provides 1.2 million primaries per state/version. Total crystal yields differ
+by 1.40, 1.09, and 1.23 estimated standard errors at 1329, 2150, and 2457 keV.
+The previously highlighted 2150-keV / 1000–1500-keV window difference is only
+0.01 standard errors in the ten new runs alone. No broad energy-window
+comparison is significant after the reported Holm correction. See
+`analysis/SULFUR_TEN_SEED_COMPARISON.md` and
+`container-results/sulfur-ten-seed-summary/` for scope, provenance, ROOT spectra,
+and uncertainty calculations. This supports the tested standard-build sulfur
+cases; it does not replace polarized-process or production-wide validation.
+
+Reviewable reports, plots, provenance, and pooled ROOT histograms are committed in
+[the comparison archive](comparisons/README.md). Full raw event data remain local.

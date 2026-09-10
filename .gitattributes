@@ -1,0 +1,3 @@
+# Archived evidence must retain the original bytes and recorded SHA256 hashes.
+# CSVs use CRLF; saved patches contain context-line whitespace by design.
+docs/comparisons/** -text -whitespace

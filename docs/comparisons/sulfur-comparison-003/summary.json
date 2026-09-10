@@ -1,0 +1,296 @@
+{
+  "1329": {
+    "runs": [
+      {
+        "label": "Geant4 10.7.4 container",
+        "events": 100000,
+        "detected_events": 29514,
+        "generated_gammas": 99997,
+        "crystal_entries": 37648,
+        "root_version": "6.28/12",
+        "geant4_banner": "Geant4 version Name: geant4-10-07-patch-04 [MT]   (9-September-2022)",
+        "underflow": 0.0,
+        "overflow": 0.0
+      },
+      {
+        "label": "Geant4 11.4.1 WSL (output filter fixed)",
+        "events": 100000,
+        "detected_events": 29465,
+        "generated_gammas": 99999,
+        "crystal_entries": 37640,
+        "root_version": "6.40.00",
+        "geant4_banner": "Geant4 version Name: geant4-11-04-patch-01 [MT]   (13-March-2026)",
+        "underflow": 0.0,
+        "overflow": 0.0
+      }
+    ],
+    "checks": {
+      "detected events": {
+        "g4_10": 29514,
+        "g4_11": 29465,
+        "difference_per_primary": -0.0004899999999999904,
+        "standard_error": 0.002039283983605927,
+        "z": -0.24028041407629594
+      },
+      "crystal entries": {
+        "g4_10": 37648,
+        "g4_11": 37640,
+        "difference_per_primary": -7.999999999996898e-05,
+        "standard_error": 0.0028805453427111186,
+        "z": -0.02777251890944872
+      },
+      "0-500 keV": {
+        "g4_10": 15588,
+        "g4_11": 15647,
+        "difference_per_primary": 0.0005900000000000072,
+        "standard_error": 0.0018734248701795975,
+        "z": 0.31493123070552936
+      },
+      "500-1000 keV": {
+        "g4_10": 9115,
+        "g4_11": 9049,
+        "difference_per_primary": -0.0006599999999999939,
+        "standard_error": 0.0013649362639002764,
+        "z": -0.4835390614606853
+      },
+      "1000-1500 keV": {
+        "g4_10": 10836,
+        "g4_11": 10847,
+        "difference_per_primary": 0.00010999999999999899,
+        "standard_error": 0.001390411100153575,
+        "z": 0.07911329245562637
+      },
+      "1500-2000 keV": {
+        "g4_10": 2109,
+        "g4_11": 2097,
+        "difference_per_primary": -0.00012000000000000205,
+        "standard_error": 0.0006416843675735571,
+        "z": -0.18700782824703346
+      },
+      "2000-2500 keV": {
+        "g4_10": 0,
+        "g4_11": 0,
+        "difference_per_primary": 0.0,
+        "standard_error": 0.0,
+        "z": null
+      },
+      "2500-3000 keV": {
+        "g4_10": 0,
+        "g4_11": 0,
+        "difference_per_primary": 0.0,
+        "standard_error": 0.0,
+        "z": null
+      },
+      "3000-3500 keV": {
+        "g4_10": 0,
+        "g4_11": 0,
+        "difference_per_primary": 0.0,
+        "standard_error": 0.0,
+        "z": null
+      },
+      "3500-4000 keV": {
+        "g4_10": 0,
+        "g4_11": 0,
+        "difference_per_primary": 0.0,
+        "standard_error": 0.0,
+        "z": null
+      }
+    }
+  },
+  "2150": {
+    "runs": [
+      {
+        "label": "Geant4 10.7.4 container",
+        "events": 100000,
+        "detected_events": 27799,
+        "generated_gammas": 99999,
+        "crystal_entries": 36711,
+        "root_version": "6.28/12",
+        "geant4_banner": "Geant4 version Name: geant4-10-07-patch-04 [MT]   (9-September-2022)",
+        "underflow": 0.0,
+        "overflow": 0.0
+      },
+      {
+        "label": "Geant4 11.4.1 WSL (output filter fixed)",
+        "events": 100000,
+        "detected_events": 27809,
+        "generated_gammas": 99999,
+        "crystal_entries": 36912,
+        "root_version": "6.40.00",
+        "geant4_banner": "Geant4 version Name: geant4-11-04-patch-01 [MT]   (13-March-2026)",
+        "underflow": 0.0,
+        "overflow": 0.0
+      }
+    ],
+    "checks": {
+      "detected events": {
+        "g4_10": 27799,
+        "g4_11": 27809,
+        "difference_per_primary": 9.999999999998899e-05,
+        "standard_error": 0.002003675439075064,
+        "z": 0.04990828257402354
+      },
+      "crystal entries": {
+        "g4_10": 36711,
+        "g4_11": 36912,
+        "difference_per_primary": 0.0020100000000000118,
+        "standard_error": 0.0029675233439600724,
+        "z": 0.6773324981894586
+      },
+      "0-500 keV": {
+        "g4_10": 13157,
+        "g4_11": 13185,
+        "difference_per_primary": 0.00028000000000000247,
+        "standard_error": 0.0017661484418935991,
+        "z": 0.15853707047398394
+      },
+      "500-1000 keV": {
+        "g4_10": 4716,
+        "g4_11": 4609,
+        "difference_per_primary": -0.0010700000000000015,
+        "standard_error": 0.0009814408261637339,
+        "z": -1.090233839346615
+      },
+      "1000-1500 keV": {
+        "g4_10": 4650,
+        "g4_11": 4919,
+        "difference_per_primary": 0.002689999999999998,
+        "standard_error": 0.0009646192222335396,
+        "z": 2.78866514164149
+      },
+      "1500-2000 keV": {
+        "g4_10": 7364,
+        "g4_11": 7530,
+        "difference_per_primary": 0.0016600000000000087,
+        "standard_error": 0.0011740887482826366,
+        "z": 1.4138624549703966
+      },
+      "2000-2500 keV": {
+        "g4_10": 5504,
+        "g4_11": 5441,
+        "difference_per_primary": -0.0006299999999999986,
+        "standard_error": 0.001017158713829111,
+        "z": -0.6193723668043437
+      },
+      "2500-3000 keV": {
+        "g4_10": 1320,
+        "g4_11": 1228,
+        "difference_per_primary": -0.0009200000000000007,
+        "standard_error": 0.0005015497298586802,
+        "z": -1.8343146157395511
+      },
+      "3000-3500 keV": {
+        "g4_10": 0,
+        "g4_11": 0,
+        "difference_per_primary": 0.0,
+        "standard_error": 0.0,
+        "z": null
+      },
+      "3500-4000 keV": {
+        "g4_10": 0,
+        "g4_11": 0,
+        "difference_per_primary": 0.0,
+        "standard_error": 0.0,
+        "z": null
+      }
+    }
+  },
+  "2457": {
+    "runs": [
+      {
+        "label": "Geant4 10.7.4 container",
+        "events": 100000,
+        "detected_events": 50747,
+        "generated_gammas": 199994,
+        "crystal_entries": 75798,
+        "root_version": "6.28/12",
+        "geant4_banner": "Geant4 version Name: geant4-10-07-patch-04 [MT]   (9-September-2022)",
+        "underflow": 0.0,
+        "overflow": 0.0
+      },
+      {
+        "label": "Geant4 11.4.1 WSL (output filter fixed)",
+        "events": 100000,
+        "detected_events": 50589,
+        "generated_gammas": 199992,
+        "crystal_entries": 75521,
+        "root_version": "6.40.00",
+        "geant4_banner": "Geant4 version Name: geant4-11-04-patch-01 [MT]   (13-March-2026)",
+        "underflow": 0.0,
+        "overflow": 0.0
+      }
+    ],
+    "checks": {
+      "detected events": {
+        "g4_10": 50747,
+        "g4_11": 50589,
+        "difference_per_primary": -0.0015800000000000258,
+        "standard_error": 0.0022358767992558567,
+        "z": -0.7066578983805729
+      },
+      "crystal entries": {
+        "g4_10": 75798,
+        "g4_11": 75521,
+        "difference_per_primary": -0.002769999999999939,
+        "standard_error": 0.00405757395423225,
+        "z": -0.6826739404492412
+      },
+      "0-500 keV": {
+        "g4_10": 32637,
+        "g4_11": 32628,
+        "difference_per_primary": -8.999999999997899e-05,
+        "standard_error": 0.002705367449558446,
+        "z": -0.033267199993357
+      },
+      "500-1000 keV": {
+        "g4_10": 21807,
+        "g4_11": 21536,
+        "difference_per_primary": -0.002710000000000018,
+        "standard_error": 0.0020473879390515443,
+        "z": -1.3236377670835697
+      },
+      "1000-1500 keV": {
+        "g4_10": 19206,
+        "g4_11": 19101,
+        "difference_per_primary": -0.0010499999999999954,
+        "standard_error": 0.0018600042900917169,
+        "z": -0.564514826978286
+      },
+      "1500-2000 keV": {
+        "g4_10": 2092,
+        "g4_11": 2196,
+        "difference_per_primary": 0.0010399999999999993,
+        "standard_error": 0.0006480781743379425,
+        "z": 1.6047446761533553
+      },
+      "2000-2500 keV": {
+        "g4_10": 40,
+        "g4_11": 39,
+        "difference_per_primary": -1.0000000000000026e-05,
+        "standard_error": 8.886482976734776e-05,
+        "z": -0.11253045806963778
+      },
+      "2500-3000 keV": {
+        "g4_10": 14,
+        "g4_11": 17,
+        "difference_per_primary": 3.0000000000000024e-05,
+        "standard_error": 5.56735663978872e-05,
+        "z": 0.5388553660384602
+      },
+      "3000-3500 keV": {
+        "g4_10": 2,
+        "g4_11": 4,
+        "difference_per_primary": 2e-05,
+        "standard_error": 2.4494611649503625e-05,
+        "z": null
+      },
+      "3500-4000 keV": {
+        "g4_10": 0,
+        "g4_11": 0,
+        "difference_per_primary": 0.0,
+        "standard_error": 0.0,
+        "z": null
+      }
+    }
+  }
+}

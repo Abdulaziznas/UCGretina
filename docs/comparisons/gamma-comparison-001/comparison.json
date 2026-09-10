@@ -1,0 +1,99 @@
+{
+  "runs": [
+    {
+      "label": "Geant4 10.7.4 container",
+      "events": 100000,
+      "detected_events": 17636,
+      "generated_gammas": 100000,
+      "crystal_entries": 20566,
+      "root_version": "6.28/12",
+      "geant4_banner": "Geant4 version Name: geant4-10-07-patch-04 [MT]   (9-September-2022)",
+      "underflow": 0.0,
+      "overflow": 0.0
+    },
+    {
+      "label": "Geant4 11.4.1 WSL",
+      "events": 100000,
+      "detected_events": 17653,
+      "generated_gammas": 100000,
+      "crystal_entries": 20542,
+      "root_version": "6.40.00",
+      "geant4_banner": "Geant4 version Name: geant4-11-04-patch-01 [MT]   (13-March-2026)",
+      "underflow": 0.0,
+      "overflow": 0.0
+    }
+  ],
+  "peak_windows": [
+    {
+      "window_keV": [
+        120,
+        124
+      ],
+      "g4_10_counts": 2170,
+      "g4_11_counts": 2183,
+      "background_subtracted": false
+    },
+    {
+      "window_keV": [
+        242,
+        248
+      ],
+      "g4_10_counts": 645,
+      "g4_11_counts": 647,
+      "background_subtracted": false
+    },
+    {
+      "window_keV": [
+        342,
+        348
+      ],
+      "g4_10_counts": 1607,
+      "g4_11_counts": 1619,
+      "background_subtracted": false
+    },
+    {
+      "window_keV": [
+        776,
+        782
+      ],
+      "g4_10_counts": 526,
+      "g4_11_counts": 492,
+      "background_subtracted": false
+    },
+    {
+      "window_keV": [
+        962,
+        968
+      ],
+      "g4_10_counts": 467,
+      "g4_11_counts": 499,
+      "background_subtracted": false
+    },
+    {
+      "window_keV": [
+        1110,
+        1116
+      ],
+      "g4_10_counts": 413,
+      "g4_11_counts": 419,
+      "background_subtracted": false
+    },
+    {
+      "window_keV": [
+        1406,
+        1412
+      ],
+      "g4_10_counts": 487,
+      "g4_11_counts": 523,
+      "background_subtracted": false
+    }
+  ],
+  "crystal_yield_ratio": 0.998833025381697,
+  "notes": [
+    "Normalized per simulated primary, not to equal spectrum area.",
+    "No resolution smearing or cross-crystal addback in the main spectrum.",
+    "Ratio errors use approximate independent Poisson counts; crystal entries within an event can be correlated.",
+    "Source emits empirical Eu-152 gamma lines, not full decay cascades.",
+    "This is an initial comparison, not a physics validation sign-off."
+  ]
+}

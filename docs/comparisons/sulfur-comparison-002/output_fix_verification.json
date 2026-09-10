@@ -1,0 +1,14 @@
+{
+  "1329": {
+    "events_checked": 100000,
+    "all_per_event_crystal_energy_records_identical": true
+  },
+  "2150": {
+    "events_checked": 100000,
+    "all_per_event_crystal_energy_records_identical": true
+  },
+  "2457": {
+    "events_checked": 100000,
+    "all_per_event_crystal_energy_records_identical": true
+  }
+}

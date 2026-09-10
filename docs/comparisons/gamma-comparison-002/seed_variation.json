@@ -1,0 +1,500 @@
+{
+  "previous": "/home/eren511/Geant4Workspace/UCGretina/UCGretina/container-results/gamma-comparison-001",
+  "current": "/home/eren511/Geant4Workspace/UCGretina/UCGretina/container-results/gamma-comparison-002",
+  "runs": {
+    "previous/g4-10": {
+      "detected events": {
+        "count": 17636,
+        "mean": 0.17636,
+        "variance_of_mean": 1.4525860298602987e-06
+      },
+      "crystal entries": {
+        "count": 20566,
+        "mean": 0.20566,
+        "variance_of_mean": 2.265062294622946e-06
+      },
+      "120-124 keV": {
+        "count": 2170,
+        "mean": 0.0217,
+        "variance_of_mean": 2.1269322693226935e-07
+      },
+      "242-248 keV": {
+        "count": 645,
+        "mean": 0.00645,
+        "variance_of_mean": 6.408461584615847e-08
+      },
+      "342-348 keV": {
+        "count": 1607,
+        "mean": 0.01607,
+        "variance_of_mean": 1.5811913219132192e-07
+      },
+      "776-782 keV": {
+        "count": 526,
+        "mean": 0.00526,
+        "variance_of_mean": 5.2323847238472386e-08
+      },
+      "962-968 keV": {
+        "count": 467,
+        "mean": 0.00467,
+        "variance_of_mean": 4.6482375823758245e-08
+      },
+      "1110-1116 keV": {
+        "count": 413,
+        "mean": 0.00413,
+        "variance_of_mean": 4.112984229842298e-08
+      },
+      "1406-1412 keV": {
+        "count": 487,
+        "mean": 0.00487,
+        "variance_of_mean": 4.8463315633156334e-08
+      }
+    },
+    "previous/g4-11": {
+      "detected events": {
+        "count": 17653,
+        "mean": 0.17653,
+        "variance_of_mean": 1.4536861278612785e-06
+      },
+      "crystal entries": {
+        "count": 20542,
+        "mean": 0.20542,
+        "variance_of_mean": 2.253448770487705e-06
+      },
+      "120-124 keV": {
+        "count": 2183,
+        "mean": 0.02183,
+        "variance_of_mean": 2.135366463664637e-07
+      },
+      "242-248 keV": {
+        "count": 647,
+        "mean": 0.00647,
+        "variance_of_mean": 6.42820338203382e-08
+      },
+      "342-348 keV": {
+        "count": 1619,
+        "mean": 0.01619,
+        "variance_of_mean": 1.5928043180431804e-07
+      },
+      "776-782 keV": {
+        "count": 492,
+        "mean": 0.00492,
+        "variance_of_mean": 4.8958425584255845e-08
+      },
+      "962-968 keV": {
+        "count": 499,
+        "mean": 0.00499,
+        "variance_of_mean": 4.965149551495515e-08
+      },
+      "1110-1116 keV": {
+        "count": 419,
+        "mean": 0.00419,
+        "variance_of_mean": 4.1724856248562485e-08
+      },
+      "1406-1412 keV": {
+        "count": 523,
+        "mean": 0.00523,
+        "variance_of_mean": 5.202699126991271e-08
+      }
+    },
+    "current/g4-10": {
+      "detected events": {
+        "count": 17428,
+        "mean": 0.17428,
+        "variance_of_mean": 1.439079206792068e-06
+      },
+      "crystal entries": {
+        "count": 20290,
+        "mean": 0.2029,
+        "variance_of_mean": 2.2325382253822536e-06
+      },
+      "120-124 keV": {
+        "count": 2117,
+        "mean": 0.02117,
+        "variance_of_mean": 2.0742038520385204e-07
+      },
+      "242-248 keV": {
+        "count": 638,
+        "mean": 0.00638,
+        "variance_of_mean": 6.359359193591936e-08
+      },
+      "342-348 keV": {
+        "count": 1598,
+        "mean": 0.01598,
+        "variance_of_mean": 1.5724796847968479e-07
+      },
+      "776-782 keV": {
+        "count": 515,
+        "mean": 0.00515,
+        "variance_of_mean": 5.123528735287353e-08
+      },
+      "962-968 keV": {
+        "count": 491,
+        "mean": 0.00491,
+        "variance_of_mean": 4.885940759407594e-08
+      },
+      "1110-1116 keV": {
+        "count": 398,
+        "mean": 0.00398,
+        "variance_of_mean": 3.9641992419924196e-08
+      },
+      "1406-1412 keV": {
+        "count": 566,
+        "mean": 0.00566,
+        "variance_of_mean": 5.6280206802068016e-08
+      }
+    },
+    "current/g4-11": {
+      "detected events": {
+        "count": 17446,
+        "mean": 0.17446,
+        "variance_of_mean": 1.4402514865148652e-06
+      },
+      "crystal entries": {
+        "count": 20250,
+        "mean": 0.2025,
+        "variance_of_mean": 2.208759587595876e-06
+      },
+      "120-124 keV": {
+        "count": 2234,
+        "mean": 0.02234,
+        "variance_of_mean": 2.1841142811428113e-07
+      },
+      "242-248 keV": {
+        "count": 650,
+        "mean": 0.0065,
+        "variance_of_mean": 6.457814578145781e-08
+      },
+      "342-348 keV": {
+        "count": 1521,
+        "mean": 0.01521,
+        "variance_of_mean": 1.4978805688056882e-07
+      },
+      "776-782 keV": {
+        "count": 504,
+        "mean": 0.00504,
+        "variance_of_mean": 5.014648546485464e-08
+      },
+      "962-968 keV": {
+        "count": 516,
+        "mean": 0.00516,
+        "variance_of_mean": 5.133425734257343e-08
+      },
+      "1110-1116 keV": {
+        "count": 428,
+        "mean": 0.00428,
+        "variance_of_mean": 4.261724217242173e-08
+      },
+      "1406-1412 keV": {
+        "count": 539,
+        "mean": 0.00539,
+        "variance_of_mean": 5.3610015100151e-08
+      }
+    }
+  },
+  "comparisons": {
+    "New Geant4 11 vs new Geant4 10": {
+      "detected events": {
+        "reference": 17428,
+        "new": 17446,
+        "difference_per_primary": 0.00018000000000001348,
+        "standard_error": 0.0016968590670137969,
+        "z": 0.10607834410007012,
+        "interval_95": [
+          -0.003145843771347028,
+          0.003505843771347055
+        ]
+      },
+      "crystal entries": {
+        "reference": 20290,
+        "new": 20250,
+        "difference_per_primary": -0.0003999999999999837,
+        "standard_error": 0.0021074386854611285,
+        "z": -0.18980386132204824,
+        "interval_95": [
+          -0.004530579823503795,
+          0.003730579823503828
+        ]
+      },
+      "120-124 keV": {
+        "reference": 2117,
+        "new": 2234,
+        "difference_per_primary": 0.0011699999999999974,
+        "standard_error": 0.0006525579003568443,
+        "z": 1.7929443492450179,
+        "interval_95": [
+          -0.00010901348469941736,
+          0.0024490134846994124
+        ]
+      },
+      "242-248 keV": {
+        "reference": 638,
+        "new": 650,
+        "difference_per_primary": 0.00011999999999999945,
+        "standard_error": 0.0003580108067047378,
+        "z": 0.335185412710089,
+        "interval_95": [
+          -0.0005817011811412867,
+          0.0008217011811412856
+        ]
+      },
+      "342-348 keV": {
+        "reference": 1598,
+        "new": 1521,
+        "difference_per_primary": -0.0007700000000000016,
+        "standard_error": 0.0005541083155487324,
+        "z": -1.3896200045968847,
+        "interval_95": [
+          -0.001856052298475517,
+          0.0003160522984755139
+        ]
+      },
+      "776-782 keV": {
+        "reference": 515,
+        "new": 504,
+        "difference_per_primary": -0.00010999999999999985,
+        "standard_error": 0.0003184050452139981,
+        "z": -0.3454719127521033,
+        "interval_95": [
+          -0.0007340738886194361,
+          0.0005140738886194364
+        ]
+      },
+      "962-968 keV": {
+        "reference": 491,
+        "new": 516,
+        "difference_per_primary": 0.00024999999999999935,
+        "standard_error": 0.0003165338290556783,
+        "z": 0.7898049972915355,
+        "interval_95": [
+          -0.00037040630494913007,
+          0.0008704063049491288
+        ]
+      },
+      "1110-1116 keV": {
+        "reference": 398,
+        "new": 428,
+        "difference_per_primary": 0.0002999999999999999,
+        "standard_error": 0.00028680870731612374,
+        "z": 1.0459933479960097,
+        "interval_95": [
+          -0.0002621450663396026,
+          0.0008621450663396025
+        ]
+      },
+      "1406-1412 keV": {
+        "reference": 566,
+        "new": 539,
+        "difference_per_primary": -0.0002700000000000003,
+        "standard_error": 0.00033149694101487423,
+        "z": -0.8144871538584889,
+        "interval_95": [
+          -0.0009197340043891537,
+          0.00037973400438915316
+        ]
+      }
+    },
+    "Geant4 10: new vs previous seed": {
+      "detected events": {
+        "reference": 17636,
+        "new": 17428,
+        "difference_per_primary": -0.0020799999999999985,
+        "standard_error": 0.0017004897049533604,
+        "z": -1.22317706125545,
+        "interval_95": [
+          -0.005412959821708585,
+          0.0012529598217085876
+        ]
+      },
+      "crystal entries": {
+        "reference": 20566,
+        "new": 20290,
+        "difference_per_primary": -0.0027600000000000124,
+        "standard_error": 0.0021207547052889447,
+        "z": -1.301423494719524,
+        "interval_95": [
+          -0.006916679222366344,
+          0.0013966792223663194
+        ]
+      },
+      "120-124 keV": {
+        "reference": 2170,
+        "new": 2117,
+        "difference_per_primary": -0.0005299999999999992,
+        "standard_error": 0.0006481617175798964,
+        "z": -0.8176971666560485,
+        "interval_95": [
+          -0.001800396966456596,
+          0.0007403969664565976
+        ]
+      },
+      "242-248 keV": {
+        "reference": 645,
+        "new": 638,
+        "difference_per_primary": -6.999999999999975e-05,
+        "standard_error": 0.00035732087509978734,
+        "z": -0.19590235241770068,
+        "interval_95": [
+          -0.000770348915195583,
+          0.0006303489151955835
+        ]
+      },
+      "342-348 keV": {
+        "reference": 1607,
+        "new": 1598,
+        "difference_per_primary": -8.99999999999998e-05,
+        "standard_error": 0.0005615755520595664,
+        "z": -0.16026338694753844,
+        "interval_95": [
+          -0.0011906880820367499,
+          0.0010106880820367503
+        ]
+      },
+      "776-782 keV": {
+        "reference": 526,
+        "new": 515,
+        "difference_per_primary": -0.00010999999999999985,
+        "standard_error": 0.0003218060512037428,
+        "z": -0.34182079419742273,
+        "interval_95": [
+          -0.0007407398603593358,
+          0.0005207398603593361
+        ]
+      },
+      "962-968 keV": {
+        "reference": 467,
+        "new": 491,
+        "difference_per_primary": 0.00024000000000000063,
+        "standard_error": 0.0003087746482757841,
+        "z": 0.7772658841656036,
+        "interval_95": [
+          -0.0003651983106205362,
+          0.0008451983106205375
+        ]
+      },
+      "1110-1116 keV": {
+        "reference": 413,
+        "new": 398,
+        "difference_per_primary": -0.00014999999999999996,
+        "standard_error": 0.0002842038611953525,
+        "z": -0.5277901551692671,
+        "interval_95": [
+          -0.0007070395679428909,
+          0.00040703956794289095
+        ]
+      },
+      "1406-1412 keV": {
+        "reference": 487,
+        "new": 566,
+        "difference_per_primary": 0.0007899999999999999,
+        "standard_error": 0.000323641039479273,
+        "z": 2.4409759691511375,
+        "interval_95": [
+          0.0001556635626206249,
+          0.001424336437379375
+        ]
+      }
+    },
+    "Geant4 11: new vs previous seed": {
+      "detected events": {
+        "reference": 17653,
+        "new": 17446,
+        "difference_per_primary": -0.0020699999999999885,
+        "standard_error": 0.0017011577276596498,
+        "z": -1.2168183857047574,
+        "interval_95": [
+          -0.005404269146212903,
+          0.0012642691462129252
+        ]
+      },
+      "crystal entries": {
+        "reference": 20542,
+        "new": 20250,
+        "difference_per_primary": -0.002919999999999978,
+        "standard_error": 0.0021123939874189146,
+        "z": -1.382317890218888,
+        "interval_95": [
+          -0.007060292215341051,
+          0.0012202922153410943
+        ]
+      },
+      "120-124 keV": {
+        "reference": 2183,
+        "new": 2234,
+        "difference_per_primary": 0.00051,
+        "standard_error": 0.0006572275667382987,
+        "z": 0.7759869272237585,
+        "interval_95": [
+          -0.0007781660308070653,
+          0.0017981660308070654
+        ]
+      },
+      "242-248 keV": {
+        "reference": 647,
+        "new": 650,
+        "difference_per_primary": 2.9999999999999645e-05,
+        "standard_error": 0.00035897100105969007,
+        "z": 0.0835722103218338,
+        "interval_95": [
+          -0.0006735831620769928,
+          0.0007335831620769921
+        ]
+      },
+      "342-348 keV": {
+        "reference": 1619,
+        "new": 1521,
+        "difference_per_primary": -0.00098,
+        "standard_error": 0.0005559392850706693,
+        "z": -1.7627824230400004,
+        "interval_95": [
+          -0.002069640998738512,
+          0.00010964099873851186
+        ]
+      },
+      "776-782 keV": {
+        "reference": 492,
+        "new": 504,
+        "difference_per_primary": 0.00012000000000000031,
+        "standard_error": 0.0003148093249081267,
+        "z": 0.38118311786037745,
+        "interval_95": [
+          -0.000497026276819928,
+          0.0007370262768199286
+        ]
+      },
+      "962-968 keV": {
+        "reference": 499,
+        "new": 516,
+        "difference_per_primary": 0.00017,
+        "standard_error": 0.0003177825559364903,
+        "z": 0.5349569912640987,
+        "interval_95": [
+          -0.000452853809635521,
+          0.000792853809635521
+        ]
+      },
+      "1110-1116 keV": {
+        "reference": 419,
+        "new": 428,
+        "difference_per_primary": 8.99999999999998e-05,
+        "standard_error": 0.0002904171111022631,
+        "z": 0.3098990953336374,
+        "interval_95": [
+          -0.0004792175377604359,
+          0.0006592175377604355
+        ]
+      },
+      "1406-1412 keV": {
+        "reference": 523,
+        "new": 539,
+        "difference_per_primary": 0.00015999999999999955,
+        "standard_error": 0.00032501847081368117,
+        "z": 0.4922797144403542,
+        "interval_95": [
+          -0.00047703620279481557,
+          0.0007970362027948147
+        ]
+      }
+    }
+  },
+  "method": "Independent primary events; sample variances include within-event crystal correlations; normal-approximation intervals; no multiple-testing correction."
+}

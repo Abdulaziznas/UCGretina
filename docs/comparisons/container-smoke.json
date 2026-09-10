@@ -1,0 +1,50 @@
+{
+  "versions": {
+    "geant4-config": "10.7.4",
+    "root-config": "6.28/12"
+  },
+  "results": [
+    {
+      "case": "smoke_standard",
+      "binary": "UCGretina",
+      "passed": true,
+      "simulated": 100,
+      "detected": 31
+    },
+    {
+      "case": "smoke_lh",
+      "binary": "UCGretina_LH",
+      "passed": true,
+      "simulated": 100,
+      "detected": 16
+    },
+    {
+      "case": "smoke_pol",
+      "binary": "UCGretina_Pol",
+      "passed": true,
+      "simulated": 100,
+      "detected": 18
+    },
+    {
+      "case": "smoke_scan",
+      "binary": "UCGretina_Scan",
+      "passed": true,
+      "simulated": 100,
+      "detected": 70
+    },
+    {
+      "case": "smoke_sources",
+      "binary": "UCGretina",
+      "passed": true,
+      "simulated": 100,
+      "detected": 37
+    },
+    {
+      "case": "smoke_background",
+      "binary": "UCGretina",
+      "passed": true,
+      "simulated": 100,
+      "detected": 4
+    }
+  ]
+}

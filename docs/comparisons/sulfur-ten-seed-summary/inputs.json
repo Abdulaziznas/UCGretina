@@ -1,0 +1,1901 @@
+{
+  "sulfur-comparison-002": {
+    "1329": {
+      "source": "Sulfur-44 in-beam excitation 1329 keV",
+      "plot_title": "Sulfur-44, excitation 1329 keV (laboratory energies)",
+      "excitation_keV": 1329,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          513279,
+          713243
+        ],
+        "g4-11": [
+          913247,
+          1113251
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "6e58294b27a49b9549b18d9261a7aece3a453290c527ec584ed35e395ee91dcc"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "45cbe99be519be513f1c692ce1a46c71cedaa53381f1c5f0d4732175394d3192"
+        }
+      },
+      "native_worktree_changes": "tracking-output-fix.patch in parent directory; accepts RadioactiveDecay process name",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "container_run_reused_from": "/home/eren511/Geant4Workspace/UCGretina/UCGretina/container-results/sulfur-comparison-001/1329/g4-10"
+    },
+    "2150": {
+      "source": "Sulfur-44 in-beam excitation 2150 keV",
+      "plot_title": "Sulfur-44, excitation 2150 keV (laboratory energies)",
+      "excitation_keV": 2150,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          514288,
+          714256
+        ],
+        "g4-11": [
+          914266,
+          1114272
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "21e6de0f09029310fbf3f11f0f646b8ef3c69cbfa4954d7a5b73dc95a468059d"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "0e02f91a6c00aecf6e5eb27916a80b42c78150f6a281b77ff7b186b46940f876"
+        }
+      },
+      "native_worktree_changes": "tracking-output-fix.patch in parent directory; accepts RadioactiveDecay process name",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "container_run_reused_from": "/home/eren511/Geant4Workspace/UCGretina/UCGretina/container-results/sulfur-comparison-001/2150/g4-10"
+    },
+    "2457": {
+      "source": "Sulfur-44 in-beam excitation 2457 keV",
+      "plot_title": "Sulfur-44, excitation 2457 keV (laboratory energies)",
+      "excitation_keV": 2457,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          515297,
+          715269
+        ],
+        "g4-11": [
+          915285,
+          1115293
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "2090c451f7cd45e1dcba38d7417accfcb86364933a14769796a9caae973b4248"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "811f7a3c562113348bccc18d610a5f8bee1034c1a8ebc4f1f8a67acc24e8d654"
+        }
+      },
+      "native_worktree_changes": "tracking-output-fix.patch in parent directory; accepts RadioactiveDecay process name",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "container_run_reused_from": "/home/eren511/Geant4Workspace/UCGretina/UCGretina/container-results/sulfur-comparison-001/2457/g4-10"
+    }
+  },
+  "sulfur-comparison-003": {
+    "1329": {
+      "source": "Sulfur-44 in-beam excitation 1329 keV",
+      "plot_title": "Sulfur-44, excitation 1329 keV (laboratory energies)",
+      "excitation_keV": 1329,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          2513279,
+          2713243
+        ],
+        "g4-11": [
+          2913247,
+          3113251
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "c2bde6293bf033f569c96946b86691caa833fc6e1ae113d0ecd639a435072818"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "b206a90214379294310b16639c2a04240759b2ab25f693807589cd34440fdeed"
+        }
+      }
+    },
+    "2150": {
+      "source": "Sulfur-44 in-beam excitation 2150 keV",
+      "plot_title": "Sulfur-44, excitation 2150 keV (laboratory energies)",
+      "excitation_keV": 2150,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          2514288,
+          2714256
+        ],
+        "g4-11": [
+          2914266,
+          3114272
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "50fa2344e1df15376de706d5b061aac01f4176f390f1ac7baa9da1b7703a00bb"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "49bfd6bd351a1c0094f76c0b5af46e2f3433c8a674ca33c429bfc7d67167cb99"
+        }
+      }
+    },
+    "2457": {
+      "source": "Sulfur-44 in-beam excitation 2457 keV",
+      "plot_title": "Sulfur-44, excitation 2457 keV (laboratory energies)",
+      "excitation_keV": 2457,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          2515297,
+          2715269
+        ],
+        "g4-11": [
+          2915285,
+          3115293
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "a36b4fc18c80678c93e779bf1ee1fc68f646ab90207bc75f8573aaee4d614500"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "86e347a3cc73168b1bf9165c63c80036a3c8e8be5a10a5a72fc6f24e483d71d0"
+        }
+      }
+    }
+  },
+  "sulfur-comparison-004": {
+    "1329": {
+      "source": "Sulfur-44 in-beam excitation 1329 keV",
+      "plot_title": "Sulfur-44, excitation 1329 keV (laboratory energies)",
+      "excitation_keV": 1329,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          4513279,
+          4713243
+        ],
+        "g4-11": [
+          4913247,
+          5113251
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "6c879c86672b45f40dfce36a63a35fd8183d785d7a49e5f9857e071106e4d071"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "3cbe29e3423f99e92f772ea02b10e146cdb4e456a6df0aadee203fdb347be422"
+        }
+      }
+    },
+    "2150": {
+      "source": "Sulfur-44 in-beam excitation 2150 keV",
+      "plot_title": "Sulfur-44, excitation 2150 keV (laboratory energies)",
+      "excitation_keV": 2150,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          4514288,
+          4714256
+        ],
+        "g4-11": [
+          4914266,
+          5114272
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "fed76a3b35d5e32ef1170be35a183daa5577ed8b5652c3161a3c3cdce2a48d4a"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "a2e4fcc090d1b4a9d270e1419be8c3f42f3effbe4d8d6932c73bd57425eaca42"
+        }
+      }
+    },
+    "2457": {
+      "source": "Sulfur-44 in-beam excitation 2457 keV",
+      "plot_title": "Sulfur-44, excitation 2457 keV (laboratory energies)",
+      "excitation_keV": 2457,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          4515297,
+          4715269
+        ],
+        "g4-11": [
+          4915285,
+          5115293
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "02d0f24cf3fb6fa32fd6bee73d062e3175cf24d8e3e0d12837598e31e2c0b706"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "0bb340b26d51721af58939f1fad07a6b037d5201d8e4272daf06334b8a4b157b"
+        }
+      }
+    }
+  },
+  "sulfur-comparison-005": {
+    "1329": {
+      "source": "Sulfur-44 in-beam excitation 1329 keV",
+      "plot_title": "Sulfur-44, excitation 1329 keV (laboratory energies)",
+      "excitation_keV": 1329,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          6513279,
+          6713243
+        ],
+        "g4-11": [
+          6913247,
+          7113251
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "c08c532953ea8bf53ed5a90cce03e845d4ae154a97c21d6d71bb6bbc724725ea"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "5d048bd7f60ab8b2359b3ab31285ca37fc8a9084d411144ed75f53f434fccc13"
+        }
+      }
+    },
+    "2150": {
+      "source": "Sulfur-44 in-beam excitation 2150 keV",
+      "plot_title": "Sulfur-44, excitation 2150 keV (laboratory energies)",
+      "excitation_keV": 2150,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          6514288,
+          6714256
+        ],
+        "g4-11": [
+          6914266,
+          7114272
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "fad5cdb6691d5649833049faacc5e12cc74857b1095cb86f8e9ac9a5b69236bb"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "01f9944426d6ed8b13453dce61380e89e388b9519c61be74262ecffd98b3893c"
+        }
+      }
+    },
+    "2457": {
+      "source": "Sulfur-44 in-beam excitation 2457 keV",
+      "plot_title": "Sulfur-44, excitation 2457 keV (laboratory energies)",
+      "excitation_keV": 2457,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          6515297,
+          6715269
+        ],
+        "g4-11": [
+          6915285,
+          7115293
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "e96cc2c13e9ba85105204943991b565cc654aa9e711f3b9dc8e2d3bfd694287b"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "0920e1d76d3a62eebb0a10d1bb4d19ac94b1694082ad8c374de7d33a0dfe91cf"
+        }
+      }
+    }
+  },
+  "sulfur-comparison-006": {
+    "1329": {
+      "source": "Sulfur-44 in-beam excitation 1329 keV",
+      "plot_title": "Sulfur-44, excitation 1329 keV (laboratory energies)",
+      "excitation_keV": 1329,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          8513279,
+          8713243
+        ],
+        "g4-11": [
+          8913247,
+          9113251
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "37e02e7e89edbbf154dc5c8a7bbea4639c670f3428302442cc7b46e9e71522d3"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "15a2829bc16808f5bc9896455b3759b31b70c6fd71365ab3e341ba78fd3647f5"
+        }
+      }
+    },
+    "2150": {
+      "source": "Sulfur-44 in-beam excitation 2150 keV",
+      "plot_title": "Sulfur-44, excitation 2150 keV (laboratory energies)",
+      "excitation_keV": 2150,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          8514288,
+          8714256
+        ],
+        "g4-11": [
+          8914266,
+          9114272
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "348688ded8d2084e1bc34df683cd11cd4585ae94d08f2f980e59db9c1bf4c9ca"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "1fa09be3e7f576386ab10128cea748686e8d44278025884c7797ecbd00ad0e4b"
+        }
+      }
+    },
+    "2457": {
+      "source": "Sulfur-44 in-beam excitation 2457 keV",
+      "plot_title": "Sulfur-44, excitation 2457 keV (laboratory energies)",
+      "excitation_keV": 2457,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          8515297,
+          8715269
+        ],
+        "g4-11": [
+          8915285,
+          9115293
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "41420afd23523684a9f3de216ce16cdb745b668bc1706a29003254281702d9d0"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "b388ea31fefa9304115e89a36d6bd1c8d12e7e764348ce76912bea911f11637a"
+        }
+      }
+    }
+  },
+  "sulfur-comparison-007": {
+    "1329": {
+      "source": "Sulfur-44 in-beam excitation 1329 keV",
+      "plot_title": "Sulfur-44, excitation 1329 keV (laboratory energies)",
+      "excitation_keV": 1329,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          10513279,
+          10713243
+        ],
+        "g4-11": [
+          10913247,
+          11113251
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "1b3d453b651c000c6fd5d4e382d1eec8a6bded9ddf8832f0fcb98d82c4789f0d"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "40f7be5e282828b7d56197621c5c19e175365203dbde2d9ff1205798beac9839"
+        }
+      }
+    },
+    "2150": {
+      "source": "Sulfur-44 in-beam excitation 2150 keV",
+      "plot_title": "Sulfur-44, excitation 2150 keV (laboratory energies)",
+      "excitation_keV": 2150,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          10514288,
+          10714256
+        ],
+        "g4-11": [
+          10914266,
+          11114272
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "c0ac4dd5a2e339546d9b93abd675f4448532ed062c25b83f152db488816b8209"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "37debc80db4fce731805832ba74771beb92bafc377b22efd003c238405f2a9ee"
+        }
+      }
+    },
+    "2457": {
+      "source": "Sulfur-44 in-beam excitation 2457 keV",
+      "plot_title": "Sulfur-44, excitation 2457 keV (laboratory energies)",
+      "excitation_keV": 2457,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          10515297,
+          10715269
+        ],
+        "g4-11": [
+          10915285,
+          11115293
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "50ec05e9c2eb2186104bb0d38d87d49781d1a8b9db00ae01328cd18eaf466576"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "5a95b6bb54754d664616d427cd60c47a9fe2aa92ae7f7718221b415a59c57f6a"
+        }
+      }
+    }
+  },
+  "sulfur-comparison-008": {
+    "1329": {
+      "source": "Sulfur-44 in-beam excitation 1329 keV",
+      "plot_title": "Sulfur-44, excitation 1329 keV (laboratory energies)",
+      "excitation_keV": 1329,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          12513279,
+          12713243
+        ],
+        "g4-11": [
+          12913247,
+          13113251
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "b47f0a8ca263d776c6a72a1087e3f4b7a0e98d799a09c222048d8081cfc25d1f"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "68ba31a49906a7a6281d2785de3b7438b870b86eaef4b3ec4b4ea1b25aaffdfc"
+        }
+      }
+    },
+    "2150": {
+      "source": "Sulfur-44 in-beam excitation 2150 keV",
+      "plot_title": "Sulfur-44, excitation 2150 keV (laboratory energies)",
+      "excitation_keV": 2150,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          12514288,
+          12714256
+        ],
+        "g4-11": [
+          12914266,
+          13114272
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "9236255bb61b717aa2cf009698df78adf2c6ee575495f0bfa5e0677456988dfb"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "525349b9252e4a3d26f5f6ae7364766d0ac8e93cd84d8ee40946fa982f2cfe9c"
+        }
+      }
+    },
+    "2457": {
+      "source": "Sulfur-44 in-beam excitation 2457 keV",
+      "plot_title": "Sulfur-44, excitation 2457 keV (laboratory energies)",
+      "excitation_keV": 2457,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          12515297,
+          12715269
+        ],
+        "g4-11": [
+          12915285,
+          13115293
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "ca63d21f6549c349b39f90af61c4fb08de48967c753f363503e5e449eeef2b50"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "ea7771060aadde846a8c98f6f26a284e7c9c2ff42018806b439a94fd3277531d"
+        }
+      }
+    }
+  },
+  "sulfur-comparison-009": {
+    "1329": {
+      "source": "Sulfur-44 in-beam excitation 1329 keV",
+      "plot_title": "Sulfur-44, excitation 1329 keV (laboratory energies)",
+      "excitation_keV": 1329,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          14513279,
+          14713243
+        ],
+        "g4-11": [
+          14913247,
+          15113251
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "ef2617f0b2711755241bd940a0c0365efa919539033308ac676f295c4c05769b"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "09195417ec9dfa6345dc6cd8bab67b893d38a946c2248bed9d93ce6f3ce55434"
+        }
+      }
+    },
+    "2150": {
+      "source": "Sulfur-44 in-beam excitation 2150 keV",
+      "plot_title": "Sulfur-44, excitation 2150 keV (laboratory energies)",
+      "excitation_keV": 2150,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          14514288,
+          14714256
+        ],
+        "g4-11": [
+          14914266,
+          15114272
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "59c945880c60d8fa382efa7330eef06c89dec4c48284b34f3c3f23956f1b73d1"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "65b3cb4c4f35c56f720c14e2ba87a7996148fc8ab295f6068c6d82488e5abf27"
+        }
+      }
+    },
+    "2457": {
+      "source": "Sulfur-44 in-beam excitation 2457 keV",
+      "plot_title": "Sulfur-44, excitation 2457 keV (laboratory energies)",
+      "excitation_keV": 2457,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          14515297,
+          14715269
+        ],
+        "g4-11": [
+          14915285,
+          15115293
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "fed43bfa0b0733fccad40b8ef1f1809ecb778cc0db02916352fcfd5189a140f8"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "35b16670ddfb67f1154b2a537283c37e81a74f35b757a24bb98568a6da499dce"
+        }
+      }
+    }
+  },
+  "sulfur-comparison-010": {
+    "1329": {
+      "source": "Sulfur-44 in-beam excitation 1329 keV",
+      "plot_title": "Sulfur-44, excitation 1329 keV (laboratory energies)",
+      "excitation_keV": 1329,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          16513279,
+          16713243
+        ],
+        "g4-11": [
+          16913247,
+          17113251
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "877fbe2c3cec9c5dc91a7f74c37cb9a2cd3c381bc7e461651257a129af7239be"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "24746a17af36b402c086079d87168aba84cae218976eb0ccae145df7fafd243b"
+        }
+      }
+    },
+    "2150": {
+      "source": "Sulfur-44 in-beam excitation 2150 keV",
+      "plot_title": "Sulfur-44, excitation 2150 keV (laboratory energies)",
+      "excitation_keV": 2150,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          16514288,
+          16714256
+        ],
+        "g4-11": [
+          16914266,
+          17114272
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "c3f7312d3a7fffc4a2db95f1190bd7457fad0c05849be26eeb1b9ea59c1ecbc8"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "372b63e0ec499d4a7037b1e635a3a05488aaf58b9a4edcb517f403c75882833b"
+        }
+      }
+    },
+    "2457": {
+      "source": "Sulfur-44 in-beam excitation 2457 keV",
+      "plot_title": "Sulfur-44, excitation 2457 keV (laboratory energies)",
+      "excitation_keV": 2457,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          16515297,
+          16715269
+        ],
+        "g4-11": [
+          16915285,
+          17115293
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "7839f086b855a6b81f6c3d1393dca14d4de2edc4550fcecb4c6b2a10ea1ddc14"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "fbbfb0c9097d86f049071c8915b7dad6e5aa7af7dd32b06227de0fc774f4277f"
+        }
+      }
+    }
+  },
+  "sulfur-comparison-011": {
+    "1329": {
+      "source": "Sulfur-44 in-beam excitation 1329 keV",
+      "plot_title": "Sulfur-44, excitation 1329 keV (laboratory energies)",
+      "excitation_keV": 1329,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          18513279,
+          18713243
+        ],
+        "g4-11": [
+          18913247,
+          19113251
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "2d398447bbf7b2484ff51e9d8ca8d09f0c8a75f9f5edd3f77c3b67ec875f6abd"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "86b6becffe8e176248affc8a4843a7d1d19441ca7e1e08f6a01f5a0cabc476e5"
+        }
+      }
+    },
+    "2150": {
+      "source": "Sulfur-44 in-beam excitation 2150 keV",
+      "plot_title": "Sulfur-44, excitation 2150 keV (laboratory energies)",
+      "excitation_keV": 2150,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          18514288,
+          18714256
+        ],
+        "g4-11": [
+          18914266,
+          19114272
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "b416aec8e2b75e3804e293ab635ba2ffef366b4a7a832cff10903bbed3e265d3"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "39f202a96188db16adfe61abc429bfb7e6ce93d7c981778131189af5139d4f40"
+        }
+      }
+    },
+    "2457": {
+      "source": "Sulfur-44 in-beam excitation 2457 keV",
+      "plot_title": "Sulfur-44, excitation 2457 keV (laboratory energies)",
+      "excitation_keV": 2457,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          18515297,
+          18715269
+        ],
+        "g4-11": [
+          18915285,
+          19115293
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "66b4d7ecd8ffb7cc1fe7fc5940905973225477cffe1d68cf14ab120fc391a314"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "f2681ad7a09a42ba47a9ded761b0528531503aa153554a21a9df3cca0bc188fc"
+        }
+      }
+    }
+  },
+  "sulfur-comparison-012": {
+    "1329": {
+      "source": "Sulfur-44 in-beam excitation 1329 keV",
+      "plot_title": "Sulfur-44, excitation 1329 keV (laboratory energies)",
+      "excitation_keV": 1329,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          20513279,
+          20713243
+        ],
+        "g4-11": [
+          20913247,
+          21113251
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "850ef56ca99d1b15b07f5f572541e6c04b0255a56b06b8b2a78487e7b2d2915f"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "b1d50cc1074772e807cf381c5479ece632607d3c356d7e0128cfe7888687e250"
+        }
+      }
+    },
+    "2150": {
+      "source": "Sulfur-44 in-beam excitation 2150 keV",
+      "plot_title": "Sulfur-44, excitation 2150 keV (laboratory energies)",
+      "excitation_keV": 2150,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          20514288,
+          20714256
+        ],
+        "g4-11": [
+          20914266,
+          21114272
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "54e8dcfca501f9d878dcb8f8bbb6cc7ea3d054fad3c4cf6205ece1d9af8e439a"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "d35254e3f2bf073d144edb3bf9f7fb9617f72d1d8611edec85ea716ae4e878ee"
+        }
+      }
+    },
+    "2457": {
+      "source": "Sulfur-44 in-beam excitation 2457 keV",
+      "plot_title": "Sulfur-44, excitation 2457 keV (laboratory energies)",
+      "excitation_keV": 2457,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          20515297,
+          20715269
+        ],
+        "g4-11": [
+          20915285,
+          21115293
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "5893c98d6364cbd517e8d98f9721a053d8abbdf31b886078f031d2bfdb2e117b"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "955f90bdbab9c12ee8a7525c95f67b62c8434c46ec994140371070af563ff4aa"
+        }
+      }
+    }
+  },
+  "sulfur-comparison-013": {
+    "1329": {
+      "source": "Sulfur-44 in-beam excitation 1329 keV",
+      "plot_title": "Sulfur-44, excitation 1329 keV (laboratory energies)",
+      "excitation_keV": 1329,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          22513279,
+          22713243
+        ],
+        "g4-11": [
+          22913247,
+          23113251
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "d4ba77d9d5fbd2b3fade247a0b3fda971e2821b3e362b3286e7ee50a5ce813e8"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "d2fd443f48c94c46d8df1f8f55f3bece28443d781f57fe343abecfd8a3219713"
+        }
+      }
+    },
+    "2150": {
+      "source": "Sulfur-44 in-beam excitation 2150 keV",
+      "plot_title": "Sulfur-44, excitation 2150 keV (laboratory energies)",
+      "excitation_keV": 2150,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          22514288,
+          22714256
+        ],
+        "g4-11": [
+          22914266,
+          23114272
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "01b1936750332b367055c6fb3fae26ab841098c7ec5b10e2087035fd28698f5a"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "64060d7a87400fa307dc39e0326fc8d9f05ca30466c0c694fec7c63feaa632d5"
+        }
+      }
+    },
+    "2457": {
+      "source": "Sulfur-44 in-beam excitation 2457 keV",
+      "plot_title": "Sulfur-44, excitation 2457 keV (laboratory energies)",
+      "excitation_keV": 2457,
+      "baseline_commit": "1271388e03ec9b3f8e055a988aeb4c2e4d2efedf",
+      "migration_commit": "7318284014affe109b486098716e2f414085d50d",
+      "native_tracking_action_sha256": "838feacdfa93721852711658eb0df0d968286b85fc854aa99bb4648883a1582d",
+      "native_worktree_patch": "native-source.patch in parent directory",
+      "events_per_run": 100000,
+      "threads": 2,
+      "seeds": {
+        "g4-10": [
+          22515297,
+          22715269
+        ],
+        "g4-11": [
+          22915285,
+          23115293
+        ]
+      },
+      "bins": 2000,
+      "range_keV": [
+        0,
+        4000
+      ],
+      "resolution_smearing": false,
+      "doppler_correction": false,
+      "geometry": "NSCLstd12quads/G120C4",
+      "peak_windows_keV": [],
+      "sha256": {
+        "g4-10": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "2695a9adfff12d9e815f0dd2dc450a0a1507200c7a49cc2c0b838970d7d87e9f"
+        },
+        "g4-11": {
+          "asolid": "bf5518bf42628a8c7caf812285f998863a93658a790bfef15ff9e9705bb794dd",
+          "aslice": "85c030e7e5888a9bb7ce58028310316a3b29ec30bbcfe8b69ea979626576aad8",
+          "aclust": "9055e9d738bc174fa927e566f470ef499cafaa3d8dba5906e810703839d93800",
+          "awalls": "9bba9cfdd283258f1f8cc85ce7379df256e6d71341dc858fb420d791203614c7",
+          "aeuler": "4ffc25c08e85285afcf1b3fee69f0e68e5be350e992b5a511e9c10eb778a88fa",
+          "crmat.LINUX": "5c29ed50f6d059caea631648407680f74bb93982fdba8d2643f99351f3cb77cc",
+          "z16.a44.lvldata": "1576ed27f71306061774d7a626bc31f6ac464c906c1ebb7f45205d7fb1e9c3d0",
+          "run.mac": "13c5ec81c6f072e8d7f71b7f106a6635d675ae4968563da6a1fac54b4408a172"
+        }
+      }
+    }
+  }
+}

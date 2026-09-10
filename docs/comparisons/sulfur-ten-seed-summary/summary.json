@@ -1,0 +1,1020 @@
+{
+  "new_ten": {
+    "1329": {
+      "events_per_version": 1000000,
+      "checks": {
+        "detected events": {
+          "g4_10_count": 294407,
+          "g4_11_count": 294231,
+          "difference_per_primary": -0.00017599999999995397,
+          "standard_error": 0.000644508380380777,
+          "z": -0.2730763561149861,
+          "p_two_sided": 0.7847945213193821,
+          "interval_95": [
+            -0.0014392364255462768,
+            0.0010872364255463689
+          ],
+          "relative_difference_percent": -0.05978118726795015
+        },
+        "crystal entries": {
+          "g4_10_count": 376636,
+          "g4_11_count": 377603,
+          "difference_per_primary": 0.0009669999999999956,
+          "standard_error": 0.0009146131064073674,
+          "z": 1.057277654590372,
+          "p_two_sided": 0.2903848882980932,
+          "interval_95": [
+            -0.0008256416885584444,
+            0.0027596416885584357
+          ],
+          "relative_difference_percent": 0.2567465669771333
+        },
+        "0-500 keV": {
+          "g4_10_count": 156466,
+          "g4_11_count": 156926,
+          "difference_per_primary": 0.00046000000000001595,
+          "standard_error": 0.0005941792443505365,
+          "z": 0.7741771601308891,
+          "p_two_sided": 0.43882603292461786,
+          "interval_95": [
+            -0.0007045913189270355,
+            0.0016245913189270674
+          ],
+          "relative_difference_percent": 0.29399358327049707,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "500-1000 keV": {
+          "g4_10_count": 91282,
+          "g4_11_count": 91880,
+          "difference_per_primary": 0.0005980000000000013,
+          "standard_error": 0.00043298019532982053,
+          "z": 1.3811255259480812,
+          "p_two_sided": 0.16724036831276795,
+          "interval_95": [
+            -0.0002506411828464469,
+            0.0014466411828464496
+          ],
+          "relative_difference_percent": 0.6551127275914214,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "1000-1500 keV": {
+          "g4_10_count": 108112,
+          "g4_11_count": 108156,
+          "difference_per_primary": 4.400000000000237e-05,
+          "standard_error": 0.00043918363813132653,
+          "z": 0.10018588166721572,
+          "p_two_sided": 0.9201967544156725,
+          "interval_95": [
+            -0.0008167999307373976,
+            0.0009047999307374024
+          ],
+          "relative_difference_percent": 0.04069853485274749,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "1500-2000 keV": {
+          "g4_10_count": 20776,
+          "g4_11_count": 20641,
+          "difference_per_primary": -0.0001349999999999997,
+          "standard_error": 0.00020139351405233362,
+          "z": -0.6703294325800331,
+          "p_two_sided": 0.5026478085730637,
+          "interval_95": [
+            -0.0005297312875425736,
+            0.0002597312875425742
+          ],
+          "relative_difference_percent": -0.6497882171736605,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "2000-2500 keV": {
+          "g4_10_count": 0,
+          "g4_11_count": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null,
+          "p_two_sided": null,
+          "interval_95": [
+            0.0,
+            0.0
+          ],
+          "relative_difference_percent": null
+        },
+        "2500-3000 keV": {
+          "g4_10_count": 0,
+          "g4_11_count": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null,
+          "p_two_sided": null,
+          "interval_95": [
+            0.0,
+            0.0
+          ],
+          "relative_difference_percent": null
+        },
+        "3000-3500 keV": {
+          "g4_10_count": 0,
+          "g4_11_count": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null,
+          "p_two_sided": null,
+          "interval_95": [
+            0.0,
+            0.0
+          ],
+          "relative_difference_percent": null
+        },
+        "3500-4000 keV": {
+          "g4_10_count": 0,
+          "g4_11_count": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null,
+          "p_two_sided": null,
+          "interval_95": [
+            0.0,
+            0.0
+          ],
+          "relative_difference_percent": null
+        }
+      }
+    },
+    "2150": {
+      "events_per_version": 1000000,
+      "checks": {
+        "detected events": {
+          "g4_10_count": 276880,
+          "g4_11_count": 277166,
+          "difference_per_primary": 0.00028600000000000847,
+          "standard_error": 0.0006329003670459313,
+          "z": 0.4518878719172123,
+          "p_two_sided": 0.6513497619874975,
+          "interval_95": [
+            -0.000954484719410017,
+            0.001526484719410034
+          ],
+          "relative_difference_percent": 0.10329384570933561
+        },
+        "crystal entries": {
+          "g4_10_count": 365707,
+          "g4_11_count": 366711,
+          "difference_per_primary": 0.0010040000000000049,
+          "standard_error": 0.0009350231584823484,
+          "z": 1.073770195841581,
+          "p_two_sided": 0.2829256910803361,
+          "interval_95": [
+            -0.000828645390625398,
+            0.0028366453906254075
+          ],
+          "relative_difference_percent": 0.2745367192862059
+        },
+        "0-500 keV": {
+          "g4_10_count": 129921,
+          "g4_11_count": 130550,
+          "difference_per_primary": 0.0006289999999999907,
+          "standard_error": 0.0005552481783486909,
+          "z": 1.132826769230721,
+          "p_two_sided": 0.2572870075338665,
+          "interval_95": [
+            -0.00045928642956344357,
+            0.001717286429563425
+          ],
+          "relative_difference_percent": 0.4841403622201112,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "500-1000 keV": {
+          "g4_10_count": 46936,
+          "g4_11_count": 47040,
+          "difference_per_primary": 0.00010399999999999993,
+          "standard_error": 0.0003113203289609389,
+          "z": 0.33406106291583904,
+          "p_two_sided": 0.7383334811486503,
+          "interval_95": [
+            -0.0005061878447634404,
+            0.0007141878447634402
+          ],
+          "relative_difference_percent": 0.22157831941366954,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "1000-1500 keV": {
+          "g4_10_count": 47248,
+          "g4_11_count": 47251,
+          "difference_per_primary": 3.0000000000030003e-06,
+          "standard_error": 0.00030369073367994244,
+          "z": 0.009878470652201985,
+          "p_two_sided": 0.9921182489715107,
+          "interval_95": [
+            -0.0005922338380126842,
+            0.0005982338380126902
+          ],
+          "relative_difference_percent": 0.006349475110063919,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "1500-2000 keV": {
+          "g4_10_count": 75365,
+          "g4_11_count": 75311,
+          "difference_per_primary": -5.3999999999998494e-05,
+          "standard_error": 0.00037326198490940566,
+          "z": -0.14467050539075074,
+          "p_two_sided": 0.8849710274155389,
+          "interval_95": [
+            -0.0007855934904224336,
+            0.0006775934904224366
+          ],
+          "relative_difference_percent": -0.07165129702116167,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "2000-2500 keV": {
+          "g4_10_count": 53613,
+          "g4_11_count": 53847,
+          "difference_per_primary": 0.0002339999999999981,
+          "standard_error": 0.0003188828131277202,
+          "z": 0.733811890659267,
+          "p_two_sided": 0.463063392562077,
+          "interval_95": [
+            -0.0003910103137303335,
+            0.0008590103137303297
+          ],
+          "relative_difference_percent": 0.4364613060265199,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "2500-3000 keV": {
+          "g4_10_count": 12624,
+          "g4_11_count": 12712,
+          "difference_per_primary": 8.799999999999954e-05,
+          "standard_error": 0.00015816151458260854,
+          "z": 0.5563932555415477,
+          "p_two_sided": 0.5779420485030229,
+          "interval_95": [
+            -0.00022199656858191318,
+            0.00039799656858191225
+          ],
+          "relative_difference_percent": 0.6970849176172333,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "3000-3500 keV": {
+          "g4_10_count": 0,
+          "g4_11_count": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null,
+          "p_two_sided": null,
+          "interval_95": [
+            0.0,
+            0.0
+          ],
+          "relative_difference_percent": null
+        },
+        "3500-4000 keV": {
+          "g4_10_count": 0,
+          "g4_11_count": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null,
+          "p_two_sided": null,
+          "interval_95": [
+            0.0,
+            0.0
+          ],
+          "relative_difference_percent": null
+        }
+      }
+    },
+    "2457": {
+      "events_per_version": 1000000,
+      "checks": {
+        "detected events": {
+          "g4_10_count": 505509,
+          "g4_11_count": 506799,
+          "difference_per_primary": 0.0012900000000000134,
+          "standard_error": 0.0007070529855972072,
+          "z": 1.8244742986417408,
+          "p_two_sided": 0.06808039844043237,
+          "interval_95": [
+            -9.582385177051272e-05,
+            0.0026758238517705394
+          ],
+          "relative_difference_percent": 0.2551883349257903
+        },
+        "crystal entries": {
+          "g4_10_count": 754647,
+          "g4_11_count": 756188,
+          "difference_per_primary": 0.0015410000000000146,
+          "standard_error": 0.001281815999704816,
+          "z": 1.2022006281360857,
+          "p_two_sided": 0.22928580602345083,
+          "interval_95": [
+            -0.0009713593594214247,
+            0.004053359359421454
+          ],
+          "relative_difference_percent": 0.2042014345780232
+        },
+        "0-500 keV": {
+          "g4_10_count": 325910,
+          "g4_11_count": 326464,
+          "difference_per_primary": 0.0005539999999999989,
+          "standard_error": 0.0008565889693129736,
+          "z": 0.6467512655974711,
+          "p_two_sided": 0.5177929379872458,
+          "interval_95": [
+            -0.0011249143798534292,
+            0.0022329143798534273
+          ],
+          "relative_difference_percent": 0.16998557884078394,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "500-1000 keV": {
+          "g4_10_count": 214478,
+          "g4_11_count": 214882,
+          "difference_per_primary": 0.0004039999999999877,
+          "standard_error": 0.0006433920480899088,
+          "z": 0.627921966395724,
+          "p_two_sided": 0.5300550602380206,
+          "interval_95": [
+            -0.0008570484142562335,
+            0.001665048414256209
+          ],
+          "relative_difference_percent": 0.18836430776116325,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "1000-1500 keV": {
+          "g4_10_count": 192237,
+          "g4_11_count": 192737,
+          "difference_per_primary": 0.0005000000000000004,
+          "standard_error": 0.0005888240241156362,
+          "z": 0.8491501357319075,
+          "p_two_sided": 0.3957977557361132,
+          "interval_95": [
+            -0.0006540950872666465,
+            0.0016540950872666474
+          ],
+          "relative_difference_percent": 0.26009561114665775,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "1500-2000 keV": {
+          "g4_10_count": 21447,
+          "g4_11_count": 21513,
+          "difference_per_primary": 6.600000000000009e-05,
+          "standard_error": 0.0002050591599301506,
+          "z": 0.32185833601620967,
+          "p_two_sided": 0.7475600179884518,
+          "interval_95": [
+            -0.00033591595346309504,
+            0.0004679159534630952
+          ],
+          "relative_difference_percent": 0.30773534760106347,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "2000-2500 keV": {
+          "g4_10_count": 401,
+          "g4_11_count": 395,
+          "difference_per_primary": -5.999999999999983e-06,
+          "standard_error": 2.820787070453865e-05,
+          "z": -0.2127065903997703,
+          "p_two_sided": 0.8315558260019482,
+          "interval_95": [
+            -6.128742658089573e-05,
+            4.928742658089577e-05
+          ],
+          "relative_difference_percent": -1.4962593516209435,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "2500-3000 keV": {
+          "g4_10_count": 154,
+          "g4_11_count": 185,
+          "difference_per_primary": 3.0999999999999995e-05,
+          "standard_error": 1.8410388315904637e-05,
+          "z": 1.6838319468372787,
+          "p_two_sided": 0.09221415127117133,
+          "interval_95": [
+            -5.0843610991730925e-06,
+            6.708436109917307e-05
+          ],
+          "relative_difference_percent": 20.129870129870127,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "3000-3500 keV": {
+          "g4_10_count": 20,
+          "g4_11_count": 12,
+          "difference_per_primary": -8.000000000000001e-06,
+          "standard_error": 5.656808994432108e-06,
+          "z": -1.4142248762286747,
+          "p_two_sided": 0.15729588617370138,
+          "interval_95": [
+            -1.908734562908693e-05,
+            3.0873456290869296e-06
+          ],
+          "relative_difference_percent": -40.00000000000001,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "3500-4000 keV": {
+          "g4_10_count": 0,
+          "g4_11_count": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null,
+          "p_two_sided": null,
+          "interval_95": [
+            0.0,
+            0.0
+          ],
+          "relative_difference_percent": null
+        }
+      }
+    }
+  },
+  "all_twelve": {
+    "1329": {
+      "events_per_version": 1200000,
+      "checks": {
+        "detected events": {
+          "g4_10_count": 353450,
+          "g4_11_count": 353493,
+          "difference_per_primary": 3.583333333334604e-05,
+          "standard_error": 0.0005884930019986448,
+          "z": 0.06088999055494047,
+          "p_two_sided": 0.9514468210354193,
+          "interval_95": [
+            -0.0011176129505839976,
+            0.0011892796172506897
+          ],
+          "relative_difference_percent": 0.012165794313202787
+        },
+        "crystal entries": {
+          "g4_10_count": 452188,
+          "g4_11_count": 453592,
+          "difference_per_primary": 0.0011700000000000044,
+          "standard_error": 0.0008351010814424373,
+          "z": 1.4010280024773878,
+          "p_two_sided": 0.16120569952675096,
+          "interval_95": [
+            -0.0004667981196271728,
+            0.0028067981196271815
+          ],
+          "relative_difference_percent": 0.31049032703212054
+        },
+        "0-500 keV": {
+          "g4_10_count": 187632,
+          "g4_11_count": 188422,
+          "difference_per_primary": 0.0006583333333333441,
+          "standard_error": 0.0005424612794641522,
+          "z": 1.2136042852379276,
+          "p_two_sided": 0.22489886988762786,
+          "interval_95": [
+            -0.00040489077441639406,
+            0.0017215574410830822
+          ],
+          "relative_difference_percent": 0.42103692333930937,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "500-1000 keV": {
+          "g4_10_count": 109831,
+          "g4_11_count": 110262,
+          "difference_per_primary": 0.0003591666666666604,
+          "standard_error": 0.0003954738630995753,
+          "z": 0.9081931833665245,
+          "p_two_sided": 0.3637761649325565,
+          "interval_95": [
+            -0.0004159621050085072,
+            0.0011342954383418281
+          ],
+          "relative_difference_percent": 0.39242108330070063,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "1000-1500 keV": {
+          "g4_10_count": 129783,
+          "g4_11_count": 130013,
+          "difference_per_primary": 0.0001916666666666733,
+          "standard_error": 0.00040110410727165244,
+          "z": 0.4778476789240775,
+          "p_two_sided": 0.6327586229905252,
+          "interval_95": [
+            -0.0005944973835857655,
+            0.000977830716919112
+          ],
+          "relative_difference_percent": 0.17721889615743816,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "1500-2000 keV": {
+          "g4_10_count": 24942,
+          "g4_11_count": 24895,
+          "difference_per_primary": -3.9166666666666516e-05,
+          "standard_error": 0.0001840934124251947,
+          "z": -0.21275430853660593,
+          "p_two_sided": 0.8315186042590149,
+          "interval_95": [
+            -0.0003999897550200481,
+            0.0003216564216867151
+          ],
+          "relative_difference_percent": -0.18843717424424591,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "2000-2500 keV": {
+          "g4_10_count": 0,
+          "g4_11_count": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null,
+          "p_two_sided": null,
+          "interval_95": [
+            0.0,
+            0.0
+          ],
+          "relative_difference_percent": null
+        },
+        "2500-3000 keV": {
+          "g4_10_count": 0,
+          "g4_11_count": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null,
+          "p_two_sided": null,
+          "interval_95": [
+            0.0,
+            0.0
+          ],
+          "relative_difference_percent": null
+        },
+        "3000-3500 keV": {
+          "g4_10_count": 0,
+          "g4_11_count": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null,
+          "p_two_sided": null,
+          "interval_95": [
+            0.0,
+            0.0
+          ],
+          "relative_difference_percent": null
+        },
+        "3500-4000 keV": {
+          "g4_10_count": 0,
+          "g4_11_count": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null,
+          "p_two_sided": null,
+          "interval_95": [
+            0.0,
+            0.0
+          ],
+          "relative_difference_percent": null
+        }
+      }
+    },
+    "2150": {
+      "events_per_version": 1200000,
+      "checks": {
+        "detected events": {
+          "g4_10_count": 332389,
+          "g4_11_count": 332506,
+          "difference_per_primary": 9.749999999997261e-05,
+          "standard_error": 0.0005777669904188762,
+          "z": 0.16875315069364888,
+          "p_two_sided": 0.8659908100373536,
+          "interval_95": [
+            -0.0010349233012210248,
+            0.00122992330122097
+          ],
+          "relative_difference_percent": 0.035199720809042156
+        },
+        "crystal entries": {
+          "g4_10_count": 438905,
+          "g4_11_count": 440017,
+          "difference_per_primary": 0.0009266666666666867,
+          "standard_error": 0.0008535968593706263,
+          "z": 1.0856022447762241,
+          "p_two_sided": 0.27765500622307815,
+          "interval_95": [
+            -0.0007463831776997408,
+            0.0025997165110331144
+          ],
+          "relative_difference_percent": 0.2533577881318336
+        },
+        "0-500 keV": {
+          "g4_10_count": 155987,
+          "g4_11_count": 156726,
+          "difference_per_primary": 0.0006158333333333432,
+          "standard_error": 0.0005069609130782884,
+          "z": 1.2147550579273987,
+          "p_two_sided": 0.22445952644542366,
+          "interval_95": [
+            -0.0003778100563001021,
+            0.0016094767229667885
+          ],
+          "relative_difference_percent": 0.473757428503665,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "500-1000 keV": {
+          "g4_10_count": 56420,
+          "g4_11_count": 56291,
+          "difference_per_primary": -0.00010749999999999649,
+          "standard_error": 0.00028409927429205305,
+          "z": -0.3783888581478278,
+          "p_two_sided": 0.7051417439105954,
+          "interval_95": [
+            -0.0006643345776124205,
+            0.0004493345776124275
+          ],
+          "relative_difference_percent": -0.2286423254165115,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "1000-1500 keV": {
+          "g4_10_count": 56628,
+          "g4_11_count": 56898,
+          "difference_per_primary": 0.00022499999999999604,
+          "standard_error": 0.0002773785999924928,
+          "z": 0.8111656775471706,
+          "p_two_sided": 0.41727053314055385,
+          "interval_95": [
+            -0.0003186620559852899,
+            0.000768662055985282
+          ],
+          "relative_difference_percent": 0.47679593134137743,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "1500-2000 keV": {
+          "g4_10_count": 90199,
+          "g4_11_count": 90411,
+          "difference_per_primary": 0.0001766666666666722,
+          "standard_error": 0.0003405657725406287,
+          "z": 0.5187446329345861,
+          "p_two_sided": 0.60393883255916,
+          "interval_95": [
+            -0.0004908422475129601,
+            0.0008441755808463045
+          ],
+          "relative_difference_percent": 0.2350358651426364,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "2000-2500 keV": {
+          "g4_10_count": 64457,
+          "g4_11_count": 64486,
+          "difference_per_primary": 2.4166666666665393e-05,
+          "standard_error": 0.00029108928264198655,
+          "z": 0.08302149240028257,
+          "p_two_sided": 0.9338344501422817,
+          "interval_95": [
+            -0.0005463683273116282,
+            0.000594701660644959
+          ],
+          "relative_difference_percent": 0.044991234466386074,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "2500-3000 keV": {
+          "g4_10_count": 15214,
+          "g4_11_count": 15205,
+          "difference_per_primary": -7.500000000000562e-06,
+          "standard_error": 0.00014441807761315638,
+          "z": -0.051932556671266186,
+          "p_two_sided": 0.9585824327957059,
+          "interval_95": [
+            -0.00029055943212178705,
+            0.0002755594321217859
+          ],
+          "relative_difference_percent": -0.0591560404890277,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "3000-3500 keV": {
+          "g4_10_count": 0,
+          "g4_11_count": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null,
+          "p_two_sided": null,
+          "interval_95": [
+            0.0,
+            0.0
+          ],
+          "relative_difference_percent": null
+        },
+        "3500-4000 keV": {
+          "g4_10_count": 0,
+          "g4_11_count": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null,
+          "p_two_sided": null,
+          "interval_95": [
+            0.0,
+            0.0
+          ],
+          "relative_difference_percent": null
+        }
+      }
+    },
+    "2457": {
+      "events_per_version": 1200000,
+      "checks": {
+        "detected events": {
+          "g4_10_count": 606767,
+          "g4_11_count": 608114,
+          "difference_per_primary": 0.0011225000000000263,
+          "standard_error": 0.0006454474522024805,
+          "z": 1.7391036190005622,
+          "p_two_sided": 0.08201653820603454,
+          "interval_95": [
+            -0.00014257700631683558,
+            0.002387577006316888
+          ],
+          "relative_difference_percent": 0.22199625226817404
+        },
+        "crystal entries": {
+          "g4_10_count": 905740,
+          "g4_11_count": 907461,
+          "difference_per_primary": 0.0014341666666666253,
+          "standard_error": 0.0011701713128558263,
+          "z": 1.225604021317625,
+          "p_two_sided": 0.22034772382733375,
+          "interval_95": [
+            -0.0008593691065307942,
+            0.0037277024398640448
+          ],
+          "relative_difference_percent": 0.19001037825423966
+        },
+        "0-500 keV": {
+          "g4_10_count": 390922,
+          "g4_11_count": 391883,
+          "difference_per_primary": 0.0008008333333333617,
+          "standard_error": 0.0007819796906314648,
+          "z": 1.0241101436875837,
+          "p_two_sided": 0.3057832537765112,
+          "interval_95": [
+            -0.0007318468603043093,
+            0.0023335135269710325
+          ],
+          "relative_difference_percent": 0.24582909122536825,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "500-1000 keV": {
+          "g4_10_count": 257775,
+          "g4_11_count": 258182,
+          "difference_per_primary": 0.00033916666666666817,
+          "standard_error": 0.0005877333075313437,
+          "z": 0.5770757966589812,
+          "p_two_sided": 0.5638882536295918,
+          "interval_95": [
+            -0.0008127906160947656,
+            0.001491123949428102
+          ],
+          "relative_difference_percent": 0.15788963243138468,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "1000-1500 keV": {
+          "g4_10_count": 230620,
+          "g4_11_count": 230812,
+          "difference_per_primary": 0.00015999999999999348,
+          "standard_error": 0.0005372795908663409,
+          "z": 0.29779653409503265,
+          "p_two_sided": 0.7658584600009726,
+          "interval_95": [
+            -0.0008930679980980346,
+            0.0012130679980980215
+          ],
+          "relative_difference_percent": 0.08325383748156802,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "1500-2000 keV": {
+          "g4_10_count": 25729,
+          "g4_11_count": 25862,
+          "difference_per_primary": 0.00011083333333333431,
+          "standard_error": 0.00018727212389856675,
+          "z": 0.5918303857832338,
+          "p_two_sided": 0.5539641736143623,
+          "interval_95": [
+            -0.0002562200295078565,
+            0.0004778866961745251
+          ],
+          "relative_difference_percent": 0.5169264254343394,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "2000-2500 keV": {
+          "g4_10_count": 479,
+          "g4_11_count": 479,
+          "difference_per_primary": 0.0,
+          "standard_error": 2.5787841616586053e-05,
+          "z": 0.0,
+          "p_two_sided": 1.0,
+          "interval_95": [
+            -5.0544169568508665e-05,
+            5.0544169568508665e-05
+          ],
+          "relative_difference_percent": 0.0,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "2500-3000 keV": {
+          "g4_10_count": 193,
+          "g4_11_count": 225,
+          "difference_per_primary": 2.6666666666666673e-05,
+          "standard_error": 1.703605490201563e-05,
+          "z": 1.5653076266801413,
+          "p_two_sided": 0.1175107957288933,
+          "interval_95": [
+            -6.724000941283962e-06,
+            6.005733427461731e-05
+          ],
+          "relative_difference_percent": 16.58031088082902,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "3000-3500 keV": {
+          "g4_10_count": 22,
+          "g4_11_count": 18,
+          "difference_per_primary": -3.3333333333333325e-06,
+          "standard_error": 5.270420603041371e-06,
+          "z": -0.632460591742865,
+          "p_two_sided": 0.5270859516025053,
+          "interval_95": [
+            -1.3663357715294419e-05,
+            6.996691048627754e-06
+          ],
+          "relative_difference_percent": -18.18181818181818,
+          "holm_adjusted_p_energy_windows": 1.0
+        },
+        "3500-4000 keV": {
+          "g4_10_count": 0,
+          "g4_11_count": 0,
+          "difference_per_primary": 0.0,
+          "standard_error": 0.0,
+          "z": null,
+          "p_two_sided": null,
+          "interval_95": [
+            0.0,
+            0.0
+          ],
+          "relative_difference_percent": null
+        }
+      }
+    }
+  },
+  "target_by_seed": [
+    {
+      "run": "sulfur-comparison-002",
+      "g4_10_count": 4730,
+      "g4_11_count": 4728,
+      "difference_per_primary": -1.9999999999999185e-05,
+      "standard_error": 0.0009622278185667613,
+      "z": -0.0207850985121062,
+      "p_two_sided": 0.9834170848370732,
+      "interval_95": [
+        -0.0019059665243908513,
+        0.001865966524390853
+      ],
+      "relative_difference_percent": -0.04228329809724986
+    },
+    {
+      "run": "sulfur-comparison-003",
+      "g4_10_count": 4650,
+      "g4_11_count": 4919,
+      "difference_per_primary": 0.002689999999999998,
+      "standard_error": 0.0009646192222335396,
+      "z": 2.78866514164149,
+      "p_two_sided": 0.005292575650304188,
+      "interval_95": [
+        0.0007993463244222604,
+        0.004580653675577736
+      ],
+      "relative_difference_percent": 5.7849462365591355
+    },
+    {
+      "run": "sulfur-comparison-004",
+      "g4_10_count": 4672,
+      "g4_11_count": 4634,
+      "difference_per_primary": -0.0003799999999999984,
+      "standard_error": 0.0009510559947106431,
+      "z": -0.39955586433752793,
+      "p_two_sided": 0.6894836696332507,
+      "interval_95": [
+        -0.002244069749632859,
+        0.001484069749632862
+      ],
+      "relative_difference_percent": -0.8133561643835583
+    },
+    {
+      "run": "sulfur-comparison-005",
+      "g4_10_count": 4758,
+      "g4_11_count": 4828,
+      "difference_per_primary": 0.0007000000000000062,
+      "standard_error": 0.0009685356124646765,
+      "z": 0.7227405900116408,
+      "p_two_sided": 0.46983927319227015,
+      "interval_95": [
+        -0.0011983298004307598,
+        0.002598329800430772
+      ],
+      "relative_difference_percent": 1.4712063892391891
+    },
+    {
+      "run": "sulfur-comparison-006",
+      "g4_10_count": 4806,
+      "g4_11_count": 4734,
+      "difference_per_primary": -0.0007199999999999984,
+      "standard_error": 0.0009651429547011313,
+      "z": -0.7460034769905723,
+      "p_two_sided": 0.4556653146615571,
+      "interval_95": [
+        -0.002611680191214216,
+        0.001171680191214219
+      ],
+      "relative_difference_percent": -1.4981273408239668
+    },
+    {
+      "run": "sulfur-comparison-007",
+      "g4_10_count": 4729,
+      "g4_11_count": 4778,
+      "difference_per_primary": 0.0004900000000000043,
+      "standard_error": 0.00096224556853505,
+      "z": 0.5092255199948535,
+      "p_two_sided": 0.6105941570237852,
+      "interval_95": [
+        -0.0013960013143286937,
+        0.0023760013143287024
+      ],
+      "relative_difference_percent": 1.036159864664843
+    },
+    {
+      "run": "sulfur-comparison-008",
+      "g4_10_count": 4596,
+      "g4_11_count": 4673,
+      "difference_per_primary": 0.0007699999999999999,
+      "standard_error": 0.0009518134872385162,
+      "z": 0.8089820225535894,
+      "p_two_sided": 0.4185254870334954,
+      "interval_95": [
+        -0.0010955544349874919,
+        0.0026355544349874914
+      ],
+      "relative_difference_percent": 1.6753698868581373
+    },
+    {
+      "run": "sulfur-comparison-009",
+      "g4_10_count": 4883,
+      "g4_11_count": 4781,
+      "difference_per_primary": -0.00102,
+      "standard_error": 0.000970931396689679,
+      "z": -1.0505376625759728,
+      "p_two_sided": 0.2934709844800052,
+      "interval_95": [
+        -0.002923025537511771,
+        0.0008830255375117707
+      ],
+      "relative_difference_percent": -2.088879787016179
+    },
+    {
+      "run": "sulfur-comparison-010",
+      "g4_10_count": 4723,
+      "g4_11_count": 4680,
+      "difference_per_primary": -0.0004299999999999998,
+      "standard_error": 0.0009576534038995633,
+      "z": -0.4490142239865075,
+      "p_two_sided": 0.6534213958022598,
+      "interval_95": [
+        -0.002307000671643144,
+        0.001447000671643144
+      ],
+      "relative_difference_percent": -0.9104382807537578
+    },
+    {
+      "run": "sulfur-comparison-011",
+      "g4_10_count": 4640,
+      "g4_11_count": 4769,
+      "difference_per_primary": 0.0012900000000000064,
+      "standard_error": 0.0009588723759512178,
+      "z": 1.3453302361748656,
+      "p_two_sided": 0.1785186133934943,
+      "interval_95": [
+        -0.0005893898568643805,
+        0.0031693898568643936
+      ],
+      "relative_difference_percent": 2.7801724137931174
+    },
+    {
+      "run": "sulfur-comparison-012",
+      "g4_10_count": 4812,
+      "g4_11_count": 4674,
+      "difference_per_primary": -0.0013800000000000062,
+      "standard_error": 0.0009626046156530005,
+      "z": -1.4336104123746154,
+      "p_two_sided": 0.15168347045616473,
+      "interval_95": [
+        -0.0032667050466798873,
+        0.0005067050466798747
+      ],
+      "relative_difference_percent": -2.867830423940162
+    },
+    {
+      "run": "sulfur-comparison-013",
+      "g4_10_count": 4629,
+      "g4_11_count": 4700,
+      "difference_per_primary": 0.0007100000000000023,
+      "standard_error": 0.000954458730859899,
+      "z": 0.7438771075626739,
+      "p_two_sided": 0.45695082600965403,
+      "interval_95": [
+        -0.0011607391124853997,
+        0.002580739112485404
+      ],
+      "relative_difference_percent": 1.5338085979693288
+    }
+  ]
+}

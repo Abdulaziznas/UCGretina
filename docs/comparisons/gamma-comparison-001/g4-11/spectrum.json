@@ -1,0 +1,11 @@
+{
+  "label": "Geant4 11.4.1 WSL",
+  "events": 100000,
+  "detected_events": 17653,
+  "generated_gammas": 100000,
+  "crystal_entries": 20542,
+  "root_version": "6.40.00",
+  "geant4_banner": "Geant4 version Name: geant4-11-04-patch-01 [MT]   (13-March-2026)",
+  "underflow": 0.0,
+  "overflow": 0.0
+}

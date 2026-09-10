@@ -14,3 +14,7 @@ tmp*
 git_hash
 __pycache__
 /build*/
+/container-results/
+/ucgretina-g4-*.tar
+# Keep the small published comparison histograms; raw event ROOT files stay ignored.
+!/docs/comparisons/**/*.root

@@ -1,0 +1,6 @@
+*
+!Dockerfile
+!environment.sh
+!build-app.sh
+!entrypoint.sh
+!smoke.py

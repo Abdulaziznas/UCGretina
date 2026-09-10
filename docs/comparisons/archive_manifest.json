@@ -1,0 +1,632 @@
+[
+  {
+    "path": "gamma-comparison-001/spectrum_bins.csv",
+    "local_source": "container-results/gamma-comparison-001/spectrum_bins.csv",
+    "sha256": "9c08b6b16e1a993f11d3fe0097a941a18274b324ebd7ad98511e98b582521cbc",
+    "bytes": 47411
+  },
+  {
+    "path": "gamma-comparison-001/comparison.pdf",
+    "local_source": "container-results/gamma-comparison-001/comparison.pdf",
+    "sha256": "fba9e4a710d02cfc7e866cda349b68f11d34e813a748eafaa747ff799880703d",
+    "bytes": 69483
+  },
+  {
+    "path": "gamma-comparison-001/inputs.json",
+    "local_source": "container-results/gamma-comparison-001/inputs.json",
+    "sha256": "965e7ea0036277d2519cbdc5dafa511f2ab5f231aafe509632340c5a45f99a17",
+    "bytes": 1117
+  },
+  {
+    "path": "gamma-comparison-001/comparison.png",
+    "local_source": "container-results/gamma-comparison-001/comparison.png",
+    "sha256": "4c41f2c04b8a9327a42c011b99de552f9d5cc22aa81785f614cf30989425d431",
+    "bytes": 37618
+  },
+  {
+    "path": "gamma-comparison-001/comparison.json",
+    "local_source": "container-results/gamma-comparison-001/comparison.json",
+    "sha256": "9295382a31929ae627072c75c279125961e5e541812bbf6fc6c8e642ebaa0080",
+    "bytes": 2333
+  },
+  {
+    "path": "gamma-comparison-001/g4-11/spectrum.json",
+    "local_source": "container-results/gamma-comparison-001/g4-11/spectrum.json",
+    "sha256": "5facc254ceb25cc722cff6632d729f76a4ee4551fb89f722c8ab393822cfd11f",
+    "bytes": 296
+  },
+  {
+    "path": "gamma-comparison-001/g4-10/spectrum.json",
+    "local_source": "container-results/gamma-comparison-001/g4-10/spectrum.json",
+    "sha256": "f851074ee84ae5fbdd2c06852522f3d5d0fd32decb4676d1e582b352334b73f8",
+    "bytes": 305
+  },
+  {
+    "path": "gamma-comparison-002/spectrum_bins.csv",
+    "local_source": "container-results/gamma-comparison-002/spectrum_bins.csv",
+    "sha256": "d185b78b9330109d2f4e41774705208e23fc4e5ca3a0612e67098362acb608d1",
+    "bytes": 46687
+  },
+  {
+    "path": "gamma-comparison-002/comparison.pdf",
+    "local_source": "container-results/gamma-comparison-002/comparison.pdf",
+    "sha256": "bcc713bf3c067802c29b3e56e7d86f6ce9b5982c2100dd73c61d7b0ce455233f",
+    "bytes": 69718
+  },
+  {
+    "path": "gamma-comparison-002/inputs.json",
+    "local_source": "container-results/gamma-comparison-002/inputs.json",
+    "sha256": "cc7d00ca4d2a8a8dd1512bf50d4cc6af696351f9784de30231da94b526d9e32d",
+    "bytes": 1845
+  },
+  {
+    "path": "gamma-comparison-002/seed_variation.json",
+    "local_source": "container-results/gamma-comparison-002/seed_variation.json",
+    "sha256": "98bbf90d60418aab7c185f100a83c44dbe6a2c8a720cb0791c651d4ca7fcf0eb",
+    "bytes": 14049
+  },
+  {
+    "path": "gamma-comparison-002/comparison.png",
+    "local_source": "container-results/gamma-comparison-002/comparison.png",
+    "sha256": "c4b9a7fb108ff0d619615764c449ca60b7942a5bb6862bdb60b5ac7500ced975",
+    "bytes": 38283
+  },
+  {
+    "path": "gamma-comparison-002/comparison.json",
+    "local_source": "container-results/gamma-comparison-002/comparison.json",
+    "sha256": "72e6673ac5a4ebe208422ad1ee581ede97a0ec6fd3c29ef41b5e450b055ca538",
+    "bytes": 2334
+  },
+  {
+    "path": "gamma-comparison-002/seed_variation.md",
+    "local_source": "container-results/gamma-comparison-002/seed_variation.md",
+    "sha256": "67ed6b4f278ed87d5e0be2a87e6db75b8a90ff5eef7338410dff06c705c03edf",
+    "bytes": 1965
+  },
+  {
+    "path": "gamma-comparison-002/g4-11/spectrum.json",
+    "local_source": "container-results/gamma-comparison-002/g4-11/spectrum.json",
+    "sha256": "ec34fb26974bea12191ed8eb7c90382d715640b22bf79b6c21909c3c5d9d75ea",
+    "bytes": 296
+  },
+  {
+    "path": "gamma-comparison-002/g4-10/spectrum.json",
+    "local_source": "container-results/gamma-comparison-002/g4-10/spectrum.json",
+    "sha256": "68ac9980ed9a4fd827a1688a1edde4d0087dd6596b98166c565ee6081e94028f",
+    "bytes": 305
+  },
+  {
+    "path": "sulfur-comparison-001/2457/spectrum_bins.csv",
+    "local_source": "container-results/sulfur-comparison-001/2457/spectrum_bins.csv",
+    "sha256": "5c0cc0cff365b639fc32ab9af533799382c15620fcda44eb1c25030f38b666fe",
+    "bytes": 87046
+  },
+  {
+    "path": "sulfur-comparison-001/2457/comparison.pdf",
+    "local_source": "container-results/sulfur-comparison-001/2457/comparison.pdf",
+    "sha256": "e8e350b29440d0be8a126a718420f871bec78d538637028d22f96530aa121343",
+    "bytes": 100302
+  },
+  {
+    "path": "sulfur-comparison-001/2457/inputs.json",
+    "local_source": "container-results/sulfur-comparison-001/2457/inputs.json",
+    "sha256": "2b9cb02785275d98cac530146c82d9bd3b83fb5973160e9629b24e76dfffd235",
+    "bytes": 2060
+  },
+  {
+    "path": "sulfur-comparison-001/2457/comparison.png",
+    "local_source": "container-results/sulfur-comparison-001/2457/comparison.png",
+    "sha256": "e6a0a61fdac1a5c11625c399cb5322526a6288b4740f56686a3585f56919396f",
+    "bytes": 35076
+  },
+  {
+    "path": "sulfur-comparison-001/2457/comparison.json",
+    "local_source": "container-results/sulfur-comparison-001/2457/comparison.json",
+    "sha256": "b0058710a2e38fb4ce2f54316550ff5ecc1d34e278786bb2ad5b044115275f24",
+    "bytes": 1168
+  },
+  {
+    "path": "sulfur-comparison-001/2150/spectrum_bins.csv",
+    "local_source": "container-results/sulfur-comparison-001/2150/spectrum_bins.csv",
+    "sha256": "10cb6b0c46eb4560dd5ef28d606e20c5963039ff6d11df52dc09c31f3285b8b9",
+    "bytes": 108911
+  },
+  {
+    "path": "sulfur-comparison-001/2150/comparison.pdf",
+    "local_source": "container-results/sulfur-comparison-001/2150/comparison.pdf",
+    "sha256": "1d3eb23f93c52752b7e7cf0fd7b28b3c6cd1a414397d966bd94b07d3e813b566",
+    "bytes": 133177
+  },
+  {
+    "path": "sulfur-comparison-001/2150/inputs.json",
+    "local_source": "container-results/sulfur-comparison-001/2150/inputs.json",
+    "sha256": "37f7e8b64a5c22a52ffa583328b10688773602a81ff2f43af4f8d0aa5abcd58c",
+    "bytes": 2060
+  },
+  {
+    "path": "sulfur-comparison-001/2150/comparison.png",
+    "local_source": "container-results/sulfur-comparison-001/2150/comparison.png",
+    "sha256": "37d271aeb150ecc17bc46d9a19aa98eaecde0eba24ec96ce67de8dbe452afa0c",
+    "bytes": 33217
+  },
+  {
+    "path": "sulfur-comparison-001/2150/comparison.json",
+    "local_source": "container-results/sulfur-comparison-001/2150/comparison.json",
+    "sha256": "7889109bdf02bda1915ae6973d2506eac952904c81a5207696cf481d1382e8e2",
+    "bytes": 1168
+  },
+  {
+    "path": "sulfur-comparison-001/1329/spectrum_bins.csv",
+    "local_source": "container-results/sulfur-comparison-001/1329/spectrum_bins.csv",
+    "sha256": "c911bad7a7bb7cabc3643787a35035cb4147c7efedd5149afbfa9f355c33a2da",
+    "bytes": 85232
+  },
+  {
+    "path": "sulfur-comparison-001/1329/comparison.pdf",
+    "local_source": "container-results/sulfur-comparison-001/1329/comparison.pdf",
+    "sha256": "32ad7fc71884c65e9a4da7bc22f3b516a4947847c0077f0ae9474656dca11ef9",
+    "bytes": 96636
+  },
+  {
+    "path": "sulfur-comparison-001/1329/inputs.json",
+    "local_source": "container-results/sulfur-comparison-001/1329/inputs.json",
+    "sha256": "3ddd7368a9fb089f5927aaf6fdf08eb315b7b41284ec6913921c6cfe9739c687",
+    "bytes": 2060
+  },
+  {
+    "path": "sulfur-comparison-001/1329/comparison.png",
+    "local_source": "container-results/sulfur-comparison-001/1329/comparison.png",
+    "sha256": "83d55199b54f4eb115f3d5051a8c39f2eeb8da6bbec76c85ded80cb467d580a2",
+    "bytes": 32406
+  },
+  {
+    "path": "sulfur-comparison-001/1329/comparison.json",
+    "local_source": "container-results/sulfur-comparison-001/1329/comparison.json",
+    "sha256": "3888350722b27709b479368565d6cf7a85816b24933c87f64e132778eed23d7b",
+    "bytes": 1168
+  },
+  {
+    "path": "sulfur-comparison-001/2457/g4-11/spectrum.json",
+    "local_source": "container-results/sulfur-comparison-001/2457/g4-11/spectrum.json",
+    "sha256": "10fdaa0e896a153bba2a09bfa8823f21404aee958acb417bd68c57868212398a",
+    "bytes": 291
+  },
+  {
+    "path": "sulfur-comparison-001/2457/g4-10/spectrum.json",
+    "local_source": "container-results/sulfur-comparison-001/2457/g4-10/spectrum.json",
+    "sha256": "3d29457c443c1bc96139ca86b34d2e7c634fc0b0d5b1c444d36e805771c8a610",
+    "bytes": 305
+  },
+  {
+    "path": "sulfur-comparison-001/2150/g4-11/spectrum.json",
+    "local_source": "container-results/sulfur-comparison-001/2150/g4-11/spectrum.json",
+    "sha256": "fa595a4e9556c46a68f02d126cfd35b80fa559410a5dc37d0d47467caf862338",
+    "bytes": 291
+  },
+  {
+    "path": "sulfur-comparison-001/2150/g4-10/spectrum.json",
+    "local_source": "container-results/sulfur-comparison-001/2150/g4-10/spectrum.json",
+    "sha256": "3afea8e8171cdec96d5be5d90174ae13126b0201ce50767c6a673eb83cc93567",
+    "bytes": 305
+  },
+  {
+    "path": "sulfur-comparison-001/1329/g4-11/spectrum.json",
+    "local_source": "container-results/sulfur-comparison-001/1329/g4-11/spectrum.json",
+    "sha256": "0741248ea70f5445388c61beeb32657bebafae0bba182f220c6ab1e062a6b261",
+    "bytes": 291
+  },
+  {
+    "path": "sulfur-comparison-001/1329/g4-10/spectrum.json",
+    "local_source": "container-results/sulfur-comparison-001/1329/g4-10/spectrum.json",
+    "sha256": "de4be918f7470a0cf380857897c16af4c86cc7146eeb7eac43773d5bb30bd8a8",
+    "bytes": 304
+  },
+  {
+    "path": "sulfur-comparison-002/summary.json",
+    "local_source": "container-results/sulfur-comparison-002/summary.json",
+    "sha256": "c96e823baf45e94b87b70d1a03870fbea1f6ad3dbd007324cb3f647259e5ef90",
+    "bytes": 8581
+  },
+  {
+    "path": "sulfur-comparison-002/summary.md",
+    "local_source": "container-results/sulfur-comparison-002/summary.md",
+    "sha256": "4279a46a30d145d968d721210d3960cf1722250e11d0ffc80b21fbe674749841",
+    "bytes": 2650
+  },
+  {
+    "path": "sulfur-comparison-002/sulfur_comparison.png",
+    "local_source": "container-results/sulfur-comparison-002/sulfur_comparison.png",
+    "sha256": "d2ca9fd5e553937e93c4ac596c9a2cb8518f7960ae4793f2d0032b024ac6e540",
+    "bytes": 38434
+  },
+  {
+    "path": "sulfur-comparison-002/output_fix_verification.json",
+    "local_source": "container-results/sulfur-comparison-002/output_fix_verification.json",
+    "sha256": "bee541928b839dfaea2edee46b1df02fdb4f35df51b6d85da50ee261fdcae4c1",
+    "bytes": 320
+  },
+  {
+    "path": "sulfur-comparison-002/sulfur_comparison.pdf",
+    "local_source": "container-results/sulfur-comparison-002/sulfur_comparison.pdf",
+    "sha256": "681ae88d2abafea4e105ffe14d92a2c120068350b2fd43677ed7e052fc3ce2e6",
+    "bytes": 31419
+  },
+  {
+    "path": "sulfur-comparison-002/tracking-output-fix.patch",
+    "local_source": "container-results/sulfur-comparison-002/tracking-output-fix.patch",
+    "sha256": "8267151f3b8e12b08fa41591d6a27c1e186bdccbc84b63f30c67d094d34682d3",
+    "bytes": 661
+  },
+  {
+    "path": "sulfur-comparison-002/2457/spectrum_bins.csv",
+    "local_source": "container-results/sulfur-comparison-002/2457/spectrum_bins.csv",
+    "sha256": "5c0cc0cff365b639fc32ab9af533799382c15620fcda44eb1c25030f38b666fe",
+    "bytes": 87046
+  },
+  {
+    "path": "sulfur-comparison-002/2457/comparison.pdf",
+    "local_source": "container-results/sulfur-comparison-002/2457/comparison.pdf",
+    "sha256": "1e1c2c783872d17e110fb184bbef65e50468dae9c8e653bd6b8e9cf93bad52bc",
+    "bytes": 100302
+  },
+  {
+    "path": "sulfur-comparison-002/2457/inputs.json",
+    "local_source": "container-results/sulfur-comparison-002/2457/inputs.json",
+    "sha256": "51d30ded334205f4726113d1fea3064bba2d798cb742b522f0d19767b00272e4",
+    "bytes": 2415
+  },
+  {
+    "path": "sulfur-comparison-002/2457/comparison.png",
+    "local_source": "container-results/sulfur-comparison-002/2457/comparison.png",
+    "sha256": "e6a0a61fdac1a5c11625c399cb5322526a6288b4740f56686a3585f56919396f",
+    "bytes": 35076
+  },
+  {
+    "path": "sulfur-comparison-002/2457/comparison.json",
+    "local_source": "container-results/sulfur-comparison-002/2457/comparison.json",
+    "sha256": "258840f698b980a24daccc642be9ce1f239ad79633e6d6b1f6143dcc31d69601",
+    "bytes": 1195
+  },
+  {
+    "path": "sulfur-comparison-002/2150/spectrum_bins.csv",
+    "local_source": "container-results/sulfur-comparison-002/2150/spectrum_bins.csv",
+    "sha256": "10cb6b0c46eb4560dd5ef28d606e20c5963039ff6d11df52dc09c31f3285b8b9",
+    "bytes": 108911
+  },
+  {
+    "path": "sulfur-comparison-002/2150/comparison.pdf",
+    "local_source": "container-results/sulfur-comparison-002/2150/comparison.pdf",
+    "sha256": "59a2279c648526211de8127789180b7d302b49f544e0d7d5a65b19db3a0de79d",
+    "bytes": 133177
+  },
+  {
+    "path": "sulfur-comparison-002/2150/inputs.json",
+    "local_source": "container-results/sulfur-comparison-002/2150/inputs.json",
+    "sha256": "22de70cf52f47217b1c9ce58cab5f64f03b905c8b9f1a638e2db9b5f11986ef9",
+    "bytes": 2415
+  },
+  {
+    "path": "sulfur-comparison-002/2150/comparison.png",
+    "local_source": "container-results/sulfur-comparison-002/2150/comparison.png",
+    "sha256": "37d271aeb150ecc17bc46d9a19aa98eaecde0eba24ec96ce67de8dbe452afa0c",
+    "bytes": 33217
+  },
+  {
+    "path": "sulfur-comparison-002/2150/comparison.json",
+    "local_source": "container-results/sulfur-comparison-002/2150/comparison.json",
+    "sha256": "52be504d01732d01b07533e5c7e6e3b728ba081fec6a0d3333f5fe2153a78459",
+    "bytes": 1195
+  },
+  {
+    "path": "sulfur-comparison-002/1329/spectrum_bins.csv",
+    "local_source": "container-results/sulfur-comparison-002/1329/spectrum_bins.csv",
+    "sha256": "c911bad7a7bb7cabc3643787a35035cb4147c7efedd5149afbfa9f355c33a2da",
+    "bytes": 85232
+  },
+  {
+    "path": "sulfur-comparison-002/1329/comparison.pdf",
+    "local_source": "container-results/sulfur-comparison-002/1329/comparison.pdf",
+    "sha256": "0d5fc04294311395904a98362b8df54a069fbcb8855c2a5c5a9405dc25ed2696",
+    "bytes": 96636
+  },
+  {
+    "path": "sulfur-comparison-002/1329/inputs.json",
+    "local_source": "container-results/sulfur-comparison-002/1329/inputs.json",
+    "sha256": "e4d9051a4f773689f925ed9396024fcb9aeabe4e852453341c8699924914cd0c",
+    "bytes": 2415
+  },
+  {
+    "path": "sulfur-comparison-002/1329/comparison.png",
+    "local_source": "container-results/sulfur-comparison-002/1329/comparison.png",
+    "sha256": "83d55199b54f4eb115f3d5051a8c39f2eeb8da6bbec76c85ded80cb467d580a2",
+    "bytes": 32406
+  },
+  {
+    "path": "sulfur-comparison-002/1329/comparison.json",
+    "local_source": "container-results/sulfur-comparison-002/1329/comparison.json",
+    "sha256": "39729e0e9a133ed2951a248f208d3c30317f230cbc9277bfd50c55d16452018c",
+    "bytes": 1194
+  },
+  {
+    "path": "sulfur-comparison-002/2457/g4-11/spectrum.json",
+    "local_source": "container-results/sulfur-comparison-002/2457/g4-11/spectrum.json",
+    "sha256": "fc60da0c647e18c4c04066ba2c3217c4cb5b60b5dfecf0d21d07cc21ca90f088",
+    "bytes": 318
+  },
+  {
+    "path": "sulfur-comparison-002/2457/g4-10/spectrum.json",
+    "local_source": "container-results/sulfur-comparison-002/2457/g4-10/spectrum.json",
+    "sha256": "3d29457c443c1bc96139ca86b34d2e7c634fc0b0d5b1c444d36e805771c8a610",
+    "bytes": 305
+  },
+  {
+    "path": "sulfur-comparison-002/2150/g4-11/spectrum.json",
+    "local_source": "container-results/sulfur-comparison-002/2150/g4-11/spectrum.json",
+    "sha256": "303ad56f755377d367031a9eed4ac51c165ef3b0e53bf0d4d95f7186577708f3",
+    "bytes": 318
+  },
+  {
+    "path": "sulfur-comparison-002/2150/g4-10/spectrum.json",
+    "local_source": "container-results/sulfur-comparison-002/2150/g4-10/spectrum.json",
+    "sha256": "3afea8e8171cdec96d5be5d90174ae13126b0201ce50767c6a673eb83cc93567",
+    "bytes": 305
+  },
+  {
+    "path": "sulfur-comparison-002/1329/g4-11/spectrum.json",
+    "local_source": "container-results/sulfur-comparison-002/1329/g4-11/spectrum.json",
+    "sha256": "e096b49506215c3106bc8a1b4ded3844cb5c3dcc2a9e7e361d406b89483db884",
+    "bytes": 317
+  },
+  {
+    "path": "sulfur-comparison-002/1329/g4-10/spectrum.json",
+    "local_source": "container-results/sulfur-comparison-002/1329/g4-10/spectrum.json",
+    "sha256": "de4be918f7470a0cf380857897c16af4c86cc7146eeb7eac43773d5bb30bd8a8",
+    "bytes": 304
+  },
+  {
+    "path": "sulfur-comparison-003/summary.json",
+    "local_source": "container-results/sulfur-comparison-003/summary.json",
+    "sha256": "2b8fb0275c66c1262f68220d72b5af967c9ef648535f867a34d5c84bb1c839fd",
+    "bytes": 8598
+  },
+  {
+    "path": "sulfur-comparison-003/summary.md",
+    "local_source": "container-results/sulfur-comparison-003/summary.md",
+    "sha256": "83b3eb543afe9569b25fbf91acb89d26bf6e38d9fe1db31b2d9a0d160c7b4158",
+    "bytes": 2648
+  },
+  {
+    "path": "sulfur-comparison-003/sulfur_comparison.png",
+    "local_source": "container-results/sulfur-comparison-003/sulfur_comparison.png",
+    "sha256": "aef21ddfc1567081fb085b276d9ff3cccd71db0e0cbae280518e9d5fec4bb2f6",
+    "bytes": 38176
+  },
+  {
+    "path": "sulfur-comparison-003/native-source.patch",
+    "local_source": "container-results/sulfur-comparison-003/native-source.patch",
+    "sha256": "8267151f3b8e12b08fa41591d6a27c1e186bdccbc84b63f30c67d094d34682d3",
+    "bytes": 661
+  },
+  {
+    "path": "sulfur-comparison-003/seed_variation.json",
+    "local_source": "container-results/sulfur-comparison-003/seed_variation.json",
+    "sha256": "93af67ffb7236ce3fa0698a91d2361fe3f68b4df60503fc89ca80a8bd97c570b",
+    "bytes": 21450
+  },
+  {
+    "path": "sulfur-comparison-003/sulfur_comparison.pdf",
+    "local_source": "container-results/sulfur-comparison-003/sulfur_comparison.pdf",
+    "sha256": "1919e45dd2e9561c2cc43002f524f9ddb281892d05766b237278c72a8b142444",
+    "bytes": 31413
+  },
+  {
+    "path": "sulfur-comparison-003/seed_variation.md",
+    "local_source": "container-results/sulfur-comparison-003/seed_variation.md",
+    "sha256": "efafdb343322db4d63e339d5e5512f8c1b393530564294b3cb2b933a6282e3be",
+    "bytes": 6048
+  },
+  {
+    "path": "sulfur-comparison-003/2457/spectrum_bins.csv",
+    "local_source": "container-results/sulfur-comparison-003/2457/spectrum_bins.csv",
+    "sha256": "ed3b874fd9f395d66915f59ffbb3943a53a4cb32d833a459687b925bd6b81cf7",
+    "bytes": 87613
+  },
+  {
+    "path": "sulfur-comparison-003/2457/comparison.pdf",
+    "local_source": "container-results/sulfur-comparison-003/2457/comparison.pdf",
+    "sha256": "1493836e60491faec5040c32fdab10526209e1f0cd0064c5c12911f0258909d2",
+    "bytes": 99678
+  },
+  {
+    "path": "sulfur-comparison-003/2457/inputs.json",
+    "local_source": "container-results/sulfur-comparison-003/2457/inputs.json",
+    "sha256": "bab8470dbaab92e99d59c6666af51131a46e4a07f6fcf296271f0d90fb5390f0",
+    "bytes": 2236
+  },
+  {
+    "path": "sulfur-comparison-003/2457/comparison.png",
+    "local_source": "container-results/sulfur-comparison-003/2457/comparison.png",
+    "sha256": "74ba0e998b664abdb2be702a8eaf3ed008cd4e26410c33b268bec9b5c3263fc9",
+    "bytes": 31037
+  },
+  {
+    "path": "sulfur-comparison-003/2457/comparison.json",
+    "local_source": "container-results/sulfur-comparison-003/2457/comparison.json",
+    "sha256": "71fab0dbd1c83a7d8c09a3476c7deef36864b234b6f1b6053203824d74ca6ce1",
+    "bytes": 1196
+  },
+  {
+    "path": "sulfur-comparison-003/2150/spectrum_bins.csv",
+    "local_source": "container-results/sulfur-comparison-003/2150/spectrum_bins.csv",
+    "sha256": "a8d3082f3fbdb12e13e50b6565ef9652b3e7f3d149cdc4684ab8c637738100c0",
+    "bytes": 108857
+  },
+  {
+    "path": "sulfur-comparison-003/2150/comparison.pdf",
+    "local_source": "container-results/sulfur-comparison-003/2150/comparison.pdf",
+    "sha256": "05e751ed399b038affe178a66a60ac90ffa7370a33ca96d6504758cdb5ef8043",
+    "bytes": 133730
+  },
+  {
+    "path": "sulfur-comparison-003/2150/inputs.json",
+    "local_source": "container-results/sulfur-comparison-003/2150/inputs.json",
+    "sha256": "764430e967a07395d96aed3281b1aa7d8dac0d6aa8dfce6742f80bf12b0ed94d",
+    "bytes": 2236
+  },
+  {
+    "path": "sulfur-comparison-003/2150/comparison.png",
+    "local_source": "container-results/sulfur-comparison-003/2150/comparison.png",
+    "sha256": "dbc8af8d6e50c3139e9826208714fb74dc47f1bf7a70b3bf39f235d437335a2b",
+    "bytes": 35935
+  },
+  {
+    "path": "sulfur-comparison-003/2150/comparison.json",
+    "local_source": "container-results/sulfur-comparison-003/2150/comparison.json",
+    "sha256": "802d8402191268ad909da796c655fbe2a320c5f61b994d59848ddc550530d119",
+    "bytes": 1194
+  },
+  {
+    "path": "sulfur-comparison-003/1329/spectrum_bins.csv",
+    "local_source": "container-results/sulfur-comparison-003/1329/spectrum_bins.csv",
+    "sha256": "f63374ee33ada4cec1d219208176e665d91d47ad48b42bc4c791477952949e16",
+    "bytes": 84651
+  },
+  {
+    "path": "sulfur-comparison-003/1329/comparison.pdf",
+    "local_source": "container-results/sulfur-comparison-003/1329/comparison.pdf",
+    "sha256": "c054d316f216e376085ebc6fc06ec68ea74705fb58aed3d8643a1a989725c8b2",
+    "bytes": 96384
+  },
+  {
+    "path": "sulfur-comparison-003/1329/inputs.json",
+    "local_source": "container-results/sulfur-comparison-003/1329/inputs.json",
+    "sha256": "0e1af0eedfe43407f7115a329e5ce3a4652ff8b0a23e915c0e94f7b73fcae3dc",
+    "bytes": 2236
+  },
+  {
+    "path": "sulfur-comparison-003/1329/comparison.png",
+    "local_source": "container-results/sulfur-comparison-003/1329/comparison.png",
+    "sha256": "8f9488d71467d3e38d569e519de56a013d319dc88483dabb861c76899065d879",
+    "bytes": 33660
+  },
+  {
+    "path": "sulfur-comparison-003/1329/comparison.json",
+    "local_source": "container-results/sulfur-comparison-003/1329/comparison.json",
+    "sha256": "9c324efc84a4f43e6a9c3d566a1e4c50320f93970ae1ee0d119d28aa276b5fd9",
+    "bytes": 1194
+  },
+  {
+    "path": "sulfur-comparison-003/2457/g4-11/spectrum.json",
+    "local_source": "container-results/sulfur-comparison-003/2457/g4-11/spectrum.json",
+    "sha256": "532e3ba025b3c2d5444f56aea61d1e9a0ecbd12311df8b2cbe76173db320c19d",
+    "bytes": 318
+  },
+  {
+    "path": "sulfur-comparison-003/2457/g4-10/spectrum.json",
+    "local_source": "container-results/sulfur-comparison-003/2457/g4-10/spectrum.json",
+    "sha256": "d7e959380e8f874b7137761ea21891ef56f4f55e549b6bf1ccf703d4865d1f1e",
+    "bytes": 305
+  },
+  {
+    "path": "sulfur-comparison-003/2150/g4-11/spectrum.json",
+    "local_source": "container-results/sulfur-comparison-003/2150/g4-11/spectrum.json",
+    "sha256": "a6c67707753045b44cea4ac424b83ff790c301ef835ef61df7bb47b68e780a05",
+    "bytes": 317
+  },
+  {
+    "path": "sulfur-comparison-003/2150/g4-10/spectrum.json",
+    "local_source": "container-results/sulfur-comparison-003/2150/g4-10/spectrum.json",
+    "sha256": "5f117d5955e028785ed711df937688d5845b306017d9c27e523e5841a2b119b6",
+    "bytes": 304
+  },
+  {
+    "path": "sulfur-comparison-003/1329/g4-11/spectrum.json",
+    "local_source": "container-results/sulfur-comparison-003/1329/g4-11/spectrum.json",
+    "sha256": "b27631b38a55653e7cd5c4f8b447f514848dc08d6250a2dcd1e8718681509902",
+    "bytes": 317
+  },
+  {
+    "path": "sulfur-comparison-003/1329/g4-10/spectrum.json",
+    "local_source": "container-results/sulfur-comparison-003/1329/g4-10/spectrum.json",
+    "sha256": "0ac7f32b563342cd554a5788b574f0a7e879b8c6d9817e4067f10c9c8a507ca7",
+    "bytes": 304
+  },
+  {
+    "path": "sulfur-ten-seed-summary/summary.json",
+    "local_source": "container-results/sulfur-ten-seed-summary/summary.json",
+    "sha256": "3e65e67561e5e0b39ca7ba3db8c7dd729f5aef95465bc8fb8650d092a6a59bfd",
+    "bytes": 33416
+  },
+  {
+    "path": "sulfur-ten-seed-summary/summary.md",
+    "local_source": "container-results/sulfur-ten-seed-summary/summary.md",
+    "sha256": "70a1bfda610031aaca57473849f8ad3ec8f0f6bdd529126bd251043d40bc2576",
+    "bytes": 6225
+  },
+  {
+    "path": "sulfur-ten-seed-summary/target_seed_followup.pdf",
+    "local_source": "container-results/sulfur-ten-seed-summary/target_seed_followup.pdf",
+    "sha256": "c7277311bb478814a4973ead3e752bcb2bb1796354579c34471723ee00dda98b",
+    "bytes": 14553
+  },
+  {
+    "path": "sulfur-ten-seed-summary/inputs.json",
+    "local_source": "container-results/sulfur-ten-seed-summary/inputs.json",
+    "sha256": "2633864f433f12ecbfdfb0013f0e19663f4d7e3cd5a38a2c3c9ee57172f0b050",
+    "bytes": 89375
+  },
+  {
+    "path": "sulfur-ten-seed-summary/run_moments.json",
+    "local_source": "container-results/sulfur-ten-seed-summary/run_moments.json",
+    "sha256": "e8ae312bc45d7188fd8bf5f9abc396259f673d42480916af96d59e87140a780b",
+    "bytes": 78875
+  },
+  {
+    "path": "sulfur-ten-seed-summary/target_seed_followup.png",
+    "local_source": "container-results/sulfur-ten-seed-summary/target_seed_followup.png",
+    "sha256": "60c3ff99ef11d93877b0e334170ba3f7ab6e64aa94cbf78a8dc99d15d1f83a70",
+    "bytes": 19138
+  },
+  {
+    "path": "sulfur-ten-seed-summary/all_twelve/spectra.root",
+    "local_source": "container-results/sulfur-ten-seed-summary/all_twelve/spectra.root",
+    "sha256": "e3dae05e3bebbbcf7124a68c54fd4fecc29ad7c589ba02810ec706aede2d4c78",
+    "bytes": 91988
+  },
+  {
+    "path": "sulfur-ten-seed-summary/all_twelve/comparison.pdf",
+    "local_source": "container-results/sulfur-ten-seed-summary/all_twelve/comparison.pdf",
+    "sha256": "b8cd867f0a76ce89c29268eae9c62b7cc2b3c03dc355951ed153f38c753c4210",
+    "bytes": 32144
+  },
+  {
+    "path": "sulfur-ten-seed-summary/all_twelve/comparison.png",
+    "local_source": "container-results/sulfur-ten-seed-summary/all_twelve/comparison.png",
+    "sha256": "1c46721dabe1247aa977d89378fc9d81d5d6de137fc8ab2718fc8aa74de298ae",
+    "bytes": 37385
+  },
+  {
+    "path": "sulfur-ten-seed-summary/new_ten/spectra.root",
+    "local_source": "container-results/sulfur-ten-seed-summary/new_ten/spectra.root",
+    "sha256": "e06a5a51e2cc692d75c01dc7fe5adba1b0a5c10caa56937c1c5a554fee290bb8",
+    "bytes": 108118
+  },
+  {
+    "path": "sulfur-ten-seed-summary/new_ten/comparison.pdf",
+    "local_source": "container-results/sulfur-ten-seed-summary/new_ten/comparison.pdf",
+    "sha256": "eaaa396f09847a497404607ccbde2a1daf56c703a0003caacdc8e911f0fd0b77",
+    "bytes": 32091
+  },
+  {
+    "path": "sulfur-ten-seed-summary/new_ten/comparison.png",
+    "local_source": "container-results/sulfur-ten-seed-summary/new_ten/comparison.png",
+    "sha256": "3a8ccfa52a273037691eb7ca745fe12662ee64912708ccccb18e71900cc31bcf",
+    "bytes": 37331
+  },
+  {
+    "path": "container-smoke.json",
+    "local_source": "container-results/geant4-10/smoke/summary.json",
+    "sha256": "5527aab8c22274f1683668ee6a1b3842acd409670890985d43cdaad6034b2cf4",
+    "bytes": 945
+  }
+]
