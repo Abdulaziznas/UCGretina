@@ -21,7 +21,6 @@
 #include "G4Transform3D.hh"
 #include "G4UnitsTable.hh"
 
-#include "CADMesh.hh"
 #include "G4VisExtent.hh"
 
 class ScanningTable 

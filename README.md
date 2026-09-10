@@ -4,54 +4,131 @@ Cite: [L.A.Riley, D.Weisshaar, H.L.Crawford et al., UCGretina GEANT4 simulation 
 
 ## Compile and Install ##
 
-Install version [Geant4-10.7.4 of the Geant4 libraries](https://geant4.web.cern.ch/download/10.7.4.html). You will need the data files for low energy electromagnetic processes, photon evaporation, and radioactive decay.
+The simulation supports Geant4 11.x and requires a C++17 compiler and CMake
+3.16 or newer. This migration has been built and smoke-tested with Geant4
+11.4.1 on Linux. Other 11.x releases have not been tested locally.
+Use the physics datasets supplied for your Geant4 version.
 
-The model of the GRETINA scanning table uses version 2.0.3 of the external [CADMesh](https://github.com/christopherpoole/cadmesh) package. 
+ROOT is needed by the separate analysis utilities, not by the simulation
+executable. The scanning table uses the bundled CADMesh 2.0.3 header and
+models in `cadModels`; no separate CADMesh installation is needed for its
+built-in STL reader.
 
-Set up your environment (consider adding this to your `.bashrc`):
+Set up Geant4 and build from the repository root:
 
-    $ source <Path to Geant4>/bin/geant4.sh
-    $ source <Path to Geant4>/share/Geant4-10.7.4/geant4make/geant4make.sh
+```sh
+source <Path-to-Geant4>/bin/geant4.sh
+cmake -S . -B build -DGeant4_DIR=<Path-to-Geant4>/lib/cmake/Geant4 \
+  -DCMAKE_BUILD_TYPE=RelWithDebInfo
+cmake --build build -j 4
+ctest --test-dir build --output-on-failure
+```
 
-Compile:
+If Geant4 is already discoverable through `CMAKE_PREFIX_PATH`, omit
+`-DGeant4_DIR`. Python 3 is used by CTest; use `-DBUILD_TESTING=OFF` to build
+without the test dependency. The old `geant4make.sh` setup is unnecessary
+for CMake builds.
 
-    $ make
+Run `build/UCGretina` interactively from the repository root, or run the
+absolute path to the executable with a macro filename from an example's
+directory. Geometry files and other macro inputs are resolved relative to
+the runtime working directory.
 
-To use the LBL scanning table:
+Running `./build/UCGretina` without arguments opens the terminal command
+prompt, as in the original workflow. Execute macros there with
+`/control/execute <macro.mac>`.
 
-    $ make SCANNING=1
+To launch the standard Geant4 Qt GUI and display the detector directly from
+the shell, run this command from the repository root:
 
-(produces the binary UCGretina_Scan)
+```sh
+./build/UCGretina --vis vis/visQt.mac
+```
 
-To use the liquid hydrogen target:
+The `--vis` option creates the Qt session, executes the specified macro,
+and leaves the GUI open. It requires a Qt-enabled Geant4 installation and
+`WITH_VIS=ON`. Edit `vis/visQt.mac` to configure the geometry and initial
+view; it does not generate events. An ordinary macro argument without
+`--vis` still runs in batch mode. The older visualization macros select
+VRML file output. `vis/gui.mac` remains a minimal display macro for an
+already-open GUI session.
 
-    $ make LHTARGET=1
+For a batch simulation:
 
-(produces the binary UCGretina_LH)
+```sh
+cd examples/sources/eu152
+../../../build/UCGretina eu152.mac
+```
 
-To include nuclear polarization (alignment) of the reaction product in the `Reaction` class:
+The supplied example runs one million events; the CTest smoke tests use
+100 events each and two workers with a multithreaded Geant4 installation.
+Their macros, simulation output, and logs are retained under `build/smoke/`.
 
-    $ make POL=1
+Build options preserve the original executable names:
 
-This flag can be combined with the `LHTARGET` or the `SCANNING` flag. (produces the binary `UCGretina_Pol` or `UCGretina_LH_Pol` or `UCGretina_Scan_Pol`.) Implementation and validation of this capability is described here: [C. Morse, H. L. Crawford, A. O. Macchiavelli et al., The polarization sensitivity of GRETINA, Nucl. Instr. Meth. A1025, 166155 (2022)](https://doi.org/10.1016/j.nima.2021.166155)
+| CMake option | Executable / behavior |
+| --- | --- |
+| Default | `UCGretina` |
+| `-DLHTARGET=ON` | `UCGretina_LH` (liquid hydrogen target) |
+| `-DSCANNING=ON` | `UCGretina_Scan` (LBNL scanning table) |
+| `-DPOL=ON` | Adds `_Pol` to any of the above names |
+| `-DNEUTRONS=ON` | Enables neutron/hadronic processes; name unchanged |
+| `-DWITH_VIS=OFF` | Builds without visualization drivers |
+| `-DHIGHMULT=ON` | Enables high-multiplicity output |
+| `-DCACHETEXT=ON` | Uses text cache files |
 
-To activate neutron-related processes in the physics list (required for the `neutron` source type:
+Use separate build directories for different configurations. `LHTARGET`
+and `SCANNING` are mutually exclusive. For example:
 
-    $ make NEUTRONS=1
+```sh
+cmake -S . -B build-pol -DGeant4_DIR=<Path-to-Geant4>/lib/cmake/Geant4 -DPOL=ON
+cmake --build build-pol -j 4
+ctest --test-dir build-pol --output-on-failure
+```
 
-(does not affect the executable name, can be used with any of the above flags)
+Optional installation uses `cmake --install build --prefix <install-prefix>`.
+The executable is installed in `<install-prefix>/bin`; geometry and macro
+inputs remain in the repository. The legacy GNUmakefile is retained, but
+CMake is the validated build path for Geant4 11.
 
-Executables are automatically installed in
+### Geant4 11 migration notes
 
-    $G4WORKDIR/bin/$G4SYSTEM
+See the [change review and human sign-off document](docs/GEANT4_11_CHANGE_REVIEW.md)
+for the distinction between equivalent API edits, logic/physics changes, and
+validation still needed before production use.
 
-(which is added to your path when you source `geant4make.sh`)
+Removed visualization drivers are replaced by `G4VisExecutive`, which
+registers the drivers provided by your Geant4 installation. The custom
+crystal solid now provides bounding limits for Boolean geometry and
+visualization. Hadronic processes use the generic inelastic interface and
+the neutron capture interface introduced in Geant4 11.
+
+For Geant4 11.2 and newer, the simulation retains the previous long-lived
+source behavior by setting the radioactive-decay time threshold to
+`1e60 year`. To override it, use
+`/process/had/rdm/thresholdForVeryLongDecayTime <value> <unit>` after
+`/run/initialize`. See the [Geant4 11.2 release notes](https://geant4.web.cern.ch/download/release-notes/notes-v11.2.0.html).
+
+Polarized gamma physics disables the combined gamma process before
+replacing its individual interactions. The `POL` build retains the
+project's custom `G4ITDecay::DecayIt` implementation for Stokes parameters,
+using Geant4's own constructors and version-dependent parent bookkeeping.
+This override should be reviewed when upgrading Geant4 again.
+
+Smoke tests check execution and output, including long-lived source decay,
+polarized process registration, and the optional ATIMA/neutron paths.
+They do not establish physics equivalence with Geant4 10.7.4; detector
+response, angular distributions, and efficiencies should be revalidated
+before using the migrated simulation for production results.
+
+Nuclear-polarization implementation and validation are described in
+[C. Morse, H. L. Crawford, A. O. Macchiavelli et al., The polarization sensitivity of GRETINA, Nucl. Instr. Meth. A1025, 166155 (2022)](https://doi.org/10.1016/j.nima.2021.166155).
 
 ## Multithreading ##
 
 (Implemented by Daniel E.M. Hoff.)
 
-If the Geant4 toolkit is compiled with multithreading support enabled, the `$G4MULTITHREADED` environment variable is set, and the number of events specified by `/run/beamOn` macro-file command will be divided among a number of threads determined by `G4Threading::G4GetNumberOfCores()`. Events are allocated to threads in batches to allow for competition between real and virtual cores.
+If the Geant4 toolkit is compiled with multithreading support enabled, CMake detects that configuration automatically. The number of events specified by `/run/beamOn` macro-file command will be divided among a number of threads determined by `G4Threading::G4GetNumberOfCores()`. Events are allocated to threads in batches to allow for competition between real and virtual cores.
 
 The `G4RunManager` class provides optional macro file commands both to control the number of threads
 

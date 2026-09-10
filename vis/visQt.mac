@@ -1,0 +1,23 @@
+# Launch from the repository root:
+#   ./build/UCGretina --vis vis/visQt.mac
+# Qt is created by --vis before this macro executes.
+
+# Geometry: use the current asolid/aslice/aclust/awalls/aeuler configuration.
+/Gretina/detector/enableCapsules
+/Gretina/detector/enableCryostats
+/Target/Construct
+/Target/Sled
+/BeamTube/Construct
+
+/run/initialize
+
+# Select the installed default Qt viewer (ToolsSG on Geant4 11.4).
+/vis/open
+/vis/viewer/set/autoRefresh false
+/vis/drawVolume
+/vis/viewer/set/style surface
+/vis/viewer/set/viewpointThetaPhi 70 30
+/vis/viewer/set/autoRefresh true
+/vis/viewer/flush
+
+# Leave the GUI open for viewing and further commands; no events are generated.

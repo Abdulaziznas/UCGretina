@@ -1,3 +1,4 @@
+#include "globals.hh"
 #ifdef G4MULTITHREADED
 #include "G4MTRunManager.hh"
 #include "G4Threading.hh"
@@ -6,12 +7,7 @@
 #endif
 #include "G4UImanager.hh"
 
-#include "G4UIterminal.hh"
-#include "G4UItcsh.hh"
-
-#ifdef G4UI_USE_XM
-#include "G4UIXm.hh"
-#endif
+#include "G4UIExecutive.hh"
 
 #include "DetectorConstruction.hh"
 #include "PhysicsList.hh"
@@ -34,6 +30,33 @@ G4Timer Timerintern;
 int main(int argc,char** argv) 
 {
   
+  const G4bool visualize = argc > 1 && G4String(argv[1]) == "--vis";
+  if ((visualize && argc != 3) || (!visualize && argc > 2) ||
+      (argc == 2 && G4String(argv[1]) == "--help")) {
+    G4cout << "Usage: " << argv[0] << " [macro.mac | --vis visualization.mac]\n"
+           << "No arguments: terminal session. --vis: Qt GUI with a startup macro."
+           << G4endl;
+    return argc == 2 && G4String(argv[1]) == "--help" ? 0 : 1;
+  }
+#ifndef G4VIS_USE
+  if (visualize) {
+    G4cerr << "Visualization is disabled; rebuild with -DWITH_VIS=ON." << G4endl;
+    return 1;
+  }
+#endif
+  // Save arguments before Qt can consume its own command-line options.
+  const G4String macroFile = visualize ? argv[2] : (argc == 2 ? argv[1] : "");
+  G4UIExecutive* session = nullptr;
+  if (argc == 1 || visualize) {
+    session = new G4UIExecutive(argc, argv, visualize ? "qt" : "csh");
+    if (visualize && !session->IsGUI()) {
+      G4cerr << "The --vis option requires a Geant4 installation with Qt support."
+             << G4endl;
+      delete session;
+      return 1;
+    }
+  }
+
   // Construct the default run manager
 #ifdef G4MULTITHREADED
   G4MTRunManager* runManager = new G4MTRunManager;
@@ -67,14 +90,13 @@ int main(int argc,char** argv)
 
   runManager->SetUserInitialization(new ActionInitialization(detector, BeamIn, BeamOut, /*enableStepping=*/true));
 
-  G4UIsession* session=0;
 
 #ifdef G4VIS_USE
   // visualization manager
   G4VisManager* visManager=0;
 #endif
 
-  if (argc==1)   // Define UI session for interactive mode.
+  if (session)   // Initialize visualization for terminal and GUI sessions.
     {
 
 #ifdef G4VIS_USE
@@ -85,12 +107,6 @@ int main(int argc,char** argv)
       G4cout << "Done!" << G4endl;
 #endif
 
-// G4UIterminal is a (dumb) terminal.
-#ifdef G4UI_USE_TCSH
-      session = new G4UIterminal(new G4UItcsh);      
-#else
-      session = new G4UIterminal();
-#endif
 
     }
 
@@ -103,24 +119,18 @@ int main(int argc,char** argv)
   // get the pointer to the UI manager and set verbosities
   G4UImanager* UI = G4UImanager::GetUIpointer();
 
-  if (session)   // Define UI session for interactive mode.
-    {
-      session->SessionStart();
-      delete session;
-    }
-  else           // Batch mode
-    {
-      G4String command = "/control/execute ";
-      G4String fileName = argv[1];
-      UI->ApplyCommand(command+fileName);
-    }
+  G4int commandStatus = 0;
+  if (!macroFile.empty()) {
+    commandStatus = UI->ApplyCommand("/control/execute " + macroFile);
+  }
+  if (session) {
+    if (commandStatus == 0) session->SessionStart();
+    delete session;
+  }
 
-  // job termination
-  if(argc==1){
 #ifdef G4VIS_USE
   delete visManager;
 #endif
-  }
 
   delete runManager;
 
@@ -132,5 +142,5 @@ int main(int argc,char** argv)
 
   delete OutgoingBeamMessenger;
 
-  return 0;
+  return commandStatus == 0 ? 0 : 1;
 }

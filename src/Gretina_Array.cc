@@ -3253,7 +3253,7 @@ void Gretina_Array::CalculateVolumeAndCenter(G4int iPg, G4int start, G4int nsegs
 ////////////////////////////////////////////////////////////////////
 void Gretina_Array::SetSolidFile(G4String nome)
 {
-  if( nome(0) == '/' )
+  if( !nome.empty() && nome.front() == '/' )
     solidFile = nome;
   else {
     if( nome.find( "./", 0 ) != string::npos ) {
@@ -3270,7 +3270,7 @@ void Gretina_Array::SetSolidFile(G4String nome)
   
 void Gretina_Array::SetAngleFile(G4String nome)
 {
-  if( nome(0) == '/' )
+  if( !nome.empty() && nome.front() == '/' )
     eulerFile = nome;
   else {
     if( nome.find( "./", 0 ) != string::npos ) {
@@ -3287,7 +3287,7 @@ void Gretina_Array::SetAngleFile(G4String nome)
     
 void Gretina_Array::SetWallsFile(G4String nome)
 {
-  if( nome(0) == '/' )
+  if( !nome.empty() && nome.front() == '/' )
     wallsFile = nome;
   else {
     if( nome.find( "./", 0 ) != string::npos ) {
@@ -3304,7 +3304,7 @@ void Gretina_Array::SetWallsFile(G4String nome)
     
 void Gretina_Array::SetClustFile(G4String nome)
 {
-  if( nome(0) == '/' )
+  if( !nome.empty() && nome.front() == '/' )
     clustFile = nome;
   else {
     if( nome.find( "./", 0 ) != string::npos ) {
@@ -3321,7 +3321,7 @@ void Gretina_Array::SetClustFile(G4String nome)
 
 void Gretina_Array::SetSliceFile(G4String nome)
 {
-  if( nome(0) == '/' )
+  if( !nome.empty() && nome.front() == '/' )
     sliceFile = nome;
   else {
     if( nome.find( "./", 0 ) != string::npos ) {

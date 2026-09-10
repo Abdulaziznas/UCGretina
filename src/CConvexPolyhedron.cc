@@ -586,6 +586,19 @@ void CConvexPolyhedron::PreparePolyhedron()
 // Calculate extent under transform and specified limit
 //
 //////////////////////////////////////////////////////////////////////////
+// Geant4 uses local bounds when constructing Boolean solids and visualization.
+void CConvexPolyhedron::BoundingLimits(G4ThreeVector& pMin, G4ThreeVector& pMax) const
+{
+  pMin = G4ThreeVector(kInfinity, kInfinity, kInfinity);
+  pMax = G4ThreeVector(-kInfinity, -kInfinity, -kInfinity);
+  for (G4int i = 0; i < nPoints; ++i) {
+    for (G4int axis = 0; axis < 3; ++axis) {
+      if (fPoints[i][axis] < pMin[axis]) pMin[axis] = fPoints[i][axis];
+      if (fPoints[i][axis] > pMax[axis]) pMax[axis] = fPoints[i][axis];
+    }
+  }
+}
+
 G4bool CConvexPolyhedron::CalculateExtent( const EAxis pAxis,
                                            const G4VoxelLimits& pVoxelLimit,
                                            const G4AffineTransform& pTransform,

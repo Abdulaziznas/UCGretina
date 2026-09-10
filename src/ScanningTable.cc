@@ -1,5 +1,6 @@
 #ifdef SCANNING
 #include "ScanningTable.hh"
+#include "CADMesh.hh"
 
 ScanningTable::ScanningTable()
 {

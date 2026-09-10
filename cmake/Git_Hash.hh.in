@@ -1,0 +1,5 @@
+#ifndef Git_Hash_h
+#define Git_Hash_h
+#define GIT_HASH "@GIT_HASH@"
+#define GIT_BRANCH "@GIT_BRANCH@"
+#endif

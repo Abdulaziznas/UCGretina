@@ -1,0 +1,8 @@
+# Execute from the GUI command box after launching UCGretina without arguments.
+# Configure any optional geometry before executing this macro.
+/run/initialize
+/vis/open
+/vis/drawVolume
+/vis/viewer/set/style surface
+/vis/viewer/set/viewpointThetaPhi 70 30
+/vis/viewer/flush
